@@ -1,16 +1,36 @@
-# ---> C++
-# Prerequisites
+# Build output
 *.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
 *.obj
-
-# Precompiled Headers
+*.pdb
+*.exe
+*.dll
+*.lib
+*.pch
+*.idb
+*.ilk
+*.exp
+*.log
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+*.cache
+*.ipch
+*.o
+*.lo
 *.gch
 *.pch
+x64/
+x64_Debug/
+Debug/
+Release/
+
+# IDE
+*.suo
+*.user
+*.ncb
+*.sdf
+*.opensdf
+.vs/
 
 # Compiled Dynamic libraries
 *.so
@@ -31,4 +51,36 @@
 *.exe
 *.out
 *.app
+
+# Archives
+*.zip
+*.7z
+*.rar
+
+# Copyrighted assets (Microsoft/Mojang — DO NOT publish)
+Minecraft.Client/BedrockData/
+Minecraft.Client/Data/
+Minecraft.Client/Windows64Media/DLC/
+
+# External dependencies — sources & builds (users build from instructions)
+ExternalDependency/RakNet-src/
+ExternalDependency/RakNet-built/
+ExternalDependency/RmlUi-src/
+ExternalDependency/RmlUi-built/
+ExternalDependency/SDL3-src/
+ExternalDependency/SDL3-built/
+ExternalDependency/SDL3/
+ExternalDependency/bgfx/
+ExternalDependency/bgfx-built/
+ExternalDependency/bimg/
+ExternalDependency/bx/
+ExternalDependency/curl-src/
+ExternalDependency/curl-built/
+ExternalDependency/freetype-src/
+ExternalDependency/freetype-built/
+# Keep: nlohmann/, miniz/, monocypher/, stb_vorbis.c (small/header-only)
+
+# Temp & one-off files
+tmp/
+*.py
 
