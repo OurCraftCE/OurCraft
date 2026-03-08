@@ -1,0 +1,2387 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="ContentPackage_NO_TU|Durango">
+      <Configuration>ContentPackage_NO_TU</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ContentPackage_NO_TU|x64">
+      <Configuration>ContentPackage_NO_TU</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="CONTENTPACKAGE_SYMBOLS|Durango">
+      <Configuration>CONTENTPACKAGE_SYMBOLS</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="CONTENTPACKAGE_SYMBOLS|x64">
+      <Configuration>CONTENTPACKAGE_SYMBOLS</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ContentPackage|Durango">
+      <Configuration>ContentPackage</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ContentPackage|x64">
+      <Configuration>ContentPackage</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Durango">
+      <Configuration>Debug</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseForArt|Durango">
+      <Configuration>ReleaseForArt</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseForArt|x64">
+      <Configuration>ReleaseForArt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Durango">
+      <Configuration>Release</Configuration>
+      <Platform>Durango</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <ProjectGuid>{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}</ProjectGuid>
+    <Keyword>Xbox360Proj</Keyword>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationEnvironment>title</ApplicationEnvironment>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Durango'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64headers;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)..\Client\Durango\DurangoExtras;$(ProjectDir)\x64headers;$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <OutDir>$(ProjectDir)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64headers;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)..\Client\Durango\DurangoExtras;$(ProjectDir)\x64headers;$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <OutDir>$(ProjectDir)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64header;$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64header;$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64header;$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64header;$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64headers;$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <OutDir>$(ProjectDir)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64headers;$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <OutDir>$(ProjectDir)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64headers;$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <OutDir>$(ProjectDir)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64headers;$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <OutDir>$(ProjectDir)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    <IncludePath>$(ProjectDir)\x64headers;$(Console_SdkIncludeRoot)</IncludePath>
+    <ExecutablePath>$(Console_SdkRoot)\bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
+    <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
+    <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
+    <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <OutDir>$(ProjectDir)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_EXTENDED_ACHIEVEMENTS;_DEBUG_MENUS_ENABLED;_DEBUG;_LIB;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;_WINDOWS64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallAttributedProfiling>Disabled</CallAttributedProfiling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ShowIncludes>false</ShowIncludes>
+      <UseFullPaths>false</UseFullPaths>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalOptions>/FS %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>SPLIT_SAVES;_EXTENDED_ACHIEVEMENTS;UNICODE;_UNICODE;__WRL_NO_DEFAULT_LIB__;WINAPI_FAMILY=WINAPI_FAMILY_TV_TITLE;WIN32_LEAN_AND_MEAN;_XM_AVX_INTRINSICS_;_DEBUG_MENUS_ENABLED;_DEBUG;_LIB;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;_DURANGO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallAttributedProfiling>Disabled</CallAttributedProfiling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ShowIncludes>false</ShowIncludes>
+      <UseFullPaths>false</UseFullPaths>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4264</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_EXTENDED_ACHIEVEMENTS;_DEBUG_MENUS_ENABLED;_LIB;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;_WINDOWS64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallAttributedProfiling>Disabled</CallAttributedProfiling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ShowIncludes>false</ShowIncludes>
+      <UseFullPaths>false</UseFullPaths>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>SPLIT_SAVES;_EXTENDED_ACHIEVEMENTS;UNICODE;_UNICODE;__WRL_NO_DEFAULT_LIB__;WINAPI_FAMILY=WINAPI_FAMILY_TV_TITLE;WIN32_LEAN_AND_MEAN;_XM_AVX_INTRINSICS_;_DEBUG_MENUS_ENABLED;_LIB;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;_DURANGO;USE_PIX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallAttributedProfiling>Disabled</CallAttributedProfiling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ShowIncludes>false</ShowIncludes>
+      <UseFullPaths>false</UseFullPaths>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4264</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_TU_BUILD;_FINAL_BUILD;NDEBUG;_XBOX;_LIB;_CONTENT_PACKAGE;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_TU_BUILD;_FINAL_BUILD;NDEBUG;_XBOX;_LIB;_CONTENT_PACKAGE;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_TU_BUILD;_FINAL_BUILD;NDEBUG;_XBOX;_LIB;_CONTENT_PACKAGE;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_TU_BUILD;_FINAL_BUILD;NDEBUG;_XBOX;_LIB;_CONTENT_PACKAGE;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>SPLIT_SAVES;_EXTENDED_ACHIEVEMENTS;_FINAL_BUILD;_CONTENT_PACKAGE;NDEBUG;__WRL_NO_DEFAULT_LIB__;_XM_AVX_INTRINSICS_;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4264</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_TU_BUILD;_FINAL_BUILD;NDEBUG;_XBOX;_LIB;_CONTENT_PACKAGE;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_TU_BUILD;_FINAL_BUILD;NDEBUG;_XBOX;_LIB;_CONTENT_PACKAGE;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_TU_BUILD;_FINAL_BUILD;NDEBUG;_XBOX;_LIB;_CONTENT_PACKAGE;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>_TU_BUILD;_FINAL_BUILD;NDEBUG;_XBOX;_LIB;_CONTENT_PACKAGE;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Entities\Arrow.h" />
+    <None Include="Minecraft.World.h" />
+    <None Include="FwdHeaders\net.minecraft.world.ContainerListener.h" />
+    <None Include="FwdHeaders\net.minecraft.world.damagesource.h" />
+    <None Include="FwdHeaders\net.minecraft.world.level.chunk.h" />
+    <None Include="ReadMe.txt" />
+    <None Include="Math\Tag.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Math\AABB.h" />
+    <ClInclude Include="Player\Abilities.h" />
+    <ClInclude Include="Container\AbstractContainerMenu.h" />
+    <ClInclude Include="Stats\Achievement.h" />
+    <ClInclude Include="Stats\Achievements.h" />
+    <ClInclude Include="Network\AddEntityPacket.h" />
+    <ClInclude Include="Network\AddExperienceOrbPacket.h" />
+    <ClInclude Include="Network\AddGlobalEntityPacket.h" />
+    <ClInclude Include="WorldGen\AddIslandLayer.h" />
+    <ClInclude Include="Network\AddMobPacket.h" />
+    <ClInclude Include="WorldGen\AddMushroomIslandLayer.h" />
+    <ClInclude Include="Network\AddPaintingPacket.h" />
+    <ClInclude Include="Network\AddPlayerPacket.h" />
+    <ClInclude Include="WorldGen\AddSnowLayer.h" />
+    <ClInclude Include="Commands\AdminLogCommand.h" />
+    <ClInclude Include="Entities\AgableMob.h" />
+    <ClInclude Include="Tiles\AirTile.h" />
+    <ClInclude Include="Entities\Animal.h" />
+    <ClInclude Include="Network\AnimatePacket.h" />
+    <ClInclude Include="Tiles\AnvilTile.h" />
+    <ClInclude Include="Items\AnvilTileItem.h" />
+    <ClInclude Include="Recipes\ArmorDyeRecipe.h" />
+    <ClInclude Include="Items\ArmorItem.h" />
+    <ClInclude Include="Recipes\ArmorRecipes.h" />
+    <ClInclude Include="Items\ArmorSlot.h" />
+    <ClInclude Include="Math\Arrays.h" />
+    <ClInclude Include="Math\ArrayWithLength.h" />
+    <ClInclude Include="AI\ArrowAttackGoal.h" />
+    <ClInclude Include="Enchantments\ArrowDamageEnchantment.h" />
+    <ClInclude Include="Enchantments\ArrowFireEnchantment.h" />
+    <ClInclude Include="Enchantments\ArrowInfiniteEnchantment.h" />
+    <ClInclude Include="Enchantments\ArrowKnockbackEnchantment.h" />
+    <ClInclude Include="Items\AuxDataTileItem.h" />
+    <ClInclude Include="AI\AvoidPlayerGoal.h" />
+    <ClInclude Include="Network\AwardStatPacket.h" />
+    <ClInclude Include="WorldGen\BasicTree.h" />
+    <ClInclude Include="Math\BasicTypeContainers.h" />
+    <ClInclude Include="WorldGen\BeachBiome.h" />
+    <ClInclude Include="Items\BedItem.h" />
+    <ClInclude Include="Tiles\BedTile.h" />
+    <ClInclude Include="AI\BegGoal.h" />
+    <ClInclude Include="Math\BinaryHeap.h" />
+    <ClInclude Include="Level\Biome.h" />
+    <ClInclude Include="Level\BiomeCache.h" />
+    <ClInclude Include="Level\BiomeDecorator.h" />
+    <ClInclude Include="WorldGen\BiomeInitLayer.h" />
+    <ClInclude Include="WorldGen\BiomeOverrideLayer.h" />
+    <ClInclude Include="Level\BiomeSource.h" />
+    <ClInclude Include="WorldGen\BirchFeature.h" />
+    <ClInclude Include="Entities\Blaze.h" />
+    <ClInclude Include="Level\BlockDestructionProgress.h" />
+    <ClInclude Include="Level\BlockGenMethods.h" />
+    <ClInclude Include="Network\BlockRegionUpdatePacket.h" />
+    <ClInclude Include="Level\BlockReplacements.h" />
+    <ClInclude Include="Entities\Boat.h" />
+    <ClInclude Include="Items\BoatItem.h" />
+    <ClInclude Include="AI\BodyControl.h" />
+    <ClInclude Include="WorldGen\BonusChestFeature.h" />
+    <ClInclude Include="Items\BookItem.h" />
+    <ClInclude Include="Tiles\BookshelfTile.h" />
+    <ClInclude Include="Entities\BossMob.h" />
+    <ClInclude Include="Entities\BossMobPart.h" />
+    <ClInclude Include="Items\BottleItem.h" />
+    <ClInclude Include="Math\BoundingBox.h" />
+    <ClInclude Include="Items\BowItem.h" />
+    <ClInclude Include="Items\BowlFoodItem.h" />
+    <ClInclude Include="AI\BreakDoorGoal.h" />
+    <ClInclude Include="AI\BreedGoal.h" />
+    <ClInclude Include="Container\BrewingStandMenu.h" />
+    <ClInclude Include="Tiles\BrewingStandTile.h" />
+    <ClInclude Include="Tiles\BrewingStandTileEntity.h" />
+    <ClInclude Include="Items\BucketItem.h" />
+    <ClInclude Include="IO\Buffer.h" />
+    <ClInclude Include="IO\BufferedOutputStream.h" />
+    <ClInclude Include="IO\BufferedReader.h" />
+    <ClInclude Include="Tiles\Bush.h" />
+    <ClInclude Include="Tiles\ButtonTile.h" />
+    <ClInclude Include="IO\ByteArrayInputStream.h" />
+    <ClInclude Include="IO\ByteArrayOutputStream.h" />
+    <ClInclude Include="IO\ByteArrayTag.h" />
+    <ClInclude Include="IO\ByteBuffer.h" />
+    <ClInclude Include="IO\ByteTag.h" />
+    <ClInclude Include="WorldGen\CactusFeature.h" />
+    <ClInclude Include="Tiles\CactusTile.h" />
+    <ClInclude Include="Tiles\CakeTile.h" />
+    <ClInclude Include="WorldGen\CanyonFeature.h" />
+    <ClInclude Include="Items\CarrotOnAStickItem.h" />
+    <ClInclude Include="Tiles\CarrotTile.h" />
+    <ClInclude Include="Tiles\CauldronTile.h" />
+    <ClInclude Include="WorldGen\CaveFeature.h" />
+    <ClInclude Include="Entities\CaveSpider.h" />
+    <ClInclude Include="Network\ChatAutoCompletePacket.h" />
+    <ClInclude Include="Network\ChunkVisibilityAreaPacket.h" />
+    <ClInclude Include="Network\ClientCommandPacket.h" />
+    <ClInclude Include="Network\ClientInformationPacket.h" />
+    <ClInclude Include="Network\ClientProtocolPacket.h" />
+    <ClInclude Include="Entities\ClientSideMerchant.h" />
+    <ClInclude Include="Items\ClockItem.h" />
+    <ClInclude Include="Tiles\CocoaTile.h" />
+    <ClInclude Include="Items\ColoredTileItem.h" />
+    <ClInclude Include="Commands\Command.h" />
+    <ClInclude Include="Commands\CommandDispatcher.h" />
+    <ClInclude Include="Entities\CommandSender.h" />
+    <ClInclude Include="Level\CommandsEnum.h" />
+    <ClInclude Include="Stats\CommonStats.h" />
+    <ClInclude Include="Items\CompassItem.h" />
+    <ClInclude Include="Level\CompressedTileStorage.h" />
+    <ClInclude Include="IO\ConsoleSaveFileConverter.h" />
+    <ClInclude Include="IO\ConsoleSaveFileOriginal.h" />
+    <ClInclude Include="IO\ConsoleSaveFileSplit.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Network\ContainerButtonClickPacket.h" />
+    <ClInclude Include="Entities\Control.h" />
+    <ClInclude Include="AI\ControlledByPlayerGoal.h" />
+    <ClInclude Include="WorldGen\CustomLevelSource.h" />
+    <ClInclude Include="Network\CustomPayloadPacket.h" />
+    <ClInclude Include="Enchantments\DamageEnchantment.h" />
+    <ClInclude Include="Entities\DamageSource.h" />
+    <ClInclude Include="Commands\DefaultGameModeCommand.h" />
+    <ClInclude Include="AI\DefendVillageTargetGoal.h" />
+    <ClInclude Include="Level\DelayedRelease.h" />
+    <ClInclude Include="Level\DerivedLevelData.h" />
+    <ClInclude Include="WorldGen\DesertBiome.h" />
+    <ClInclude Include="WorldGen\DesertWellFeature.h" />
+    <ClInclude Include="Tiles\DirectionalTile.h" />
+    <ClInclude Include="AI\DoorInfo.h" />
+    <ClInclude Include="AI\DoorInteractGoal.h" />
+    <ClInclude Include="Entities\DragonFireball.h" />
+    <ClInclude Include="Stats\DurangoStats.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="AI\EatTileGoal.h" />
+    <ClInclude Include="Tiles\EggTile.h" />
+    <ClInclude Include="Enchantments\DigDurabilityEnchantment.h" />
+    <ClInclude Include="Enchantments\DiggingEnchantment.h" />
+    <ClInclude Include="Items\EnchantedBookItem.h" />
+    <ClInclude Include="Commands\EnchantItemCommand.h" />
+    <ClInclude Include="Enchantments\Enchantment.h" />
+    <ClInclude Include="Enchantments\EnchantmentCategory.h" />
+    <ClInclude Include="Container\EnchantmentContainer.h" />
+    <ClInclude Include="Enchantments\EnchantmentHelper.h" />
+    <ClInclude Include="Enchantments\EnchantmentInstance.h" />
+    <ClInclude Include="Container\EnchantmentMenu.h" />
+    <ClInclude Include="Items\EnchantmentSlot.h" />
+    <ClInclude Include="Tiles\EnchantmentTableEntity.h" />
+    <ClInclude Include="Tiles\EnchantmentTableTile.h" />
+    <ClInclude Include="Tiles\EnderChestTile.h" />
+    <ClInclude Include="Tiles\EnderChestTileEntity.h" />
+    <ClInclude Include="Entities\EnderCrystal.h" />
+    <ClInclude Include="Entities\EnderDragon.h" />
+    <ClInclude Include="Items\EnderEyeItem.h" />
+    <ClInclude Include="Items\EnderpearlItem.h" />
+    <ClInclude Include="WorldGen\EndPodiumFeature.h" />
+    <ClInclude Include="Commands\ExperienceCommand.h" />
+    <ClInclude Include="Items\ExperienceItem.h" />
+    <ClInclude Include="Entities\EyeOfEnderSignal.h" />
+    <ClInclude Include="Enchantments\FireAspectEnchantment.h" />
+    <ClInclude Include="Items\FireChargeItem.h" />
+    <ClInclude Include="AI\FleeSunGoal.h" />
+    <ClInclude Include="Items\FlippedIcon.h" />
+    <ClInclude Include="AI\FloatGoal.h" />
+    <ClInclude Include="Tiles\FlowerPotTile.h" />
+    <ClInclude Include="AI\FollowOwnerGoal.h" />
+    <ClInclude Include="AI\FollowParentGoal.h" />
+    <ClInclude Include="Network\GameCommandPacket.h" />
+    <ClInclude Include="Commands\GameModeCommand.h" />
+    <ClInclude Include="Stats\GenericStats.h" />
+    <ClInclude Include="Commands\GiveItemCommand.h" />
+    <ClInclude Include="AI\Goal.h" />
+    <ClInclude Include="AI\GoalSelector.h" />
+    <ClInclude Include="Items\GoldenAppleItem.h" />
+    <ClInclude Include="Entities\Golem.h" />
+    <ClInclude Include="WorldGen\GroundBushFeature.h" />
+    <ClInclude Include="WorldGen\GrowMushroomIslandLayer.h" />
+    <ClInclude Include="Tiles\HalfSlabTile.h" />
+    <ClInclude Include="Entities\HangingEntity.h" />
+    <ClInclude Include="Items\HangingEntityItem.h" />
+    <ClInclude Include="WorldGen\HellFlatLevelSource.h" />
+    <ClInclude Include="AI\HurtByTargetGoal.h" />
+    <ClInclude Include="WorldGen\IceBiome.h" />
+    <ClInclude Include="Entities\Icon.h" />
+    <ClInclude Include="Entities\IconRegister.h" />
+    <ClInclude Include="IO\IntArrayTag.h" />
+    <ClInclude Include="AI\InteractGoal.h" />
+    <ClInclude Include="Entities\ItemFrame.h" />
+    <ClInclude Include="AI\JumpControl.h" />
+    <ClInclude Include="WorldGen\JungleBiome.h" />
+    <ClInclude Include="Network\KickPlayerPacket.h" />
+    <ClInclude Include="Commands\KillCommand.h" />
+    <ClInclude Include="Enchantments\KnockbackEnchantment.h" />
+    <ClInclude Include="Entities\LavaSlime.h" />
+    <ClInclude Include="AI\LeapAtTargetGoal.h" />
+    <ClInclude Include="Network\LevelSoundPacket.h" />
+    <ClInclude Include="AI\LookAtPlayerGoal.h" />
+    <ClInclude Include="AI\LookAtTradingPlayerGoal.h" />
+    <ClInclude Include="AI\LookControl.h" />
+    <ClInclude Include="Enchantments\LootBonusEnchantment.h" />
+    <ClInclude Include="AI\MakeLoveGoal.h" />
+    <ClInclude Include="WorldGen\MegaTreeFeature.h" />
+    <ClInclude Include="AI\MeleeAttackGoal.h" />
+    <ClInclude Include="Entities\Merchant.h" />
+    <ClInclude Include="Container\MerchantContainer.h" />
+    <ClInclude Include="Container\MerchantMenu.h" />
+    <ClInclude Include="Container\MerchantRecipe.h" />
+    <ClInclude Include="Container\MerchantRecipeList.h" />
+    <ClInclude Include="Container\MerchantResultSlot.h" />
+    <ClInclude Include="Items\MilkBucketItem.h" />
+    <ClInclude Include="Entities\MobType.h" />
+    <ClInclude Include="Items\MonsterPlacerItem.h" />
+    <ClInclude Include="AI\MoveControl.h" />
+    <ClInclude Include="AI\MoveIndoorsGoal.h" />
+    <ClInclude Include="AI\MoveThroughVillageGoal.h" />
+    <ClInclude Include="AI\MoveTowardsRestrictionGoal.h" />
+    <ClInclude Include="AI\MoveTowardsTargetGoal.h" />
+    <ClInclude Include="Items\MultiTextureTileItem.h" />
+    <ClInclude Include="Entities\MushroomCow.h" />
+    <ClInclude Include="WorldGen\MushroomIslandBiome.h" />
+    <ClInclude Include="Tiles\MycelTile.h" />
+    <ClInclude Include="AI\NearestAttackableTargetGoal.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.commands.common.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.commands.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.control.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.goal.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.goal.target.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.navigation.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.sensing.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.util.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.village.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.boss.enderdragon.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.boss.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.npc.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.item.alchemy.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.item.enchantment.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.item.trading.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.tile.piston.h" />
+    <ClInclude Include="WorldGen\NetherSphere.h" />
+    <ClInclude Include="Tiles\NetherStalkTile.h" />
+    <ClInclude Include="AI\NonTameRandomTargetGoal.h" />
+    <ClInclude Include="Entities\Npc.h" />
+    <ClInclude Include="AI\OcelotSitOnTileGoal.h" />
+    <ClInclude Include="AI\OfferFlowerGoal.h" />
+    <ClInclude Include="AI\OpenDoorGoal.h" />
+    <ClInclude Include="AI\OwnerHurtByTargetGoal.h" />
+    <ClInclude Include="AI\OwnerHurtTargetGoal.h" />
+    <ClInclude Include="Enchantments\OxygenEnchantment.h" />
+    <ClInclude Include="Entities\Ozelot.h" />
+    <ClInclude Include="AI\OzelotAttackGoal.h" />
+    <ClInclude Include="AI\PanicGoal.h" />
+    <ClInclude Include="AI\PathNavigation.h" />
+    <ClInclude Include="Math\PerformanceTimer.h" />
+    <ClInclude Include="Network\PlayerAbilitiesPacket.h" />
+    <ClInclude Include="Container\PlayerEnderChestContainer.h" />
+    <ClInclude Include="AI\PlayGoal.h" />
+    <ClInclude Include="Tiles\PotatoTile.h" />
+    <ClInclude Include="Recipes\PotionBrewing.h" />
+    <ClInclude Include="Items\PotionItem.h" />
+    <ClInclude Include="Enchantments\ProtectionEnchantment.h" />
+    <ClInclude Include="Tiles\QuartzBlockTile.h" />
+    <ClInclude Include="AI\RandomLookAroundGoal.h" />
+    <ClInclude Include="AI\RandomPos.h" />
+    <ClInclude Include="WorldGen\RandomScatteredLargeFeature.h" />
+    <ClInclude Include="AI\RandomStrollGoal.h" />
+    <ClInclude Include="Math\Rarity.h" />
+    <ClInclude Include="Tiles\RedlightTile.h" />
+    <ClInclude Include="WorldGen\RegionHillsLayer.h" />
+    <ClInclude Include="Container\RepairContainer.h" />
+    <ClInclude Include="Container\RepairMenu.h" />
+    <ClInclude Include="Container\RepairResultSlot.h" />
+    <ClInclude Include="AI\RestrictOpenDoorGoal.h" />
+    <ClInclude Include="AI\RestrictSunGoal.h" />
+    <ClInclude Include="Network\RotateHeadPacket.h" />
+    <ClInclude Include="WorldGen\ScatteredFeaturePieces.h" />
+    <ClInclude Include="Items\SeedFoodItem.h" />
+    <ClInclude Include="AI\Sensing.h" />
+    <ClInclude Include="Network\ServerAuthDataPacket.h" />
+    <ClInclude Include="Network\SharedKeyPacket.h" />
+    <ClInclude Include="AI\SitGoal.h" />
+    <ClInclude Include="Items\SkullItem.h" />
+    <ClInclude Include="Tiles\SkullTile.h" />
+    <ClInclude Include="Tiles\SkullTileEntity.h" />
+    <ClInclude Include="Level\SparseDataStorage.h" />
+    <ClInclude Include="WorldGen\SwampRiversLayer.h" />
+    <ClInclude Include="AI\SwellGoal.h" />
+    <ClInclude Include="AI\TakeFlowerGoal.h" />
+    <ClInclude Include="Entities\TamableAnimal.h" />
+    <ClInclude Include="AI\TargetGoal.h" />
+    <ClInclude Include="AI\TemptGoal.h" />
+    <ClInclude Include="Enchantments\ThornsEnchantment.h" />
+    <ClInclude Include="Network\TileDestructionPacket.h" />
+    <ClInclude Include="Level\TileEventData.h" />
+    <ClInclude Include="Commands\TimeCommand.h" />
+    <ClInclude Include="Commands\ToggleDownfallCommand.h" />
+    <ClInclude Include="AI\TradeWithPlayerGoal.h" />
+    <ClInclude Include="Tiles\TripWireSourceTile.h" />
+    <ClInclude Include="Tiles\TripWireTile.h" />
+    <ClInclude Include="Level\Village.h" />
+    <ClInclude Include="Entities\VillagerGolem.h" />
+    <ClInclude Include="Level\Villages.h" />
+    <ClInclude Include="Level\VillageSiege.h" />
+    <ClInclude Include="WorldGen\VinesFeature.h" />
+    <ClInclude Include="Tiles\WallTile.h" />
+    <ClInclude Include="Math\WeighedTreasure.h" />
+    <ClInclude Include="Tiles\WoodSlabTile.h" />
+    <ClInclude Include="Tiles\WoodTile.h" />
+    <ClInclude Include="Math\C4JThread.h">
+      </ClInclude>
+    <ClInclude Include="WorldGen\ChunkGenThreadPool.h" />
+    <ClInclude Include="noise\SimdNoise.h" />
+    <ClInclude Include="Tiles\WoolCarpetTile.h" />
+    <ClInclude Include="x64headers\extraX64.h" />
+    <ClInclude Include="x64headers\qnet.h" />
+    <ClInclude Include="x64headers\xmcore.h" />
+    <ClInclude Include="x64headers\xrnm.h" />
+    <ClInclude Include="x64headers\xsocialpost.h" />
+    <ClInclude Include="x64headers\xuiapp.h" />
+    <ClInclude Include="x64headers\xuiresource.h" />
+    <ClInclude Include="Network\XZPacket.h" />
+    <ClInclude Include="WorldGen\ShoreLayer.h" />
+    <ClInclude Include="Entities\SmallFireball.h" />
+    <ClInclude Include="Items\SmoothStoneBrickTileItem.h" />
+    <ClInclude Include="Entities\SnowMan.h" />
+    <ClInclude Include="WorldGen\NetherBridgeFeature.h" />
+    <ClInclude Include="WorldGen\NetherBridgePieces.h" />
+    <ClInclude Include="Entities\SoundTypes.h" />
+    <ClInclude Include="Level\SparseLightStorage.h" />
+    <ClInclude Include="WorldGen\SpikeFeature.h" />
+    <ClInclude Include="Items\StoneMonsterTileItem.h" />
+    <ClInclude Include="Network\TextureAndGeometryChangePacket.h" />
+    <ClInclude Include="Network\TextureAndGeometryPacket.h" />
+    <ClInclude Include="WorldGen\TheEndBiome.h" />
+    <ClInclude Include="WorldGen\TheEndBiomeDecorator.h" />
+    <ClInclude Include="Level\TheEndDimension.h" />
+    <ClInclude Include="Level\TheEndLevelRandomLevelSource.h" />
+    <ClInclude Include="Tiles\TheEndPortal.h" />
+    <ClInclude Include="Tiles\TheEndPortalFrameTile.h" />
+    <ClInclude Include="Tiles\TheEndPortalTileEntity.h" />
+    <ClInclude Include="Entities\Throwable.h" />
+    <ClInclude Include="Entities\ThrownEnderpearl.h" />
+    <ClInclude Include="Entities\ThrownExpBottle.h" />
+    <ClInclude Include="Entities\ThrownPotion.h" />
+    <ClInclude Include="Network\TileEntityDataPacket.h" />
+    <ClInclude Include="Enchantments\UntouchingEnchantment.h" />
+    <ClInclude Include="Network\UpdateGameRuleProgressPacket.h" />
+    <ClInclude Include="WorldGen\DownfallLayer.h" />
+    <ClInclude Include="WorldGen\DownfallMixerLayer.h" />
+    <ClInclude Include="Entities\EnderMan.h" />
+    <ClInclude Include="Entities\EntityDamageSource.h" />
+    <ClInclude Include="Entities\ExperienceOrb.h" />
+    <ClInclude Include="WorldGen\ExtremeHillsBiome.h" />
+    <ClInclude Include="Tiles\FenceGateTile.h" />
+    <ClInclude Include="WorldGen\FlatLayer.h" />
+    <ClInclude Include="WorldGen\FlatLevelSource.h" />
+    <ClInclude Include="Recipes\FoodConstants.h" />
+    <ClInclude Include="Player\FoodData.h" />
+    <ClInclude Include="WorldGen\FuzzyZoomLayer.h" />
+    <ClInclude Include="Network\GetInfoPacket.h" />
+    <ClInclude Include="WorldGen\HugeMushroomFeature.h" />
+    <ClInclude Include="Tiles\HugeMushroomTile.h" />
+    <ClInclude Include="Entities\IndirectEntityDamageSource.h" />
+    <ClInclude Include="Entities\InstantenousMobEffect.h" />
+    <ClInclude Include="Math\IntCache.h" />
+    <ClInclude Include="WorldGen\IslandLayer.h" />
+    <ClInclude Include="WorldGen\Layer.h" />
+    <ClInclude Include="Items\LeafTileItem.h" />
+    <ClInclude Include="Level\LevelSettings.h" />
+    <ClInclude Include="Level\LevelType.h" />
+    <ClInclude Include="Tiles\MelonTile.h" />
+    <ClInclude Include="WorldGen\MineShaftFeature.h" />
+    <ClInclude Include="WorldGen\MineShaftPieces.h" />
+    <ClInclude Include="WorldGen\MineShaftStart.h" />
+    <ClInclude Include="Entities\MobEffect.h" />
+    <ClInclude Include="Entities\MobEffectInstance.h" />
+    <ClInclude Include="Network\MoveEntityPacketSmall.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.effect.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.food.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.levelgen.structure.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.newbiome.layer.h" />
+    <ClInclude Include="Level\OceanBiome.h" />
+    <ClInclude Include="Entities\ParticleTypes.h" />
+    <ClInclude Include="Tiles\PistonBaseTile.h" />
+    <ClInclude Include="Tiles\PistonExtensionTile.h" />
+    <ClInclude Include="Tiles\PistonMovingPiece.h" />
+    <ClInclude Include="Tiles\PistonPieceEntity.h" />
+    <ClInclude Include="Items\PistonTileItem.h" />
+    <ClInclude Include="WorldGen\PlainsBiome.h" />
+    <ClInclude Include="Network\PlayerInfoPacket.h" />
+    <ClInclude Include="Network\RemoveMobEffectPacket.h" />
+    <ClInclude Include="Level\RiverBiome.h" />
+    <ClInclude Include="WorldGen\RiverInitLayer.h" />
+    <ClInclude Include="WorldGen\RiverLayer.h" />
+    <ClInclude Include="WorldGen\RiverMixerLayer.h" />
+    <ClInclude Include="WorldGen\SandFeature.h" />
+    <ClInclude Include="Network\ServerSettingsChangedPacket.h" />
+    <ClInclude Include="Network\ChatPacket.h" />
+    <ClInclude Include="Tiles\ChestTile.h" />
+    <ClInclude Include="Tiles\ChestTileEntity.h" />
+    <ClInclude Include="Entities\Chicken.h" />
+    <ClInclude Include="Level\ChunkPos.h" />
+    <ClInclude Include="Level\ChunkSource.h" />
+    <ClInclude Include="Level\ChunkStorage.h" />
+    <ClInclude Include="Level\ChunkStorageProfileDecorator.h" />
+    <ClInclude Include="Network\ChunkTilesUpdatePacket.h" />
+    <ClInclude Include="Network\ChunkVisibilityPacket.h" />
+    <ClInclude Include="Math\Class.h" />
+    <ClInclude Include="WorldGen\ClayFeature.h" />
+    <ClInclude Include="Tiles\ClayTile.h" />
+    <ClInclude Include="Recipes\ClothDyeRecipes.h" />
+    <ClInclude Include="Tiles\ClothTile.h" />
+    <ClInclude Include="Items\ClothTileItem.h" />
+    <ClInclude Include="Items\CoalItem.h" />
+    <ClInclude Include="Math\Color.h" />
+    <ClInclude Include="Items\ComplexItem.h" />
+    <ClInclude Include="Network\ComplexItemDataPacket.h" />
+    <ClInclude Include="Container\CompoundContainer.h" />
+    <ClInclude Include="IO\CompoundTag.h" />
+    <ClInclude Include="IO\compression.h" />
+    <ClInclude Include="Network\Connection.h" />
+    <ClInclude Include="Container\Container.h" />
+    <ClInclude Include="Network\ContainerAckPacket.h" />
+    <ClInclude Include="Network\ContainerClickPacket.h" />
+    <ClInclude Include="Network\ContainerClosePacket.h" />
+    <ClInclude Include="Container\ContainerMenu.h" />
+    <ClInclude Include="Network\ContainerOpenPacket.h" />
+    <ClInclude Include="Network\ContainerSetContentPacket.h" />
+    <ClInclude Include="Network\ContainerSetDataPacket.h" />
+    <ClInclude Include="Network\ContainerSetSlotPacket.h" />
+    <ClInclude Include="Math\Coord.h" />
+    <ClInclude Include="Tiles\CoralTile.h" />
+    <ClInclude Include="Entities\Cow.h" />
+    <ClInclude Include="Container\CraftingContainer.h" />
+    <ClInclude Include="Container\CraftingMenu.h" />
+    <ClInclude Include="Network\TradeItemPacket.h" />
+    <ClInclude Include="Network\CraftItemPacket.h" />
+    <ClInclude Include="Entities\Creature.h" />
+    <ClInclude Include="Entities\Creeper.h" />
+    <ClInclude Include="Tiles\CropTile.h" />
+    <ClInclude Include="IO\DataInput.h" />
+    <ClInclude Include="IO\DataInputStream.h" />
+    <ClInclude Include="Level\DataLayer.h" />
+    <ClInclude Include="IO\DataOutput.h" />
+    <ClInclude Include="IO\DataOutputStream.h" />
+    <ClInclude Include="WorldGen\DeadBushFeature.h" />
+    <ClInclude Include="Tiles\DeadBushTile.h" />
+    <ClInclude Include="Network\DebugOptionsPacket.h" />
+    <ClInclude Include="Tiles\Materials\DecorationMaterial.h" />
+    <ClInclude Include="Math\Definitions.h" />
+    <ClInclude Include="Entities\DescFormatter.h" />
+    <ClInclude Include="Tiles\DetectorRailTile.h" />
+    <ClInclude Include="Math\Difficulty.h" />
+    <ClInclude Include="Items\DiggerItem.h" />
+    <ClInclude Include="Level\Dimension.h" />
+    <ClInclude Include="Tiles\DiodeTile.h" />
+    <ClInclude Include="Math\Direction.h" />
+    <ClInclude Include="Level\DirectoryLevelStorage.h" />
+    <ClInclude Include="Level\DirectoryLevelStorageSource.h" />
+    <ClInclude Include="Tiles\DirtTile.h" />
+    <ClInclude Include="Network\DisconnectPacket.h" />
+    <ClInclude Include="Tiles\DispenserTile.h" />
+    <ClInclude Include="Tiles\DispenserTileEntity.h" />
+    <ClInclude Include="Math\Distort.h" />
+    <ClInclude Include="Items\DoorItem.h" />
+    <ClInclude Include="Tiles\DoorTile.h" />
+    <ClInclude Include="IO\DoubleTag.h" />
+    <ClInclude Include="WorldGen\DungeonFeature.h" />
+    <ClInclude Include="Items\DyePowderItem.h" />
+    <ClInclude Include="Items\EggItem.h" />
+    <ClInclude Include="Math\Emboss.h" />
+    <ClInclude Include="Level\EmptyLevelChunk.h" />
+    <ClInclude Include="IO\EndTag.h" />
+    <ClInclude Include="Entities\Enemy.h" />
+    <ClInclude Include="Entities\Entity.h" />
+    <ClInclude Include="Network\EntityActionAtPositionPacket.h" />
+    <ClInclude Include="Entities\EntityEvent.h" />
+    <ClInclude Include="Network\EntityEventPacket.h" />
+    <ClInclude Include="Network\EntityIO.h" />
+    <ClInclude Include="Math\EntityPos.h" />
+    <ClInclude Include="Entities\EntityTile.h" />
+    <ClInclude Include="IO\Exceptions.h" />
+    <ClInclude Include="Network\ExplodePacket.h" />
+    <ClInclude Include="Level\Explosion.h" />
+    <ClInclude Include="Math\Facing.h" />
+    <ClInclude Include="Entities\FallingTile.h" />
+    <ClInclude Include="Tiles\FarmTile.h" />
+    <ClInclude Include="Math\FastNoise.h" />
+    <ClInclude Include="WorldGen\Feature.h" />
+    <ClInclude Include="Tiles\FenceTile.h" />
+    <ClInclude Include="IO\File.h" />
+    <ClInclude Include="IO\FileFilter.h" />
+    <ClInclude Include="IO\FileHeader.h" />
+    <ClInclude Include="IO\FileInputStream.h" />
+    <ClInclude Include="IO\FileOutputStream.h" />
+    <ClInclude Include="Entities\Fireball.h" />
+    <ClInclude Include="Tiles\FireTile.h" />
+    <ClInclude Include="Entities\FishingHook.h" />
+    <ClInclude Include="Items\FishingRodItem.h" />
+    <ClInclude Include="Level\FixedBiomeSource.h" />
+    <ClInclude Include="Items\FlintAndSteelItem.h" />
+    <ClInclude Include="IO\FloatBuffer.h" />
+    <ClInclude Include="IO\FloatTag.h" />
+    <ClInclude Include="WorldGen\FlowerFeature.h" />
+    <ClInclude Include="Entities\FlyingMob.h" />
+    <ClInclude Include="IO\FilenameFilter.h" />
+    <ClInclude Include="Math\FoliageColor.h" />
+    <ClInclude Include="Items\FoodItem.h" />
+    <ClInclude Include="Recipes\FoodRecipies.h" />
+    <ClInclude Include="WorldGen\ForestBiome.h" />
+    <ClInclude Include="Container\FurnaceMenu.h" />
+    <ClInclude Include="Recipes\FurnaceRecipes.h" />
+    <ClInclude Include="Container\FurnaceResultSlot.h" />
+    <ClInclude Include="Tiles\FurnaceTile.h" />
+    <ClInclude Include="Tiles\FurnaceTileEntity.h" />
+    <ClInclude Include="Network\GameEventPacket.h" />
+    <ClInclude Include="Tiles\Materials\GasMaterial.h" />
+    <ClInclude Include="Stats\GeneralStat.h" />
+    <ClInclude Include="Entities\Ghast.h" />
+    <ClInclude Include="Entities\Giant.h" />
+    <ClInclude Include="Tiles\GlassTile.h" />
+    <ClInclude Include="Entities\GlobalEntity.h" />
+    <ClInclude Include="Math\GrassColor.h" />
+    <ClInclude Include="Tiles\GrassTile.h" />
+    <ClInclude Include="Tiles\GravelTile.h" />
+    <ClInclude Include="IO\GZIPInputStream.h" />
+    <ClInclude Include="IO\GZIPOutputStream.h" />
+    <ClInclude Include="Tiles\HalfTransparentTile.h" />
+    <ClInclude Include="Math\Hasher.h" />
+    <ClInclude Include="Math\HashExtension.h" />
+    <ClInclude Include="Items\HatchetItem.h" />
+    <ClInclude Include="WorldGen\HellBiome.h" />
+    <ClInclude Include="Level\HellDimension.h" />
+    <ClInclude Include="WorldGen\HellFireFeature.h" />
+    <ClInclude Include="WorldGen\HellPortalFeature.h" />
+    <ClInclude Include="WorldGen\HellRandomLevelSource.h" />
+    <ClInclude Include="Tiles\HellSandTile.h" />
+    <ClInclude Include="WorldGen\HellSpringFeature.h" />
+    <ClInclude Include="Tiles\HellStoneTile.h" />
+    <ClInclude Include="Math\HitResult.h" />
+    <ClInclude Include="Items\HoeItem.h" />
+    <ClInclude Include="WorldGen\HouseFeature.h" />
+    <ClInclude Include="Math\I18n.h" />
+    <ClInclude Include="Tiles\IceTile.h" />
+    <ClInclude Include="Math\ImprovedNoise.h" />
+    <ClInclude Include="IO\InputOutputStream.h" />
+    <ClInclude Include="IO\InputStream.h" />
+    <ClInclude Include="IO\InputStreamReader.h" />
+    <ClInclude Include="IO\IntBuffer.h" />
+    <ClInclude Include="Network\InteractPacket.h" />
+    <ClInclude Include="IO\IntTag.h" />
+    <ClInclude Include="Items\ItemInstance.h" />
+    <ClInclude Include="Math\JavaIntHash.h" />
+    <ClInclude Include="Network\KeepAlivePacket.h" />
+    <ClInclude Include="Math\Language.h" />
+    <ClInclude Include="Level\Level.h" />
+    <ClInclude Include="Level\LevelConflictException.h" />
+    <ClInclude Include="Level\LevelData.h" />
+    <ClInclude Include="Network\LevelEventPacket.h" />
+    <ClInclude Include="Level\LevelListener.h" />
+    <ClInclude Include="Items\LevelObjectInputStream.h" />
+    <ClInclude Include="Level\LevelSource.h" />
+    <ClInclude Include="Level\LevelStorage.h" />
+    <ClInclude Include="Level\LevelStorageProfilerDecorator.h" />
+    <ClInclude Include="Level\LevelStorageSource.h" />
+    <ClInclude Include="Level\LevelSummary.h" />
+    <ClInclude Include="Level\LightLayer.h" />
+    <ClInclude Include="Network\LoginPacket.h" />
+    <ClInclude Include="Items\MapItem.h" />
+    <ClInclude Include="Math\JavaMath.h" />
+    <ClInclude Include="Level\McRegionLevelStorage.h" />
+    <ClInclude Include="Level\McRegionLevelStorageSource.h" />
+    <ClInclude Include="Items\MapItemSavedData.h" />
+    <ClInclude Include="Level\MemoryChunkStorage.h" />
+    <ClInclude Include="Level\MemoryLevelStorage.h" />
+    <ClInclude Include="Level\MemoryLevelStorageSource.h" />
+    <ClInclude Include="Items\MinecartItem.h" />
+    <ClInclude Include="Entities\MobCategory.h" />
+    <ClInclude Include="Entities\MobSpawner.h" />
+    <ClInclude Include="Tiles\MobSpawnerTileEntity.h" />
+    <ClInclude Include="Level\MockedLevelStorage.h" />
+    <ClInclude Include="Entities\MouseInventoryClickHandler.h" />
+    <ClInclude Include="Network\MoveEntityPacket.h" />
+    <ClInclude Include="Network\MovePlayerPacket.h" />
+    <ClInclude Include="Math\Mth.h" />
+    <ClInclude Include="Tiles\MusicTileEntity.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.locale.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.network.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.item.crafting.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.material.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.network.packet.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.inventory.ContainerListener.h" />
+    <ClInclude Include="Math\Inventory.h" />
+    <ClInclude Include="Container\InventoryMenu.h" />
+    <ClInclude Include="Items\Item.h" />
+    <ClInclude Include="Entities\ItemEntity.h" />
+    <ClInclude Include="Items\ItemStat.h" />
+    <ClInclude Include="Tiles\LadderTile.h" />
+    <ClInclude Include="WorldGen\LakeFeature.h" />
+    <ClInclude Include="WorldGen\LargeCaveFeature.h" />
+    <ClInclude Include="WorldGen\LargeFeature.h" />
+    <ClInclude Include="WorldGen\LargeHellCaveFeature.h" />
+    <ClInclude Include="Tiles\LeafTile.h" />
+    <ClInclude Include="Level\LevelChunk.h" />
+    <ClInclude Include="Entities\LevelEvent.h" />
+    <ClInclude Include="Tiles\LeverTile.h" />
+    <ClInclude Include="WorldGen\LightGemFeature.h" />
+    <ClInclude Include="Tiles\LightGemTile.h" />
+    <ClInclude Include="Entities\LightningBolt.h" />
+    <ClInclude Include="Tiles\Materials\LiquidMaterial.h" />
+    <ClInclude Include="Tiles\LiquidTile.h" />
+    <ClInclude Include="Tiles\LiquidTileDynamic.h" />
+    <ClInclude Include="Tiles\LiquidTileStatic.h" />
+    <ClInclude Include="IO\ListTag.h" />
+    <ClInclude Include="Tiles\LockedChestTile.h" />
+    <ClInclude Include="IO\LongTag.h" />
+    <ClInclude Include="Tiles\Material.h" />
+    <ClInclude Include="Tiles\MaterialColor.h" />
+    <ClInclude Include="Level\McRegionChunkStorage.h" />
+    <ClInclude Include="Container\MenuBackup.h" />
+    <ClInclude Include="Tiles\MetalTile.h" />
+    <ClInclude Include="Entities\Minecart.h" />
+    <ClInclude Include="Entities\Mob.h" />
+    <ClInclude Include="Tiles\MobSpawnerTile.h" />
+    <ClInclude Include="Entities\Monster.h" />
+    <ClInclude Include="WorldGen\MonsterRoomFeature.h" />
+    <ClInclude Include="Tiles\Mushroom.h" />
+    <ClInclude Include="Tiles\MusicTile.h" />
+    <ClInclude Include="IO\NbtIo.h" />
+    <ClInclude Include="IO\NbtSlotFile.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.stats.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.dimension.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.animal.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.global.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.item.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.monster.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.player.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.inventory.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.item.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.biome.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.chunk.storage.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.levelgen.feature.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.levelgen.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.levelgen.synth.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.pathfinder.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.saveddata.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.tile.entity.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.tile.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.projectile.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.storage.h" />
+    <ClInclude Include="Math\Node.h" />
+    <ClInclude Include="FwdHeaders\net.minecraft.world.phys.h" />
+    <ClInclude Include="Level\NormalDimension.h" />
+    <ClInclude Include="Tiles\NotGateTile.h" />
+    <ClInclude Include="Math\NumberFormaters.h" />
+    <ClInclude Include="Tiles\ObsidianTile.h" />
+    <ClInclude Include="Level\OldChunkStorage.h" />
+    <ClInclude Include="WorldGen\OreFeature.h" />
+    <ClInclude Include="Recipes\OreRecipies.h" />
+    <ClInclude Include="Tiles\OreTile.h" />
+    <ClInclude Include="IO\OutputStream.h" />
+    <ClInclude Include="Network\Packet.h" />
+    <ClInclude Include="Network\PacketListener.h" />
+    <ClInclude Include="Entities\Painting.h" />
+    <ClInclude Include="AI\Path.h" />
+    <ClInclude Include="AI\PathFinder.h" />
+    <ClInclude Include="Entities\PathfinderMob.h" />
+    <ClInclude Include="Math\PerlinNoise.h" />
+    <ClInclude Include="Math\PerlinSimplexNoise.h" />
+    <ClInclude Include="Items\PickaxeItem.h" />
+    <ClInclude Include="Entities\Pig.h" />
+    <ClInclude Include="Entities\PigZombie.h" />
+    <ClInclude Include="WorldGen\PineFeature.h" />
+    <ClInclude Include="Player\Player.h" />
+    <ClInclude Include="Network\PlayerActionPacket.h" />
+    <ClInclude Include="Network\PlayerCommandPacket.h" />
+    <ClInclude Include="Network\PlayerInputPacket.h" />
+    <ClInclude Include="Entities\PlayerIO.h" />
+    <ClInclude Include="Level\PortalForcer.h" />
+    <ClInclude Include="Tiles\Materials\PortalMaterial.h" />
+    <ClInclude Include="Tiles\PortalTile.h" />
+    <ClInclude Include="Math\Pos.h" />
+    <ClInclude Include="Network\PreLoginPacket.h" />
+    <ClInclude Include="Tiles\PressurePlateTile.h" />
+    <ClInclude Include="Entities\PrimedTnt.h" />
+    <ClInclude Include="Entities\ProgressListener.h" />
+    <ClInclude Include="WorldGen\PumpkinFeature.h" />
+    <ClInclude Include="Tiles\PumpkinTile.h" />
+    <ClInclude Include="Tiles\RailTile.h" />
+    <ClInclude Include="WorldGen\RainforestBiome.h" />
+    <ClInclude Include="Math\Random.h" />
+    <ClInclude Include="WorldGen\RandomLevelSource.h" />
+    <ClInclude Include="IO\Reader.h" />
+    <ClInclude Include="Level\ReadOnlyChunkCache.h" />
+    <ClInclude Include="Recipes\Recipes.h" />
+    <ClInclude Include="Items\Recipy.h" />
+    <ClInclude Include="Items\RecordingItem.h" />
+    <ClInclude Include="Tiles\RecordPlayerTile.h" />
+    <ClInclude Include="Tiles\RedStoneDustTile.h" />
+    <ClInclude Include="Items\RedStoneItem.h" />
+    <ClInclude Include="Tiles\RedStoneOreTile.h" />
+    <ClInclude Include="WorldGen\ReedsFeature.h" />
+    <ClInclude Include="Tiles\ReedTile.h" />
+    <ClInclude Include="Math\Reference.h" />
+    <ClInclude Include="IO\Region.h" />
+    <ClInclude Include="IO\RegionFile.h" />
+    <ClInclude Include="IO\RegionFileCache.h" />
+    <ClInclude Include="Network\RemoveEntitiesPacket.h" />
+    <ClInclude Include="Network\RespawnPacket.h" />
+    <ClInclude Include="Container\ResultContainer.h" />
+    <ClInclude Include="Container\ResultSlot.h" />
+    <ClInclude Include="Math\Rotate.h" />
+    <ClInclude Include="Items\SaddleItem.h" />
+    <ClInclude Include="Tiles\SandStoneTile.h" />
+    <ClInclude Include="Tiles\HeavyTile.h" />
+    <ClInclude Include="Tiles\Sapling.h" />
+    <ClInclude Include="Items\SaplingTileItem.h" />
+    <ClInclude Include="IO\SavedData.h" />
+    <ClInclude Include="IO\SavedDataStorage.h" />
+    <ClInclude Include="Math\Scale.h" />
+    <ClInclude Include="Items\SeedItem.h" />
+    <ClInclude Include="Network\SetCreativeModeSlotPacket.h" />
+    <ClInclude Include="Network\SetExperiencePacket.h" />
+    <ClInclude Include="Recipes\ShapedRecipy.h" />
+    <ClInclude Include="Recipes\ShapelessRecipy.h" />
+    <ClInclude Include="Network\SetCarriedItemPacket.h" />
+    <ClInclude Include="Network\SetEntityDataPacket.h" />
+    <ClInclude Include="Network\SetEntityMotionPacket.h" />
+    <ClInclude Include="Network\SetEquippedItemPacket.h" />
+    <ClInclude Include="Network\SetHealthPacket.h" />
+    <ClInclude Include="Network\SetRidingPacket.h" />
+    <ClInclude Include="Network\SetSpawnPositionPacket.h" />
+    <ClInclude Include="Network\SetTimePacket.h" />
+    <ClInclude Include="Math\SharedConstants.h" />
+    <ClInclude Include="Items\ShearsItem.h" />
+    <ClInclude Include="Entities\Sheep.h" />
+    <ClInclude Include="IO\ShortTag.h" />
+    <ClInclude Include="Items\ShovelItem.h" />
+    <ClInclude Include="Items\SignItem.h" />
+    <ClInclude Include="Tiles\SignTile.h" />
+    <ClInclude Include="Tiles\SignTileEntity.h" />
+    <ClInclude Include="Network\SignUpdatePacket.h" />
+    <ClInclude Include="Entities\Silverfish.h" />
+    <ClInclude Include="Container\SimpleContainer.h" />
+    <ClInclude Include="Math\SimplexNoise.h" />
+    <ClInclude Include="Entities\Skeleton.h" />
+    <ClInclude Include="Entities\Slime.h" />
+    <ClInclude Include="Container\Slot.h" />
+    <ClInclude Include="Math\SmoothFloat.h" />
+    <ClInclude Include="WorldGen\SmoothLayer.h" />
+    <ClInclude Include="Tiles\SmoothStoneBrickTile.h" />
+    <ClInclude Include="WorldGen\SmoothZoomLayer.h" />
+    <ClInclude Include="Entities\Snowball.h" />
+    <ClInclude Include="Items\SnowballItem.h" />
+    <ClInclude Include="Tiles\SnowTile.h" />
+    <ClInclude Include="IO\Socket.h" />
+    <ClInclude Include="Math\SocketAddress.h" />
+    <ClInclude Include="Entities\Spider.h" />
+    <ClInclude Include="Tiles\Sponge.h" />
+    <ClInclude Include="WorldGen\SpringFeature.h" />
+    <ClInclude Include="Tiles\SpringTile.h" />
+    <ClInclude Include="WorldGen\SpruceFeature.h" />
+    <ClInclude Include="Entities\Squid.h" />
+    <ClInclude Include="Stats\Stat.h" />
+    <ClInclude Include="Items\StatFormatter.h" />
+    <ClInclude Include="Stats\Stats.h" />
+    <ClInclude Include="Tiles\StairTile.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Tiles\StemTile.h" />
+    <ClInclude Include="Tiles\StoneMonsterTile.h" />
+    <ClInclude Include="Tiles\StoneSlabTile.h" />
+    <ClInclude Include="Items\StoneSlabTileItem.h" />
+    <ClInclude Include="Tiles\StoneTile.h" />
+    <ClInclude Include="Math\StringHelpers.h" />
+    <ClInclude Include="IO\StringTag.h" />
+    <ClInclude Include="WorldGen\StrongholdFeature.h" />
+    <ClInclude Include="WorldGen\StrongholdPieces.h" />
+    <ClInclude Include="WorldGen\StructureFeature.h" />
+    <ClInclude Include="WorldGen\StructurePiece.h" />
+    <ClInclude Include="Recipes\StructureRecipies.h" />
+    <ClInclude Include="WorldGen\StructureStart.h" />
+    <ClInclude Include="WorldGen\SwampBiome.h" />
+    <ClInclude Include="WorldGen\SwampTreeFeature.h" />
+    <ClInclude Include="Entities\SynchedEntityData.h" />
+    <ClInclude Include="Math\Synth.h" />
+    <ClInclude Include="IO\System.h" />
+    <ClInclude Include="WorldGen\TaigaBiome.h" />
+    <ClInclude Include="Network\TakeItemEntityPacket.h" />
+    <ClInclude Include="Tiles\TallGrass.h" />
+    <ClInclude Include="WorldGen\TallGrassFeature.h" />
+    <ClInclude Include="Network\TeleportEntityPacket.h" />
+    <ClInclude Include="WorldGen\TemperatureLayer.h" />
+    <ClInclude Include="WorldGen\TemperatureMixerLayer.h" />
+    <ClInclude Include="Network\TextureChangePacket.h" />
+    <ClInclude Include="Network\TexturePacket.h" />
+    <ClInclude Include="Tiles\ThinFenceTile.h" />
+    <ClInclude Include="Math\ThreadName.h" />
+    <ClInclude Include="Entities\ThrownEgg.h" />
+    <ClInclude Include="Level\TickNextTickData.h" />
+    <ClInclude Include="Tiles\Tile.h" />
+    <ClInclude Include="Tiles\TileEntity.h" />
+    <ClInclude Include="Network\TileEventPacket.h" />
+    <ClInclude Include="Items\TileItem.h" />
+    <ClInclude Include="Items\TilePlanterItem.h" />
+    <ClInclude Include="Math\TilePos.h" />
+    <ClInclude Include="Network\TileUpdatePacket.h" />
+    <ClInclude Include="Tiles\TntTile.h" />
+    <ClInclude Include="Recipes\ToolRecipies.h" />
+    <ClInclude Include="Tiles\TopSnowTile.h" />
+    <ClInclude Include="Tiles\TorchTile.h" />
+    <ClInclude Include="WorldGen\TownFeature.h" />
+    <ClInclude Include="Tiles\TransparentTile.h" />
+    <ClInclude Include="Tiles\TrapDoorTile.h" />
+    <ClInclude Include="Container\TrapMenu.h" />
+    <ClInclude Include="WorldGen\TreeFeature.h" />
+    <ClInclude Include="Items\TreeTileItem.h" />
+    <ClInclude Include="Network\UpdateMobEffectPacket.h" />
+    <ClInclude Include="Network\UpdateProgressPacket.h" />
+    <ClInclude Include="Entities\UseAnim.h" />
+    <ClInclude Include="Network\UseItemPacket.h" />
+    <ClInclude Include="Math\Vec3.h" />
+    <ClInclude Include="WorldGen\VillageFeature.h" />
+    <ClInclude Include="WorldGen\VillagePieces.h" />
+    <ClInclude Include="Entities\Villager.h" />
+    <ClInclude Include="Tiles\VineTile.h" />
+    <ClInclude Include="WorldGen\VoronoiZoom.h" />
+    <ClInclude Include="Math\WaterColor.h" />
+    <ClInclude Include="Level\WaterLevelChunk.h" />
+    <ClInclude Include="WorldGen\WaterlilyFeature.h" />
+    <ClInclude Include="Tiles\WaterLilyTile.h" />
+    <ClInclude Include="Items\WaterLilyTileItem.h" />
+    <ClInclude Include="Enchantments\WaterWorkerEnchantment.h" />
+    <ClInclude Include="Items\WeaponItem.h" />
+    <ClInclude Include="Recipes\WeaponRecipies.h" />
+    <ClInclude Include="Tiles\Materials\WebMaterial.h" />
+    <ClInclude Include="Math\WeighedRandom.h" />
+    <ClInclude Include="Entities\Wolf.h" />
+    <ClInclude Include="Tiles\TreeTile.h" />
+    <ClInclude Include="Tiles\WebTile.h" />
+    <ClInclude Include="Tiles\WorkbenchTile.h" />
+    <ClInclude Include="IO\ConsoleSaveFile.h" />
+    <ClInclude Include="IO\ConsoleSaveFileInputStream.h" />
+    <ClInclude Include="IO\ConsoleSaveFileIO.h" />
+    <ClInclude Include="IO\ConsoleSaveFileOutputStream.h" />
+    <ClInclude Include="IO\ConsoleSavePath.h" />
+    <ClInclude Include="Entities\Zombie.h" />
+    <ClInclude Include="Entities\WaterAnimal.h" />
+    <ClInclude Include="Level\ZonedChunkStorage.h" />
+    <ClInclude Include="IO\ZoneFile.h" />
+    <ClInclude Include="IO\ZoneIo.h" />
+    <ClInclude Include="WorldGen\ZoomLayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Math\AABB.cpp" />
+    <ClCompile Include="Player\Abilities.cpp" />
+    <ClCompile Include="Container\AbstractContainerMenu.cpp" />
+    <ClCompile Include="Stats\Achievement.cpp" />
+    <ClCompile Include="Stats\Achievements.cpp" />
+    <ClCompile Include="Network\AddEntityPacket.cpp" />
+    <ClCompile Include="Network\AddExperienceOrbPacket.cpp" />
+    <ClCompile Include="Network\AddGlobalEntityPacket.cpp" />
+    <ClCompile Include="WorldGen\AddIslandLayer.cpp" />
+    <ClCompile Include="Network\AddMobPacket.cpp" />
+    <ClCompile Include="WorldGen\AddMushroomIslandLayer.cpp" />
+    <ClCompile Include="Network\AddPaintingPacket.cpp" />
+    <ClCompile Include="Network\AddPlayerPacket.cpp" />
+    <ClCompile Include="WorldGen\AddSnowLayer.cpp" />
+    <ClCompile Include="Entities\AgableMob.cpp" />
+    <ClCompile Include="Tiles\AirTile.cpp" />
+    <ClCompile Include="Entities\Animal.cpp" />
+    <ClCompile Include="Network\AnimatePacket.cpp" />
+    <ClCompile Include="Tiles\AnvilTile.cpp" />
+    <ClCompile Include="Items\AnvilTileItem.cpp" />
+    <ClCompile Include="Recipes\ArmorDyeRecipe.cpp" />
+    <ClCompile Include="Items\ArmorItem.cpp" />
+    <ClCompile Include="Recipes\ArmorRecipes.cpp" />
+    <ClCompile Include="Items\ArmorSlot.cpp" />
+    <ClCompile Include="Entities\Arrow.cpp" />
+    <ClCompile Include="AI\ArrowAttackGoal.cpp" />
+    <ClCompile Include="Enchantments\ArrowDamageEnchantment.cpp" />
+    <ClCompile Include="Enchantments\ArrowFireEnchantment.cpp" />
+    <ClCompile Include="Enchantments\ArrowInfiniteEnchantment.cpp" />
+    <ClCompile Include="Enchantments\ArrowKnockbackEnchantment.cpp" />
+    <ClCompile Include="Items\AuxDataTileItem.cpp" />
+    <ClCompile Include="AI\AvoidPlayerGoal.cpp" />
+    <ClCompile Include="Network\AwardStatPacket.cpp" />
+    <ClCompile Include="WorldGen\BasicTree.cpp" />
+    <ClCompile Include="Math\BasicTypeContainers.cpp" />
+    <ClCompile Include="WorldGen\BeachBiome.cpp" />
+    <ClCompile Include="Items\BedItem.cpp" />
+    <ClCompile Include="Tiles\BedTile.cpp" />
+    <ClCompile Include="AI\BegGoal.cpp" />
+    <ClCompile Include="Math\BinaryHeap.cpp" />
+    <ClCompile Include="Level\Biome.cpp" />
+    <ClCompile Include="Level\BiomeCache.cpp" />
+    <ClCompile Include="Level\BiomeDecorator.cpp" />
+    <ClCompile Include="WorldGen\BiomeInitLayer.cpp" />
+    <ClCompile Include="WorldGen\BiomeOverrideLayer.cpp" />
+    <ClCompile Include="Level\BiomeSource.cpp" />
+    <ClCompile Include="WorldGen\BirchFeature.cpp" />
+    <ClCompile Include="Entities\Blaze.cpp" />
+    <ClCompile Include="Level\BlockDestructionProgress.cpp" />
+    <ClCompile Include="Level\BlockGenMethods.cpp" />
+    <ClCompile Include="Network\BlockRegionUpdatePacket.cpp" />
+    <ClCompile Include="Level\BlockReplacements.cpp" />
+    <ClCompile Include="Entities\Boat.cpp" />
+    <ClCompile Include="Items\BoatItem.cpp" />
+    <ClCompile Include="AI\BodyControl.cpp" />
+    <ClCompile Include="WorldGen\BonusChestFeature.cpp" />
+    <ClCompile Include="Items\BookItem.cpp" />
+    <ClCompile Include="Tiles\BookshelfTile.cpp" />
+    <ClCompile Include="Entities\BossMob.cpp" />
+    <ClCompile Include="Entities\BossMobPart.cpp" />
+    <ClCompile Include="Items\BottleItem.cpp" />
+    <ClCompile Include="Math\BoundingBox.cpp" />
+    <ClCompile Include="Items\BowItem.cpp" />
+    <ClCompile Include="Items\BowlFoodItem.cpp" />
+    <ClCompile Include="AI\BreakDoorGoal.cpp" />
+    <ClCompile Include="AI\BreedGoal.cpp" />
+    <ClCompile Include="Container\BrewingStandMenu.cpp" />
+    <ClCompile Include="Tiles\BrewingStandTile.cpp" />
+    <ClCompile Include="Tiles\BrewingStandTileEntity.cpp" />
+    <ClCompile Include="Items\BucketItem.cpp" />
+    <ClCompile Include="IO\Buffer.cpp" />
+    <ClCompile Include="IO\BufferedOutputStream.cpp" />
+    <ClCompile Include="IO\BufferedReader.cpp" />
+    <ClCompile Include="Tiles\Bush.cpp" />
+    <ClCompile Include="Tiles\ButtonTile.cpp" />
+    <ClCompile Include="IO\ByteArrayInputStream.cpp" />
+    <ClCompile Include="IO\ByteArrayOutputStream.cpp" />
+    <ClCompile Include="IO\ByteBuffer.cpp" />
+    <ClCompile Include="WorldGen\CactusFeature.cpp" />
+    <ClCompile Include="Tiles\CactusTile.cpp" />
+    <ClCompile Include="Tiles\CakeTile.cpp" />
+    <ClCompile Include="WorldGen\CanyonFeature.cpp" />
+    <ClCompile Include="Items\CarrotOnAStickItem.cpp" />
+    <ClCompile Include="Tiles\CarrotTile.cpp" />
+    <ClCompile Include="Tiles\CauldronTile.cpp" />
+    <ClCompile Include="WorldGen\CaveFeature.cpp" />
+    <ClCompile Include="Entities\CaveSpider.cpp" />
+    <ClCompile Include="Network\ChatPacket.cpp" />
+    <ClCompile Include="Tiles\ChestTile.cpp" />
+    <ClCompile Include="Tiles\ChestTileEntity.cpp" />
+    <ClCompile Include="Entities\Chicken.cpp" />
+    <ClCompile Include="Level\ChunkPos.cpp" />
+    <ClCompile Include="Level\ChunkStorageProfileDecorator.cpp">
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">false</ShowIncludes>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Network\ChunkTilesUpdatePacket.cpp" />
+    <ClCompile Include="Network\ChunkVisibilityAreaPacket.cpp" />
+    <ClCompile Include="Network\ChunkVisibilityPacket.cpp" />
+    <ClCompile Include="Math\Class.cpp" />
+    <ClCompile Include="WorldGen\ClayFeature.cpp" />
+    <ClCompile Include="Tiles\ClayTile.cpp" />
+    <ClCompile Include="Network\ClientCommandPacket.cpp" />
+    <ClCompile Include="Entities\ClientSideMerchant.cpp" />
+    <ClCompile Include="Items\ClockItem.cpp" />
+    <ClCompile Include="Recipes\ClothDyeRecipes.cpp" />
+    <ClCompile Include="Tiles\ClothTile.cpp" />
+    <ClCompile Include="Items\ClothTileItem.cpp" />
+    <ClCompile Include="Items\CoalItem.cpp" />
+    <ClCompile Include="Tiles\CocoaTile.cpp" />
+    <ClCompile Include="Math\Color.cpp" />
+    <ClCompile Include="Items\ColoredTileItem.cpp" />
+    <ClCompile Include="Commands\Command.cpp" />
+    <ClCompile Include="Commands\CommandDispatcher.cpp" />
+    <ClCompile Include="Stats\CommonStats.cpp" />
+    <ClCompile Include="Items\CompassItem.cpp" />
+    <ClCompile Include="Items\ComplexItem.cpp" />
+    <ClCompile Include="Network\ComplexItemDataPacket.cpp" />
+    <ClCompile Include="Container\CompoundContainer.cpp" />
+    <ClCompile Include="Level\CompressedTileStorage.cpp">
+      </ClCompile>
+    <ClCompile Include="IO\compression.cpp" />
+    <ClCompile Include="Network\Connection.cpp" />
+    <ClCompile Include="IO\ConsoleSaveFileConverter.cpp" />
+    <ClCompile Include="IO\ConsoleSaveFileOriginal.cpp" />
+    <ClCompile Include="IO\ConsoleSaveFileSplit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Container\Container.cpp" />
+    <ClCompile Include="Network\ContainerAckPacket.cpp" />
+    <ClCompile Include="Network\ContainerButtonClickPacket.cpp" />
+    <ClCompile Include="Network\ContainerClickPacket.cpp" />
+    <ClCompile Include="Network\ContainerClosePacket.cpp" />
+    <ClCompile Include="Network\ContainerOpenPacket.cpp" />
+    <ClCompile Include="Network\ContainerSetContentPacket.cpp" />
+    <ClCompile Include="Network\ContainerSetDataPacket.cpp" />
+    <ClCompile Include="Network\ContainerSetSlotPacket.cpp" />
+    <ClCompile Include="AI\ControlledByPlayerGoal.cpp" />
+    <ClCompile Include="Tiles\CoralTile.cpp" />
+    <ClCompile Include="Entities\Cow.cpp" />
+    <ClCompile Include="Container\CraftingContainer.cpp" />
+    <ClCompile Include="Container\CraftingMenu.cpp" />
+    <ClCompile Include="Commands\DefaultGameModeCommand.cpp" />
+    <ClCompile Include="Stats\DurangoStats.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Commands\EnchantItemCommand.cpp" />
+    <ClCompile Include="Commands\ExperienceCommand.cpp" />
+    <ClCompile Include="Network\GameCommandPacket.cpp" />
+    <ClCompile Include="Commands\GameModeCommand.cpp" />
+    <ClCompile Include="Stats\GenericStats.cpp" />
+    <ClCompile Include="Commands\GiveItemCommand.cpp" />
+    <ClCompile Include="Commands\KillCommand.cpp" />
+    <ClCompile Include="Math\PerformanceTimer.cpp" />
+    <ClCompile Include="Commands\TimeCommand.cpp" />
+    <ClCompile Include="Commands\ToggleDownfallCommand.cpp" />
+    <ClCompile Include="Network\TradeItemPacket.cpp" />
+    <ClCompile Include="Network\CraftItemPacket.cpp" />
+    <ClCompile Include="Entities\Creature.cpp" />
+    <ClCompile Include="Entities\Creeper.cpp" />
+    <ClCompile Include="Tiles\CropTile.cpp" />
+    <ClCompile Include="WorldGen\CustomLevelSource.cpp" />
+    <ClCompile Include="Network\CustomPayloadPacket.cpp" />
+    <ClCompile Include="Enchantments\DamageEnchantment.cpp" />
+    <ClCompile Include="Entities\DamageSource.cpp" />
+    <ClCompile Include="IO\DataInputStream.cpp" />
+    <ClCompile Include="Level\DataLayer.cpp" />
+    <ClCompile Include="IO\DataOutputStream.cpp" />
+    <ClCompile Include="WorldGen\DeadBushFeature.cpp" />
+    <ClCompile Include="Tiles\DeadBushTile.cpp" />
+    <ClCompile Include="Network\DebugOptionsPacket.cpp" />
+    <ClCompile Include="AI\DefendVillageTargetGoal.cpp" />
+    <ClCompile Include="Level\DelayedRelease.cpp" />
+    <ClCompile Include="Level\DerivedLevelData.cpp" />
+    <ClCompile Include="WorldGen\DesertBiome.cpp" />
+    <ClCompile Include="WorldGen\DesertWellFeature.cpp" />
+    <ClCompile Include="Tiles\DetectorRailTile.cpp" />
+    <ClCompile Include="Enchantments\DigDurabilityEnchantment.cpp" />
+    <ClCompile Include="Items\DiggerItem.cpp" />
+    <ClCompile Include="Enchantments\DiggingEnchantment.cpp" />
+    <ClCompile Include="Level\Dimension.cpp" />
+    <ClCompile Include="Tiles\DiodeTile.cpp" />
+    <ClCompile Include="Math\Direction.cpp" />
+    <ClCompile Include="Tiles\DirectionalTile.cpp" />
+    <ClCompile Include="Level\DirectoryLevelStorage.cpp" />
+    <ClCompile Include="Level\DirectoryLevelStorageSource.cpp" />
+    <ClCompile Include="Tiles\DirtTile.cpp" />
+    <ClCompile Include="Network\DisconnectPacket.cpp" />
+    <ClCompile Include="Tiles\DispenserTile.cpp" />
+    <ClCompile Include="Tiles\DispenserTileEntity.cpp" />
+    <ClCompile Include="AI\DoorInfo.cpp" />
+    <ClCompile Include="AI\DoorInteractGoal.cpp" />
+    <ClCompile Include="Entities\DragonFireball.cpp" />
+    <ClCompile Include="AI\EatTileGoal.cpp" />
+    <ClCompile Include="Tiles\EggTile.cpp" />
+    <ClCompile Include="Items\EnchantedBookItem.cpp" />
+    <ClCompile Include="Enchantments\Enchantment.cpp" />
+    <ClCompile Include="Enchantments\EnchantmentCategory.cpp" />
+    <ClCompile Include="Container\EnchantmentContainer.cpp" />
+    <ClCompile Include="Enchantments\EnchantmentHelper.cpp" />
+    <ClCompile Include="Enchantments\EnchantmentInstance.cpp" />
+    <ClCompile Include="Container\EnchantmentMenu.cpp" />
+    <ClCompile Include="Tiles\EnchantmentTableEntity.cpp" />
+    <ClCompile Include="Tiles\EnchantmentTableTile.cpp" />
+    <ClCompile Include="Tiles\EnderChestTile.cpp" />
+    <ClCompile Include="Tiles\EnderChestTileEntity.cpp" />
+    <ClCompile Include="Items\EnderEyeItem.cpp" />
+    <ClCompile Include="Items\EnderpearlItem.cpp" />
+    <ClCompile Include="WorldGen\EndPodiumFeature.cpp" />
+    <ClCompile Include="Items\ExperienceItem.cpp" />
+    <ClCompile Include="WorldGen\ExtremeHillsBiome.cpp" />
+    <ClCompile Include="WorldGen\Feature.cpp" />
+    <ClCompile Include="Entities\EnderCrystal.cpp" />
+    <ClCompile Include="Entities\EnderDragon.cpp" />
+    <ClCompile Include="Entities\EyeOfEnderSignal.cpp" />
+    <ClCompile Include="Enchantments\FireAspectEnchantment.cpp" />
+    <ClCompile Include="Items\FireChargeItem.cpp" />
+    <ClCompile Include="AI\FleeSunGoal.cpp" />
+    <ClCompile Include="Items\FlippedIcon.cpp" />
+    <ClCompile Include="AI\FloatGoal.cpp" />
+    <ClCompile Include="Tiles\FlowerPotTile.cpp" />
+    <ClCompile Include="AI\FollowOwnerGoal.cpp" />
+    <ClCompile Include="AI\FollowParentGoal.cpp" />
+    <ClCompile Include="AI\Goal.cpp" />
+    <ClCompile Include="AI\GoalSelector.cpp" />
+    <ClCompile Include="Items\GoldenAppleItem.cpp" />
+    <ClCompile Include="Entities\Golem.cpp" />
+    <ClCompile Include="WorldGen\GroundBushFeature.cpp" />
+    <ClCompile Include="WorldGen\GrowMushroomIslandLayer.cpp" />
+    <ClCompile Include="Tiles\HalfSlabTile.cpp" />
+    <ClCompile Include="Entities\HangingEntity.cpp" />
+    <ClCompile Include="Items\HangingEntityItem.cpp" />
+    <ClCompile Include="WorldGen\HellFlatLevelSource.cpp" />
+    <ClCompile Include="AI\HurtByTargetGoal.cpp" />
+    <ClCompile Include="WorldGen\IceBiome.cpp" />
+    <ClCompile Include="AI\InteractGoal.cpp" />
+    <ClCompile Include="Entities\ItemFrame.cpp" />
+    <ClCompile Include="AI\JumpControl.cpp" />
+    <ClCompile Include="WorldGen\JungleBiome.cpp" />
+    <ClCompile Include="Network\KickPlayerPacket.cpp" />
+    <ClCompile Include="Enchantments\KnockbackEnchantment.cpp" />
+    <ClCompile Include="Entities\LavaSlime.cpp" />
+    <ClCompile Include="AI\LeapAtTargetGoal.cpp" />
+    <ClCompile Include="Network\LevelSoundPacket.cpp" />
+    <ClCompile Include="AI\LookAtPlayerGoal.cpp" />
+    <ClCompile Include="AI\LookAtTradingPlayerGoal.cpp" />
+    <ClCompile Include="AI\LookControl.cpp" />
+    <ClCompile Include="Enchantments\LootBonusEnchantment.cpp" />
+    <ClCompile Include="AI\MakeLoveGoal.cpp" />
+    <ClCompile Include="WorldGen\MegaTreeFeature.cpp" />
+    <ClCompile Include="AI\MeleeAttackGoal.cpp" />
+    <ClCompile Include="Container\MerchantContainer.cpp" />
+    <ClCompile Include="Container\MerchantMenu.cpp" />
+    <ClCompile Include="Container\MerchantRecipe.cpp" />
+    <ClCompile Include="Container\MerchantRecipeList.cpp" />
+    <ClCompile Include="Container\MerchantResultSlot.cpp" />
+    <ClCompile Include="Items\MilkBucketItem.cpp" />
+    <ClCompile Include="Items\MonsterPlacerItem.cpp" />
+    <ClCompile Include="AI\MoveControl.cpp" />
+    <ClCompile Include="AI\MoveIndoorsGoal.cpp" />
+    <ClCompile Include="AI\MoveThroughVillageGoal.cpp" />
+    <ClCompile Include="AI\MoveTowardsRestrictionGoal.cpp" />
+    <ClCompile Include="AI\MoveTowardsTargetGoal.cpp" />
+    <ClCompile Include="Items\MultiTextureTileItem.cpp" />
+    <ClCompile Include="Entities\MushroomCow.cpp" />
+    <ClCompile Include="WorldGen\MushroomIslandBiome.cpp" />
+    <ClCompile Include="Tiles\MycelTile.cpp" />
+    <ClCompile Include="AI\NearestAttackableTargetGoal.cpp" />
+    <ClCompile Include="WorldGen\NetherBridgeFeature.cpp" />
+    <ClCompile Include="WorldGen\NetherBridgePieces.cpp" />
+    <ClCompile Include="Tiles\NetherStalkTile.cpp" />
+    <ClCompile Include="AI\NonTameRandomTargetGoal.cpp" />
+    <ClCompile Include="Entities\Npc.cpp" />
+    <ClCompile Include="AI\OcelotSitOnTileGoal.cpp" />
+    <ClCompile Include="AI\OfferFlowerGoal.cpp" />
+    <ClCompile Include="AI\OpenDoorGoal.cpp" />
+    <ClCompile Include="AI\OwnerHurtByTargetGoal.cpp" />
+    <ClCompile Include="AI\OwnerHurtTargetGoal.cpp" />
+    <ClCompile Include="Enchantments\OxygenEnchantment.cpp" />
+    <ClCompile Include="Entities\Ozelot.cpp" />
+    <ClCompile Include="AI\OzelotAttackGoal.cpp" />
+    <ClCompile Include="AI\PanicGoal.cpp" />
+    <ClCompile Include="AI\PathNavigation.cpp" />
+    <ClCompile Include="Network\PlayerAbilitiesPacket.cpp" />
+    <ClCompile Include="Container\PlayerEnderChestContainer.cpp" />
+    <ClCompile Include="AI\PlayGoal.cpp" />
+    <ClCompile Include="Tiles\PotatoTile.cpp" />
+    <ClCompile Include="Recipes\PotionBrewing.cpp" />
+    <ClCompile Include="Items\PotionItem.cpp" />
+    <ClCompile Include="Enchantments\ProtectionEnchantment.cpp" />
+    <ClCompile Include="Tiles\QuartzBlockTile.cpp" />
+    <ClCompile Include="AI\RandomLookAroundGoal.cpp" />
+    <ClCompile Include="AI\RandomPos.cpp" />
+    <ClCompile Include="WorldGen\RandomScatteredLargeFeature.cpp" />
+    <ClCompile Include="AI\RandomStrollGoal.cpp" />
+    <ClCompile Include="Math\Rarity.cpp" />
+    <ClCompile Include="Tiles\RedlightTile.cpp" />
+    <ClCompile Include="WorldGen\RegionHillsLayer.cpp" />
+    <ClCompile Include="Container\RepairContainer.cpp" />
+    <ClCompile Include="Container\RepairMenu.cpp" />
+    <ClCompile Include="Container\RepairResultSlot.cpp" />
+    <ClCompile Include="AI\RestrictOpenDoorGoal.cpp" />
+    <ClCompile Include="AI\RestrictSunGoal.cpp" />
+    <ClCompile Include="Network\RotateHeadPacket.cpp" />
+    <ClCompile Include="WorldGen\ScatteredFeaturePieces.cpp" />
+    <ClCompile Include="Items\SeedFoodItem.cpp" />
+    <ClCompile Include="AI\Sensing.cpp" />
+    <ClCompile Include="AI\SitGoal.cpp" />
+    <ClCompile Include="Items\SkullItem.cpp" />
+    <ClCompile Include="Tiles\SkullTile.cpp" />
+    <ClCompile Include="Tiles\SkullTileEntity.cpp" />
+    <ClCompile Include="Level\SparseDataStorage.cpp" />
+    <ClCompile Include="WorldGen\SwampRiversLayer.cpp" />
+    <ClCompile Include="AI\SwellGoal.cpp" />
+    <ClCompile Include="AI\TakeFlowerGoal.cpp" />
+    <ClCompile Include="Entities\TamableAnimal.cpp" />
+    <ClCompile Include="AI\TargetGoal.cpp" />
+    <ClCompile Include="AI\TemptGoal.cpp" />
+    <ClCompile Include="Enchantments\ThornsEnchantment.cpp" />
+    <ClCompile Include="Network\TileDestructionPacket.cpp" />
+    <ClCompile Include="Level\TileEventData.cpp" />
+    <ClCompile Include="AI\TradeWithPlayerGoal.cpp" />
+    <ClCompile Include="Tiles\TripWireSourceTile.cpp" />
+    <ClCompile Include="Tiles\TripWireTile.cpp" />
+    <ClCompile Include="Level\Village.cpp" />
+    <ClCompile Include="Entities\VillagerGolem.cpp" />
+    <ClCompile Include="Level\Villages.cpp" />
+    <ClCompile Include="Level\VillageSiege.cpp" />
+    <ClCompile Include="WorldGen\VinesFeature.cpp" />
+    <ClCompile Include="Tiles\WallTile.cpp" />
+    <ClCompile Include="Math\WeighedTreasure.cpp" />
+    <ClCompile Include="Tiles\WoodSlabTile.cpp" />
+    <ClCompile Include="Math\C4JThread.cpp">
+      </ClCompile>
+    <ClCompile Include="WorldGen\ChunkGenThreadPool.cpp" />
+    <ClCompile Include="noise\SimdNoise.cpp" />
+    <ClCompile Include="Tiles\WoodTile.cpp" />
+    <ClCompile Include="Tiles\WoolCarpetTile.cpp" />
+    <ClCompile Include="Network\XZPacket.cpp" />
+    <ClCompile Include="WorldGen\ShoreLayer.cpp" />
+    <ClCompile Include="Items\SmoothStoneBrickTileItem.cpp" />
+    <ClCompile Include="Level\SparseLightStorage.cpp" />
+    <ClCompile Include="WorldGen\SpikeFeature.cpp" />
+    <ClCompile Include="WorldGen\NetherSphere.cpp" />
+    <ClCompile Include="Entities\SmallFireball.cpp" />
+    <ClCompile Include="Entities\SnowMan.cpp" />
+    <ClCompile Include="Items\StoneMonsterTileItem.cpp" />
+    <ClCompile Include="Network\TextureAndGeometryChangePacket.cpp" />
+    <ClCompile Include="Network\TextureAndGeometryPacket.cpp" />
+    <ClCompile Include="WorldGen\TheEndBiome.cpp" />
+    <ClCompile Include="WorldGen\TheEndBiomeDecorator.cpp" />
+    <ClCompile Include="Level\TheEndDimension.cpp" />
+    <ClCompile Include="Level\TheEndLevelRandomLevelSource.cpp" />
+    <ClCompile Include="Tiles\TheEndPortal.cpp" />
+    <ClCompile Include="Tiles\TheEndPortalFrameTile.cpp" />
+    <ClCompile Include="Tiles\TheEndPortalTileEntity.cpp" />
+    <ClCompile Include="Entities\Throwable.cpp" />
+    <ClCompile Include="Entities\ThrownEnderpearl.cpp" />
+    <ClCompile Include="Entities\ThrownExpBottle.cpp" />
+    <ClCompile Include="Entities\ThrownPotion.cpp" />
+    <ClCompile Include="Network\TileEntityDataPacket.cpp" />
+    <ClCompile Include="Enchantments\UntouchingEnchantment.cpp" />
+    <ClCompile Include="Network\UpdateGameRuleProgressPacket.cpp" />
+    <ClCompile Include="Math\Distort.cpp" />
+    <ClCompile Include="Items\DoorItem.cpp" />
+    <ClCompile Include="Tiles\DoorTile.cpp" />
+    <ClCompile Include="WorldGen\DownfallLayer.cpp" />
+    <ClCompile Include="WorldGen\DownfallMixerLayer.cpp" />
+    <ClCompile Include="WorldGen\DungeonFeature.cpp" />
+    <ClCompile Include="Items\DyePowderItem.cpp" />
+    <ClCompile Include="Items\EggItem.cpp" />
+    <ClCompile Include="Math\Emboss.cpp" />
+    <ClCompile Include="Level\ChunkMemoryManager.cpp" />
+    <ClCompile Include="Level\EmptyLevelChunk.cpp" />
+    <ClCompile Include="Entities\EnderMan.cpp" />
+    <ClCompile Include="Entities\Enemy.cpp" />
+    <ClCompile Include="Entities\Entity.cpp" />
+    <ClCompile Include="Network\EntityActionAtPositionPacket.cpp" />
+    <ClCompile Include="Entities\EntityDamageSource.cpp" />
+    <ClCompile Include="Network\EntityEventPacket.cpp" />
+    <ClCompile Include="Network\EntityIO.cpp" />
+    <ClCompile Include="Math\EntityPos.cpp" />
+    <ClCompile Include="Entities\EntityTile.cpp" />
+    <ClCompile Include="Entities\ExperienceOrb.cpp" />
+    <ClCompile Include="Network\ExplodePacket.cpp" />
+    <ClCompile Include="Level\Explosion.cpp" />
+    <ClCompile Include="Math\Facing.cpp" />
+    <ClCompile Include="Entities\FallingTile.cpp" />
+    <ClCompile Include="Tiles\FarmTile.cpp" />
+    <ClCompile Include="Math\FastNoise.cpp" />
+    <ClCompile Include="Tiles\FenceGateTile.cpp" />
+    <ClCompile Include="Tiles\FenceTile.cpp" />
+    <ClCompile Include="IO\File.cpp" />
+    <ClCompile Include="IO\FileHeader.cpp" />
+    <ClCompile Include="IO\FileInputStream.cpp" />
+    <ClCompile Include="IO\FileOutputStream.cpp" />
+    <ClCompile Include="Entities\Fireball.cpp" />
+    <ClCompile Include="Tiles\FireTile.cpp" />
+    <ClCompile Include="Entities\FishingHook.cpp" />
+    <ClCompile Include="Items\FishingRodItem.cpp" />
+    <ClCompile Include="Level\FixedBiomeSource.cpp" />
+    <ClCompile Include="WorldGen\FlatLayer.cpp" />
+    <ClCompile Include="WorldGen\FlatLevelSource.cpp" />
+    <ClCompile Include="Items\FlintAndSteelItem.cpp" />
+    <ClCompile Include="IO\FloatBuffer.cpp" />
+    <ClCompile Include="WorldGen\FlowerFeature.cpp" />
+    <ClCompile Include="Entities\FlyingMob.cpp" />
+    <ClCompile Include="Math\FoliageColor.cpp" />
+    <ClCompile Include="Recipes\FoodConstants.cpp" />
+    <ClCompile Include="Player\FoodData.cpp" />
+    <ClCompile Include="Items\FoodItem.cpp" />
+    <ClCompile Include="Recipes\FoodRecipies.cpp" />
+    <ClCompile Include="WorldGen\ForestBiome.cpp" />
+    <ClCompile Include="Container\FurnaceMenu.cpp" />
+    <ClCompile Include="Recipes\FurnaceRecipes.cpp" />
+    <ClCompile Include="Container\FurnaceResultSlot.cpp" />
+    <ClCompile Include="Tiles\FurnaceTile.cpp" />
+    <ClCompile Include="Tiles\FurnaceTileEntity.cpp" />
+    <ClCompile Include="WorldGen\FuzzyZoomLayer.cpp" />
+    <ClCompile Include="Network\GameEventPacket.cpp" />
+    <ClCompile Include="Stats\GeneralStat.cpp" />
+    <ClCompile Include="Network\GetInfoPacket.cpp" />
+    <ClCompile Include="Entities\Ghast.cpp" />
+    <ClCompile Include="Entities\Giant.cpp" />
+    <ClCompile Include="Tiles\GlassTile.cpp" />
+    <ClCompile Include="Entities\GlobalEntity.cpp" />
+    <ClCompile Include="Math\GrassColor.cpp" />
+    <ClCompile Include="Tiles\GrassTile.cpp" />
+    <ClCompile Include="Tiles\GravelTile.cpp" />
+    <ClCompile Include="Tiles\HalfTransparentTile.cpp" />
+    <ClCompile Include="Math\Hasher.cpp" />
+    <ClCompile Include="Items\HatchetItem.cpp" />
+    <ClCompile Include="WorldGen\HellBiome.cpp" />
+    <ClCompile Include="Level\HellDimension.cpp" />
+    <ClCompile Include="WorldGen\HellFireFeature.cpp" />
+    <ClCompile Include="WorldGen\HellPortalFeature.cpp" />
+    <ClCompile Include="WorldGen\HellRandomLevelSource.cpp" />
+    <ClCompile Include="Tiles\HellSandTile.cpp" />
+    <ClCompile Include="WorldGen\HellSpringFeature.cpp" />
+    <ClCompile Include="Tiles\HellStoneTile.cpp" />
+    <ClCompile Include="Math\HitResult.cpp" />
+    <ClCompile Include="Items\HoeItem.cpp" />
+    <ClCompile Include="WorldGen\HouseFeature.cpp" />
+    <ClCompile Include="WorldGen\HugeMushroomFeature.cpp" />
+    <ClCompile Include="Tiles\HugeMushroomTile.cpp" />
+    <ClCompile Include="Math\I18n.cpp" />
+    <ClCompile Include="Tiles\IceTile.cpp" />
+    <ClCompile Include="Math\ImprovedNoise.cpp" />
+    <ClCompile Include="Container\ContainerMenu.cpp" />
+    <ClCompile Include="Entities\IndirectEntityDamageSource.cpp" />
+    <ClCompile Include="IO\InputStream.cpp" />
+    <ClCompile Include="IO\InputStreamReader.cpp" />
+    <ClCompile Include="Entities\InstantenousMobEffect.cpp" />
+    <ClCompile Include="IO\IntBuffer.cpp" />
+    <ClCompile Include="Math\IntCache.cpp" />
+    <ClCompile Include="Network\InteractPacket.cpp" />
+    <ClCompile Include="Math\Inventory.cpp" />
+    <ClCompile Include="Container\InventoryMenu.cpp" />
+    <ClCompile Include="WorldGen\IslandLayer.cpp" />
+    <ClCompile Include="Items\Item.cpp" />
+    <ClCompile Include="Entities\ItemEntity.cpp" />
+    <ClCompile Include="Items\ItemInstance.cpp" />
+    <ClCompile Include="Items\ItemStat.cpp" />
+    <ClCompile Include="Network\KeepAlivePacket.cpp" />
+    <ClCompile Include="Tiles\LadderTile.cpp" />
+    <ClCompile Include="WorldGen\LakeFeature.cpp" />
+    <ClCompile Include="Math\Language.cpp" />
+    <ClCompile Include="WorldGen\LargeCaveFeature.cpp" />
+    <ClCompile Include="WorldGen\LargeFeature.cpp" />
+    <ClCompile Include="WorldGen\LargeHellCaveFeature.cpp" />
+    <ClCompile Include="WorldGen\Layer.cpp" />
+    <ClCompile Include="Tiles\LeafTile.cpp" />
+    <ClCompile Include="Items\LeafTileItem.cpp" />
+    <ClCompile Include="Level\LevelConflictException.cpp" />
+    <ClCompile Include="Level\LevelData.cpp" />
+    <ClCompile Include="Level\Level.cpp" />
+    <ClCompile Include="Level\LevelChunk.cpp">
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">false</ShowIncludes>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Network\LevelEventPacket.cpp" />
+    <ClCompile Include="Level\LevelSettings.cpp" />
+    <ClCompile Include="Level\LevelStorage.cpp" />
+    <ClCompile Include="Level\LevelStorageProfilerDecorator.cpp" />
+    <ClCompile Include="Level\LevelSummary.cpp" />
+    <ClCompile Include="Level\LevelType.cpp" />
+    <ClCompile Include="Tiles\LeverTile.cpp" />
+    <ClCompile Include="WorldGen\LightGemFeature.cpp" />
+    <ClCompile Include="Tiles\LightGemTile.cpp" />
+    <ClCompile Include="Entities\LightningBolt.cpp" />
+    <ClCompile Include="Tiles\LiquidTile.cpp" />
+    <ClCompile Include="Tiles\LiquidTileDynamic.cpp" />
+    <ClCompile Include="Tiles\LiquidTileStatic.cpp" />
+    <ClCompile Include="Tiles\LockedChestTile.cpp" />
+    <ClCompile Include="Network\LoginPacket.cpp" />
+    <ClCompile Include="Items\MapItem.cpp" />
+    <ClCompile Include="Items\MapItemSavedData.cpp" />
+    <ClCompile Include="Tiles\Material.cpp" />
+    <ClCompile Include="Tiles\MaterialColor.cpp" />
+    <ClCompile Include="Math\JavaMath.cpp" />
+    <ClCompile Include="Level\McRegionChunkStorage.cpp" />
+    <ClCompile Include="Level\McRegionLevelStorageSource.cpp" />
+    <ClCompile Include="Level\McRegionLevelStorage.cpp" />
+    <ClCompile Include="Tiles\MelonTile.cpp" />
+    <ClCompile Include="Level\MemoryChunkStorage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Level\MemoryLevelStorage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Level\MemoryLevelStorageSource.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Container\MenuBackup.cpp" />
+    <ClCompile Include="Tiles\MetalTile.cpp" />
+    <ClCompile Include="Entities\Minecart.cpp" />
+    <ClCompile Include="Items\MinecartItem.cpp" />
+    <ClCompile Include="Minecraft.World.cpp" />
+    <ClCompile Include="WorldGen\MineShaftFeature.cpp" />
+    <ClCompile Include="WorldGen\MineShaftPieces.cpp" />
+    <ClCompile Include="WorldGen\MineShaftStart.cpp" />
+    <ClCompile Include="Entities\Mob.cpp" />
+    <ClCompile Include="Entities\MobCategory.cpp" />
+    <ClCompile Include="Entities\MobEffect.cpp" />
+    <ClCompile Include="Entities\MobEffectInstance.cpp" />
+    <ClCompile Include="Entities\MobSpawner.cpp" />
+    <ClCompile Include="Tiles\MobSpawnerTile.cpp" />
+    <ClCompile Include="Tiles\MobSpawnerTileEntity.cpp" />
+    <ClCompile Include="Level\MockedLevelStorage.cpp" />
+    <ClCompile Include="Entities\Monster.cpp" />
+    <ClCompile Include="WorldGen\MonsterRoomFeature.cpp" />
+    <ClCompile Include="Network\MoveEntityPacket.cpp" />
+    <ClCompile Include="Network\MoveEntityPacketSmall.cpp" />
+    <ClCompile Include="Network\MovePlayerPacket.cpp" />
+    <ClCompile Include="Math\Mth.cpp" />
+    <ClCompile Include="Tiles\Mushroom.cpp" />
+    <ClCompile Include="Tiles\MusicTile.cpp" />
+    <ClCompile Include="Tiles\MusicTileEntity.cpp" />
+    <ClCompile Include="IO\NbtIo.cpp" />
+    <ClCompile Include="IO\NbtSlotFile.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Math\Node.cpp" />
+    <ClCompile Include="Tiles\NotGateTile.cpp" />
+    <ClCompile Include="Tiles\ObsidianTile.cpp" />
+    <ClCompile Include="Level\OldChunkStorage.cpp" />
+    <ClCompile Include="WorldGen\OreFeature.cpp" />
+    <ClCompile Include="Recipes\OreRecipies.cpp" />
+    <ClCompile Include="Tiles\OreTile.cpp" />
+    <ClCompile Include="Network\Packet.cpp" />
+    <ClCompile Include="Network\PacketListener.cpp" />
+    <ClCompile Include="Entities\Painting.cpp" />
+    <ClCompile Include="AI\Path.cpp" />
+    <ClCompile Include="AI\PathFinder.cpp" />
+    <ClCompile Include="Entities\PathfinderMob.cpp" />
+    <ClCompile Include="Math\PerlinNoise.cpp" />
+    <ClCompile Include="Math\PerlinSimplexNoise.cpp" />
+    <ClCompile Include="Items\PickaxeItem.cpp" />
+    <ClCompile Include="Entities\Pig.cpp" />
+    <ClCompile Include="Entities\PigZombie.cpp" />
+    <ClCompile Include="WorldGen\PineFeature.cpp" />
+    <ClCompile Include="Tiles\PistonBaseTile.cpp" />
+    <ClCompile Include="Tiles\PistonExtensionTile.cpp" />
+    <ClCompile Include="Tiles\PistonMovingPiece.cpp" />
+    <ClCompile Include="Tiles\PistonPieceEntity.cpp" />
+    <ClCompile Include="Items\PistonTileItem.cpp" />
+    <ClCompile Include="WorldGen\PlainsBiome.cpp" />
+    <ClCompile Include="Player\Player.cpp" />
+    <ClCompile Include="Network\PlayerActionPacket.cpp" />
+    <ClCompile Include="Network\PlayerCommandPacket.cpp" />
+    <ClCompile Include="Network\PlayerInfoPacket.cpp" />
+    <ClCompile Include="Network\PlayerInputPacket.cpp" />
+    <ClCompile Include="Level\PortalForcer.cpp" />
+    <ClCompile Include="Tiles\PortalTile.cpp" />
+    <ClCompile Include="Math\Pos.cpp" />
+    <ClCompile Include="Network\PreLoginPacket.cpp" />
+    <ClCompile Include="Tiles\PressurePlateTile.cpp" />
+    <ClCompile Include="Entities\PrimedTnt.cpp" />
+    <ClCompile Include="WorldGen\PumpkinFeature.cpp" />
+    <ClCompile Include="Tiles\PumpkinTile.cpp" />
+    <ClCompile Include="Tiles\RailTile.cpp" />
+    <ClCompile Include="WorldGen\RainforestBiome.cpp" />
+    <ClCompile Include="Math\Random.cpp" />
+    <ClCompile Include="WorldGen\RandomLevelSource.cpp" />
+    <ClCompile Include="Level\ReadOnlyChunkCache.cpp" />
+    <ClCompile Include="Recipes\Recipes.cpp" />
+    <ClCompile Include="Items\RecordingItem.cpp" />
+    <ClCompile Include="Tiles\RecordPlayerTile.cpp" />
+    <ClCompile Include="Tiles\RedStoneDustTile.cpp" />
+    <ClCompile Include="Items\RedStoneItem.cpp" />
+    <ClCompile Include="Tiles\RedStoneOreTile.cpp" />
+    <ClCompile Include="WorldGen\ReedsFeature.cpp" />
+    <ClCompile Include="Tiles\ReedTile.cpp" />
+    <ClCompile Include="IO\Region.cpp" />
+    <ClCompile Include="IO\RegionFile.cpp" />
+    <ClCompile Include="IO\RegionFileCache.cpp" />
+    <ClCompile Include="Network\RemoveEntitiesPacket.cpp" />
+    <ClCompile Include="Network\RemoveMobEffectPacket.cpp" />
+    <ClCompile Include="Network\RespawnPacket.cpp" />
+    <ClCompile Include="Container\ResultContainer.cpp" />
+    <ClCompile Include="Container\ResultSlot.cpp" />
+    <ClCompile Include="WorldGen\RiverInitLayer.cpp" />
+    <ClCompile Include="WorldGen\RiverLayer.cpp" />
+    <ClCompile Include="WorldGen\RiverMixerLayer.cpp" />
+    <ClCompile Include="Math\Rotate.cpp" />
+    <ClCompile Include="Items\SaddleItem.cpp" />
+    <ClCompile Include="WorldGen\SandFeature.cpp" />
+    <ClCompile Include="Tiles\SandStoneTile.cpp" />
+    <ClCompile Include="Tiles\HeavyTile.cpp" />
+    <ClCompile Include="Tiles\Sapling.cpp" />
+    <ClCompile Include="Items\SaplingTileItem.cpp" />
+    <ClCompile Include="IO\SavedData.cpp" />
+    <ClCompile Include="IO\SavedDataStorage.cpp" />
+    <ClCompile Include="Math\Scale.cpp" />
+    <ClCompile Include="Items\SeedItem.cpp" />
+    <ClCompile Include="Network\ServerSettingsChangedPacket.cpp" />
+    <ClCompile Include="Network\SetCarriedItemPacket.cpp" />
+    <ClCompile Include="Network\SetCreativeModeSlotPacket.cpp" />
+    <ClCompile Include="Network\SetEntityDataPacket.cpp" />
+    <ClCompile Include="Network\SetEntityMotionPacket.cpp" />
+    <ClCompile Include="Network\SetEquippedItemPacket.cpp" />
+    <ClCompile Include="Network\SetExperiencePacket.cpp" />
+    <ClCompile Include="Network\SetHealthPacket.cpp" />
+    <ClCompile Include="Network\SetRidingPacket.cpp" />
+    <ClCompile Include="Network\SetSpawnPositionPacket.cpp" />
+    <ClCompile Include="Network\SetTimePacket.cpp" />
+    <ClCompile Include="Recipes\ShapedRecipy.cpp" />
+    <ClCompile Include="Recipes\ShapelessRecipy.cpp" />
+    <ClCompile Include="Math\SharedConstants.cpp" />
+    <ClCompile Include="Items\ShearsItem.cpp" />
+    <ClCompile Include="Entities\Sheep.cpp" />
+    <ClCompile Include="Items\ShovelItem.cpp" />
+    <ClCompile Include="Items\SignItem.cpp" />
+    <ClCompile Include="Tiles\SignTile.cpp" />
+    <ClCompile Include="Tiles\SignTileEntity.cpp">
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">false</ShowIncludes>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Network\SignUpdatePacket.cpp" />
+    <ClCompile Include="Entities\Silverfish.cpp" />
+    <ClCompile Include="Container\SimpleContainer.cpp" />
+    <ClCompile Include="Math\SimplexNoise.cpp" />
+    <ClCompile Include="Entities\Skeleton.cpp" />
+    <ClCompile Include="Level\SkyIslandDimension.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Entities\Slime.cpp" />
+    <ClCompile Include="Container\Slot.cpp" />
+    <ClCompile Include="Math\SmoothFloat.cpp" />
+    <ClCompile Include="WorldGen\SmoothLayer.cpp" />
+    <ClCompile Include="Tiles\SmoothStoneBrickTile.cpp" />
+    <ClCompile Include="WorldGen\SmoothZoomLayer.cpp" />
+    <ClCompile Include="Entities\Snowball.cpp" />
+    <ClCompile Include="Items\SnowballItem.cpp" />
+    <ClCompile Include="Tiles\SnowTile.cpp" />
+    <ClCompile Include="IO\Socket.cpp" />
+    <ClCompile Include="Entities\Spider.cpp" />
+    <ClCompile Include="Tiles\Sponge.cpp" />
+    <ClCompile Include="WorldGen\SpringFeature.cpp" />
+    <ClCompile Include="Tiles\SpringTile.cpp" />
+    <ClCompile Include="WorldGen\SpruceFeature.cpp" />
+    <ClCompile Include="Entities\Squid.cpp" />
+    <ClCompile Include="Stats\Stat.cpp" />
+    <ClCompile Include="Stats\Stats.cpp" />
+    <ClCompile Include="Tiles\StairTile.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">Create</PrecompiledHeader>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">false</ShowIncludes>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">true</CompileAsWinRT>
+      <CompileAsWinRT Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">true</CompileAsWinRT>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Tiles\StemTile.cpp" />
+    <ClCompile Include="Tiles\StoneMonsterTile.cpp" />
+    <ClCompile Include="Tiles\StoneSlabTile.cpp" />
+    <ClCompile Include="Items\StoneSlabTileItem.cpp" />
+    <ClCompile Include="Tiles\StoneTile.cpp" />
+    <ClCompile Include="Math\StringHelpers.cpp" />
+    <ClCompile Include="WorldGen\StrongholdFeature.cpp" />
+    <ClCompile Include="WorldGen\StrongholdPieces.cpp" />
+    <ClCompile Include="WorldGen\StructureFeature.cpp" />
+    <ClCompile Include="WorldGen\StructurePiece.cpp" />
+    <ClCompile Include="Recipes\StructureRecipies.cpp" />
+    <ClCompile Include="WorldGen\StructureStart.cpp" />
+    <ClCompile Include="WorldGen\SwampBiome.cpp" />
+    <ClCompile Include="WorldGen\SwampTreeFeature.cpp" />
+    <ClCompile Include="Entities\SynchedEntityData.cpp" />
+    <ClCompile Include="Math\Synth.cpp" />
+    <ClCompile Include="IO\system.cpp" />
+    <ClCompile Include="Math\Tag.cpp" />
+    <ClCompile Include="WorldGen\TaigaBiome.cpp" />
+    <ClCompile Include="Network\TakeItemEntityPacket.cpp" />
+    <ClCompile Include="Tiles\TallGrass.cpp" />
+    <ClCompile Include="WorldGen\TallGrassFeature.cpp" />
+    <ClCompile Include="Network\TeleportEntityPacket.cpp" />
+    <ClCompile Include="WorldGen\TemperatureLayer.cpp" />
+    <ClCompile Include="WorldGen\TemperatureMixerLayer.cpp" />
+    <ClCompile Include="Network\TextureChangePacket.cpp" />
+    <ClCompile Include="Network\TexturePacket.cpp" />
+    <ClCompile Include="Tiles\ThinFenceTile.cpp" />
+    <ClCompile Include="Math\ThreadName.cpp" />
+    <ClCompile Include="Entities\ThrownEgg.cpp" />
+    <ClCompile Include="Level\TickNextTickData.cpp" />
+    <ClCompile Include="Tiles\Tile.cpp" />
+    <ClCompile Include="Network\TileEventPacket.cpp" />
+    <ClCompile Include="Items\TileItem.cpp" />
+    <ClCompile Include="Tiles\TileEntity.cpp" />
+    <ClCompile Include="Items\TilePlanterItem.cpp" />
+    <ClCompile Include="Math\TilePos.cpp" />
+    <ClCompile Include="Network\TileUpdatePacket.cpp" />
+    <ClCompile Include="Tiles\TntTile.cpp" />
+    <ClCompile Include="Recipes\ToolRecipies.cpp" />
+    <ClCompile Include="Tiles\TopSnowTile.cpp" />
+    <ClCompile Include="Tiles\TorchTile.cpp" />
+    <ClCompile Include="Tiles\TransparentTile.cpp" />
+    <ClCompile Include="Tiles\TrapDoorTile.cpp" />
+    <ClCompile Include="Container\TrapMenu.cpp" />
+    <ClCompile Include="WorldGen\TreeFeature.cpp" />
+    <ClCompile Include="Items\TreeTileItem.cpp" />
+    <ClCompile Include="Network\UpdateMobEffectPacket.cpp" />
+    <ClCompile Include="Network\UpdateProgressPacket.cpp" />
+    <ClCompile Include="Network\UseItemPacket.cpp" />
+    <ClCompile Include="Math\Vec3.cpp" />
+    <ClCompile Include="WorldGen\VillageFeature.cpp" />
+    <ClCompile Include="WorldGen\VillagePieces.cpp" />
+    <ClCompile Include="Entities\Villager.cpp" />
+    <ClCompile Include="Tiles\VineTile.cpp" />
+    <ClCompile Include="WorldGen\VoronoiZoom.cpp" />
+    <ClCompile Include="Math\WaterColor.cpp" />
+    <ClCompile Include="Level\WaterLevelChunk.cpp" />
+    <ClCompile Include="WorldGen\WaterlilyFeature.cpp" />
+    <ClCompile Include="Tiles\WaterLilyTile.cpp" />
+    <ClCompile Include="Items\WaterLilyTileItem.cpp" />
+    <ClCompile Include="Enchantments\WaterWorkerEnchantment.cpp" />
+    <ClCompile Include="Items\WeaponItem.cpp" />
+    <ClCompile Include="Recipes\WeaponRecipies.cpp" />
+    <ClCompile Include="Math\WeighedRandom.cpp" />
+    <ClCompile Include="Entities\Wolf.cpp" />
+    <ClCompile Include="Tiles\TreeTile.cpp" />
+    <ClCompile Include="Tiles\WebTile.cpp" />
+    <ClCompile Include="Tiles\WorkbenchTile.cpp" />
+    <ClCompile Include="IO\ConsoleSaveFileInputStream.cpp" />
+    <ClCompile Include="IO\ConsoleSaveFileOutputStream.cpp" />
+    <ClCompile Include="Entities\Zombie.cpp" />
+    <ClCompile Include="Entities\WaterAnimal.cpp" />
+    <ClCompile Include="Level\ZonedChunkStorage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="IO\ZoneFile.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="IO\ZoneIo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories>Entities;AI;Tiles;Items;Enchantments;Level;WorldGen;Container;Network;IO;Recipes;Commands;Math;Stats;Player;FwdHeaders;..\Client;..\Client\Game;..\Client\Render;..\Client\Mobs;..\Client\Screens;..\Client\UI;..\Client\Network;..\Client\Textures;..\Client\Common;..\Client\Platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="WorldGen\ZoomLayer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

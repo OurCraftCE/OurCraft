@@ -1,0 +1,92 @@
+<rml>
+<head>
+    <title>Start Screen</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #1a1a2e;
+            font-family: Mojangles, LatoLatin, segoeui;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title {
+            font-size: 48dp;
+            color: #ffffff;
+            margin-bottom: 8dp;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 18dp;
+            color: #aaaaaa;
+            margin-bottom: 48dp;
+        }
+
+        .menu-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12dp;
+        }
+
+        button {
+            width: 300dp;
+            height: 40dp;
+            background-color: #4a4a4a;
+            color: #ffffff;
+            font-size: 16dp;
+            text-align: center;
+            border: 1dp solid #666666;
+            padding-top: 8dp;
+        }
+
+        button:hover {
+            background-color: #5a5a8a;
+            border-color: #8888ff;
+        }
+
+        button:active {
+            background-color: #3a3a6a;
+        }
+
+        .version {
+            position: absolute;
+            bottom: 8dp;
+            left: 8dp;
+            font-size: 12dp;
+            color: #666666;
+        }
+
+        .copyright {
+            position: absolute;
+            bottom: 8dp;
+            right: 8dp;
+            font-size: 12dp;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">MINECRAFT</div>
+        <div class="subtitle">Legacy Console Edition</div>
+        <div class="menu-buttons">
+            <button id="btn_play">Play</button>
+            <button id="btn_options">Options</button>
+            <button id="btn_quit">Quit Game</button>
+        </div>
+    </div>
+    <div class="version">v1.83 (Open Source Port)</div>
+    <div class="copyright">Copyright Mojang AB</div>
+</body>
+</rml>

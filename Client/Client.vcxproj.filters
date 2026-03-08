@@ -1,0 +1,3868 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <ItemGroup>
+    <Filter Include="Client">
+      <UniqueIdentifier>{566e9e55-89c0-53f0-8029-89904d5cb38d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Build">
+      <UniqueIdentifier>{09f9d347-5f9f-5db1-8217-e76bcea8f240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Core">
+      <UniqueIdentifier>{0e427b5d-8a92-5cb2-8a39-ba9ba756c9d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Models">
+      <UniqueIdentifier>{a694df7d-720c-516a-807a-38467950afb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Particles">
+      <UniqueIdentifier>{451f1a4a-7bad-5cab-ac21-a32df13bc887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Renderers">
+      <UniqueIdentifier>{99bb74bc-cade-5a06-aee9-2f0b7f94bc6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Rendering">
+      <UniqueIdentifier>{f4f23b0b-3cf0-51df-8536-f8b818416a74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Screens">
+      <UniqueIdentifier>{dafe79da-3573-5c43-8b94-6b9f35b9a2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Textures">
+      <UniqueIdentifier>{e8ac47d3-c873-560f-b21c-596485d92a40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\UI">
+      <UniqueIdentifier>{6391602a-d454-5de8-9662-a7fb6ce144cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{9af8b0d1-465c-51ec-be08-6ead9b6fd12d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Audio">
+      <UniqueIdentifier>{c958e6a1-4f41-5a72-9def-c2985ec7dda0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Colours">
+      <UniqueIdentifier>{680e70b7-7c20-5ccd-abf6-9b8f9bfcc995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\DLC">
+      <UniqueIdentifier>{77194c0d-184c-5056-80d0-d160d3bb104d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Discord">
+      <UniqueIdentifier>{272e0fb3-9334-5bff-aedb-b58eeeec9163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\GameRules">
+      <UniqueIdentifier>{506d8928-7adf-5034-9452-ebccec5cc904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Leaderboards">
+      <UniqueIdentifier>{7eaf37b0-0f92-5d2a-8902-17c6cfa1ea7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Network">
+      <UniqueIdentifier>{d7174a6f-af23-53a7-b59e-9a2987767bb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Telemetry">
+      <UniqueIdentifier>{80353b8d-f156-578a-b8ae-c64b57bc0081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Trial">
+      <UniqueIdentifier>{f524e085-743d-5aa7-9115-05225d5ade37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Tutorial">
+      <UniqueIdentifier>{cc4c5d03-e5a1-550a-ae85-5918d43a5db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\UI">
+      <UniqueIdentifier>{897ae1f1-a2fd-507c-bf55-34ad7d408ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\XUI">
+      <UniqueIdentifier>{fadfcec5-77b3-5569-a0c1-d2ba5190a773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\minizip">
+      <UniqueIdentifier>{1655c666-4f67-5ba7-8e21-af115a442ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\zlib">
+      <UniqueIdentifier>{554ae049-9ab1-5854-b415-181a04d4f7f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{9c375cc3-14a5-5365-8880-1ef349dddd13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Durango">
+      <UniqueIdentifier>{e4d5ae14-e9d1-591e-85c5-ccea33fb0d82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Durango\4JLibs">
+      <UniqueIdentifier>{76640d20-166b-52a4-b503-0a01e7a93f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Durango\Iggy">
+      <UniqueIdentifier>{93e20136-0148-54c1-a9b2-8a7d70810d27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Durango\Leaderboards">
+      <UniqueIdentifier>{2dd86337-3f26-519f-b06d-e691e00904e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Durango\Miles">
+      <UniqueIdentifier>{763f9357-7404-5513-a8d3-f07ac617807c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Durango\Network">
+      <UniqueIdentifier>{ce95a274-d561-54c7-9e06-c4d28d88237f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Durango\Sentient">
+      <UniqueIdentifier>{7f7c3b4e-77f6-553f-b550-694604e3e9f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Durango\XML">
+      <UniqueIdentifier>{8fa0a5a1-7eba-534e-a1fa-1d8ed41341bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64">
+      <UniqueIdentifier>{21b17bad-f4dc-572f-9062-1da99ce6fce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\4JLibs">
+      <UniqueIdentifier>{191f48fc-846d-54c8-8397-617c8eb413be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\Discord">
+      <UniqueIdentifier>{9d46aee9-7ff9-51ed-9233-c1e399fbb9f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\Steam">
+      <UniqueIdentifier>{a3b2c1d0-4e5f-6789-abcd-ef0123456789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModLoader">
+      <UniqueIdentifier>{b4c3d2e1-5f6a-7890-bcde-f01234567890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\GameConfig">
+      <UniqueIdentifier>{1ed50cff-31fe-5c6d-a31b-2342c81ed109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\Iggy">
+      <UniqueIdentifier>{1814d9c3-2098-51d6-b8ce-31cfba9c776f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\Leaderboards">
+      <UniqueIdentifier>{130df6f3-39bf-50b0-a622-628756eac661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\Miles">
+      <UniqueIdentifier>{3713e8d5-50f6-5d37-9dd9-9d7535ce6bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\Network">
+      <UniqueIdentifier>{64778a8a-7bd3-5854-bcdd-8fa7be4afaa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\Sentient">
+      <UniqueIdentifier>{3bcd7884-7b8c-5c67-bce6-b0f25666e952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\Social">
+      <UniqueIdentifier>{afda99fd-68ed-57d7-b5fd-b3f34d24b7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows64\XML">
+      <UniqueIdentifier>{9de2d4bb-bc13-51f9-bd2f-fcf1f2208834}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Client\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="stubs.cpp">
+      <Filter>Client\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\AchievementPopup.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\ArchiveFile.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\BedrockFolderPack.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\BedrockResourcePack.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\BedrockZipPack.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\BufferedImage.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Camera.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ClientConnection.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ClientConstants.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\ConsoleInput.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Cube.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DemoLevel.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DemoUser.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DerivedServerLevel.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\EditBox.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\EntityRenderDispatcher.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\EntityTracker.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Extrax64Stubs.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Input.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\KeyMapping.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\KeyboardMouseInput.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\KeyboardMousePlayerInput.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Lighting.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\LocalPlayer.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MemoryTracker.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OurCraft.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="MinecraftServer.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Minimap.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MultiPlayerGameMode.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MultiPlayerLevel.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MultiPlayerLocalPlayer.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\OffsettedRenderList.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Options.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PendingConnection.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PlayerConnection.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PlayerList.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Polygon.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Rect2i.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\RemotePlayer.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ScrolledSelectionList.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ServerCommandDispatcher.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ServerConnection.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\ServerLevel.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\ServerLevelListener.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\ServerPlayer.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\ServerPlayerGameMode.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Settings.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\SimpleIcon.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\SlideButton.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\SmallButton.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\StatsCounter.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\StatsSyncher.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\StitchSlot.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\Stitcher.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\StringTable.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TeleportCommand.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\TexOffs.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Timer.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\TrackedEntity.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\User.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Vertex.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\WstringLookup.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="glWrapper.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\BlazeModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\BoatModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\BookModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\ChestModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\ChickenModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\CowModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\CreeperModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\DragonModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\EnderCrystalModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\EndermanModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\GhastModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\HumanoidModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\LargeChestModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\LavaSlimeModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\MinecartModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\Model.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\ModelPart.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\OzelotModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\PigModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\QuadrupedModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SheepFurModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SheepModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SignModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SilverfishModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SkeletonHeadModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SkeletonModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SlimeModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SnowManModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SpiderModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SquidModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\VillagerGolemModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\VillagerModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\VillagerZombieModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\WolfModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\ZombieModel.cpp">
+      <Filter>Client\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\BreakingItemParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\BubbleParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\CritParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\CritParticle2.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\DragonBreathParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\DripParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\EchantmentTableParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\EnderParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\ExplodeParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\FlameParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\FootstepParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\GuiParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\GuiParticles.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\HeartParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\HugeExplosionParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\HugeExplosionSeedParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\LavaParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\NetherPortalParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\NoteParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\Particle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\ParticleEngine.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\PlayerCloudParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\RedDustParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\SmokeParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\SnowShovelParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\SpellParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\SplashParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\SuspendedParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\SuspendedTownParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\TakeAnimationParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\TerrainParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Particles\WaterDropParticle.cpp">
+      <Filter>Client\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\ArrowRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\BlazeRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\BoatRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\ChestRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\ChickenRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\CowRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\CreeperRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\DefaultRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\EnchantTableRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\EnderChestRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\EnderCrystalRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\EnderDragonRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\EndermanRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\EntityRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\EntityTileRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\ExperienceOrbRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\FallingTileRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\FireballRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\FishingHookRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\GameRenderer.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\GhastRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\GiantMobRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\HumanoidMobRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\ItemFrameRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ItemInHandRenderer.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ItemRenderer.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ItemSpriteRenderer.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\LavaSlimeRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\LevelRenderer.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\LightningBoltRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\MinecartRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\MobRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\MobSpawnerRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\MushroomCowRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\OzelotRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\PaintingRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\PigRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\PistonPieceRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\PlayerRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ProgressRenderer.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SheepRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SignRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SilverfishRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SkullTileRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SlimeRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SnowManRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SpiderRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\SquidRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\TheEndPortalRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\TileEntityRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\TileRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\TntRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\VillagerGolemRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\VillagerRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\WolfRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\ZombieRenderer.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\AllowAllCuller.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Chunk.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\DirtyChunkSorter.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\DistanceChunkSorter.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Frustum.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\FrustumCuller.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\FrustumData.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\MultiPlayerChunkCache.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PlayerChunkMap.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ServerChunkCache.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Tesselator.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Mobs\TileEntityRenderDispatcher.cpp">
+      <Filter>Client\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\ViewportCuller.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\AbstractContainerScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\AchievementScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\ChatScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\ConfirmScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\ConnectScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\ContainerScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\ControlsScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\CraftingScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\CreateWorldScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\DeathScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\DisconnectedScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\ErrorScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\FurnaceScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\InBedChatScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\InventoryScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\JoinMultiplayerScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\NameEntryScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\OptionsScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\ReceivingLevelScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\RenameWorldScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\Screen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ScreenSizeCalculator.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\SelectWorldScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\StatsScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\TextEditScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\TitleScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\TrapScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\VideoSettingsScreen.cpp">
+      <Filter>Client\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\AbstractTexturePack.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\ClockTexture.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\CompassTexture.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\DLCTexturePack.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\DefaultTexturePack.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\FileTexturePack.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\FolderTexturePack.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\HttpTexture.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\MemTexture.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\MobSkinMemTextureProcessor.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\MobSkinTextureProcessor.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\PreStitchedTextureMap.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\StitchedTexture.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\Texture.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\TextureHolder.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\TextureManager.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\TextureMap.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\TexturePack.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\TexturePackRepository.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Textures.cpp">
+      <Filter>Client\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Button.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures\Font.cpp">
+      <Filter>Client\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Gui.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\GuiComponent.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\GuiMessage.cpp">
+      <Filter>Client\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Audio\Consoles_SoundEngine.cpp">
+      <Filter>Common\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Audio\SoundEngine.cpp">
+      <Filter>Common\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Audio\SoundNames.cpp">
+      <Filter>Common\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Colours\ColourTable.cpp">
+      <Filter>Common\Colours</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\ConsoleGameMode.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Console_Utils.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Consoles_App.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCAudioFile.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCCapeFile.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCColourTableFile.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCFile.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCGameRulesFile.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCGameRulesHeader.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCLocalisationFile.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCManager.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCPack.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCSkinFile.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCTextureFile.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DLC\DLCUIDataFile.cpp">
+      <Filter>Common\DLC</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Discord\DiscordManager.cpp">
+      <Filter>Common\Discord</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Discord\DiscordXUIDMapper.cpp">
+      <Filter>Common\Discord</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\AddEnchantmentRuleDefinition.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\AddItemRuleDefinition.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\ApplySchematicRuleDefinition.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\BiomeOverride.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\CollectItemRuleDefinition.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\CompleteAllRuleDefinition.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\CompoundGameRuleDefinition.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\ConsoleGenerateStructure.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\ConsoleSchematicFile.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\GameRule.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\GameRuleDefinition.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\GameRuleManager.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\LevelGenerationOptions.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\LevelGenerators.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\LevelRules.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\LevelRuleset.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\NamedAreaRuleDefinition.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\StartFeature.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\UpdatePlayerRuleDefinition.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\UseTileRuleDefinition.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\XboxStructureActionGenerateBox.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\XboxStructureActionPlaceBlock.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\XboxStructureActionPlaceContainer.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GameRules\XboxStructureActionPlaceSpawner.cpp">
+      <Filter>Common\GameRules</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Leaderboards\LeaderboardManager.cpp">
+      <Filter>Common\Leaderboards</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Network\GameNetworkManager.cpp">
+      <Filter>Common\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Network\PlatformNetworkManagerStub.cpp">
+      <Filter>Common\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Telemetry\TelemetryManager.cpp">
+      <Filter>Common\Telemetry</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Trial\TrialMode.cpp">
+      <Filter>Common\Trial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\AreaConstraint.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\AreaHint.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\AreaTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\ChangeStateConstraint.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\ChoiceTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\CompleteUsingItemTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\ControllerTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\CraftTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\DiggerItemHint.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\EffectChangedTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\FullTutorial.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\FullTutorialActiveTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\FullTutorialMode.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\InfoTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\InputConstraint.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\LookAtEntityHint.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\LookAtTileHint.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\PickupTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\ProcedureCompoundTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\ProgressFlagTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\StatTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\TakeItemHint.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\Tutorial.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\TutorialHint.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\TutorialMessage.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\TutorialMode.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\TutorialTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\UseItemTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\UseTileTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Tutorial\XuiCraftingTask.cpp">
+      <Filter>Common\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_AbstractContainerMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_AnvilMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_BrewingMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_ContainerMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_CraftingMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_CraftingTableMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_CreativeMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_DispenserMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_EnchantingMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_FurnaceMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_InventoryMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_PauseMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_StartGame.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\IUIScene_TradingMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIBitmapFont.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIComponent_Chat.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIComponent_DebugUIConsole.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIComponent_DebugUIMarketingGuide.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIComponent_Logo.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIComponent_MenuBackground.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIComponent_Panorama.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIComponent_PressStartToPlay.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIComponent_Tooltips.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIComponent_TutorialPopup.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_Base.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_BitmapIcon.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_Button.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_ButtonList.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_CheckBox.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_Cursor.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_DLCList.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_DynamicLabel.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_EnchantmentBook.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_EnchantmentButton.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_HTMLLabel.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_Label.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_LeaderboardList.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_MinecraftPlayer.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_PlayerList.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_PlayerSkinPreview.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_Progress.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_SaveList.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_Slider.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_SlotList.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_SpaceIndicatorBar.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_TextInput.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_TexturePackList.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIControl_Touch.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIController.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UICursor.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIFontData.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIGroup.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UILayer.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_AbstractContainerMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_AnvilMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_BrewingStandMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_ConnectingProgress.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_ContainerMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_ControlsMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_CraftingMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_CraftingTableMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_CreateWorldMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_CreativeMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_Credits.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_DLCMainMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_DLCOffersMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_DeathMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_DebugCreateSchematic.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_DebugOptions.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_DebugOverlay.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_DebugSetCamera.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_DispenserMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_EULA.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_EnchantingMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_EndPoem.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_FullscreenProgress.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_FurnaceMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_HUD.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_HelpAndOptionsMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_HowToPlay.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_HowToPlayMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_InGameHostOptionsMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_InGameInfoMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_InGamePlayerOptionsMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_InGameSaveManagementMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_Intro.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_InventoryMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_JoinMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_Keyboard.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_LanguageMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_LaunchMoreOptionsMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_LeaderboardsMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_LoadMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_LoadOrJoinMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_MainMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_MessageBox.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_PauseMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_QuadrantSignin.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_ReinstallMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_SaveMessage.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_SettingsAudioMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_SettingsControlMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_SettingsGraphicsMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_SettingsMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_SettingsOptionsMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_SettingsUIMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_SignEntryMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_SkinSelectMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_TeleportMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_Timer.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_TradingMenu.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UIScene_TrialExitUpsell.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UI\UITTFFont.cpp">
+      <Filter>Common\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_BasePlayer.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Chat.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_ConnectingProgress.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_4JEdit.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_4JIcon.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_4JList.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_BrewProgress.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_BubblesProgress.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_BurnProgress.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_CraftIngredientSlot.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_EnchantButton.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_EnchantmentBook.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_EnchantmentButtonText.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_FireProgress.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_LoadingProgress.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_MinecraftPlayer.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_MinecraftSkinPreview.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_MinecraftSlot.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_MobEffect.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_PassThroughList.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_ProgressCtrlBase.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_SliderWrapper.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_SlotItemCtrlBase.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_SlotList.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Ctrl_SplashPulser.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_DLCOffers.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Death.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_DebugItemEditor.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_DebugOverlay.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_DebugSchematicCreator.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_DebugSetCamera.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_DebugTips.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_FullscreenProgress.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_HUD.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_HelpAndOptions.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_HelpControls.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_HelpCredits.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_HelpHowToPlay.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_HowToPlayMenu.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_InGameHostOptions.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_InGameInfo.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_InGamePlayerOptions.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Intro.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Leaderboards.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_LoadSettings.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_MainMenu.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_MultiGameCreate.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_MultiGameInfo.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_MultiGameJoinLoad.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_MultiGameLaunchMoreOptions.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_NewUpdateMessage.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_PartnernetPassword.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_PauseMenu.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Reinstall.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_SaveMessage.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_AbstractContainer.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_Anvil.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_Base.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_BrewingStand.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_Container.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_CraftingPanel.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_Enchant.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_Furnace.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_Inventory.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_Inventory_Creative.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_Trading.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_Trap.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Scene_Win.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_SettingsAll.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_SettingsAudio.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_SettingsControl.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_SettingsGraphics.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_SettingsOptions.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_SettingsUI.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_SignEntry.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_SkinSelect.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_SocialPost.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_Teleport.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_TextEntry.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_TransferToXboxOne.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_TrialExitUpsell.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_TutorialPopup.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\XUI\XUI_debug.cpp">
+      <Filter>Common\XUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\minizip\ioapi.c">
+      <Filter>Common\minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\minizip\unzip.c">
+      <Filter>Common\minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\adler32.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\compress.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\crc32.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\deflate.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\gzclose.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\gzlib.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\gzread.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\gzwrite.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\infback.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\inffast.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\inflate.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\inftrees.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\trees.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\uncompr.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\zlib\zutil.c">
+      <Filter>Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Durango\ApplicationView.cpp">
+      <Filter>Platform\Durango</Filter>
+    </ClCompile>
+    <ClCompile Include="Durango\Durango_App.cpp">
+      <Filter>Platform\Durango</Filter>
+    </ClCompile>
+    <ClCompile Include="Durango\Durango_OurCraft.cpp">
+      <Filter>Platform\Durango</Filter>
+    </ClCompile>
+    <ClCompile Include="Durango\Durango_UIController.cpp">
+      <Filter>Platform\Durango</Filter>
+    </ClCompile>
+    <ClCompile Include="Durango\Iggy\gdraw\gdraw_d3d11.cpp">
+      <Filter>Platform\Durango\Iggy</Filter>
+    </ClCompile>
+    <ClCompile Include="Durango\Leaderboards\GameProgress.cpp">
+      <Filter>Platform\Durango\Leaderboards</Filter>
+    </ClCompile>
+    <ClCompile Include="Durango\Network\base64.cpp">
+      <Filter>Platform\Durango\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Durango\XML\ATGXmlParser.cpp">
+      <Filter>Platform\Durango\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Discord\discord_game_sdk_stub.cpp">
+      <Filter>Platform\Windows64\Discord</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Steam\steam_api_stub.cpp">
+      <Filter>Platform\Windows64\Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Steam\SteamManager.cpp">
+      <Filter>Platform\Windows64\Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Steam\SteamNetworkManager.cpp">
+      <Filter>Platform\Windows64\Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Win64ProfileData.cpp">
+      <Filter>Platform\Windows64</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Win64SavePaths.cpp">
+      <Filter>Platform\Windows64</Filter>
+    </ClCompile>
+    <ClCompile Include="ModLoader\ModLoader.cpp">
+      <Filter>ModLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="ModLoader\ModAPIImpl.cpp">
+      <Filter>ModLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Iggy\gdraw\gdraw_d3d11.cpp">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Leaderboards\WindowsLeaderboardManager.cpp">
+      <Filter>Platform\Windows64\Leaderboards</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Network\WinsockNetLayer.cpp">
+      <Filter>Platform\Windows64\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Windows64_App.cpp">
+      <Filter>Platform\Windows64</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Windows64_OurCraft.cpp">
+      <Filter>Platform\Windows64</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\Windows64_UIController.cpp">
+      <Filter>Platform\Windows64</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\legacy_compat.cpp">
+      <Filter>Platform\Windows64</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows64\legacy_winerror_map.cpp">
+      <Filter>Platform\Windows64</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\SDLAudioEngine.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\MSSCMPExtractor.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\StorageManager.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\BedrockUIParser.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\UIScreenManager.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\HUDOverlay.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\InventoryOverlay.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\CraftingOverlay.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\ChatOverlay.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Client\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\AchievementPopup.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\ArchiveFile.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\BedrockFolderPack.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\BedrockResourcePack.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\BedrockZipPack.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\BufferedImage.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Camera.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ClientConnection.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ClientConstants.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\ConsoleInput.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\ConsoleInputSource.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Cube.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DemoLevel.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DemoUser.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DerivedServerLevel.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\EditBox.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\EntityRenderDispatcher.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\EntityTracker.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Input.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\KeyMapping.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\KeyboardMouseInput.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Lighting.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\LocalPlayer.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MemoryTracker.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="OurCraft.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="MinecraftServer.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Minimap.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MultiPlayerGameMode.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MultiPlayerLevel.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MultiPlayerLocalPlayer.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\OffsettedRenderList.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Options.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Polygon.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Rect2i.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\RemotePlayer.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ScrolledSelectionList.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ServerCommandDispatcher.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ServerConnection.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ServerInterface.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ServerLevel.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ServerLevelListener.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ServerPlayer.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ServerPlayerGameMode.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Settings.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\SimpleIcon.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SkinBox.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\SlideButton.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\SmallButton.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StatsCounter.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StatsSyncher.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\StitchSlot.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\Stitcher.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\StringTable.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TeleportCommand.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\TexOffs.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Timer.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\TrackedEntity.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\User.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Vertex.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\WstringLookup.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="extraX64client.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\BlazeModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\BoatModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\BookModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\ChestModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\ChickenModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\CowModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\CreeperModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\DragonModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\EnderCrystalModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\EndermanModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\GhastModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\HumanoidModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\LargeChestModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\LavaSlimeModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\MinecartModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\Model.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\ModelPart.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\PigModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\QuadrupedModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SheepFurModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SheepModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SignModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SilverfishModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SkeletonHeadModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SkeletonModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SlimeModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SnowManModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SpiderModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SquidModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\VillagerGolemModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\VillagerModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\VillagerZombieModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\WolfModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\ZombieModel.h">
+      <Filter>Client\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\BreakingItemParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\BubbleParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\CritParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\CritParticle2.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\DragonBreathParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\DripParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\EchantmentTableParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\EnderParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\ExplodeParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\FlameParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\FootstepParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\GuiParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\GuiParticles.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\HeartParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\HugeExplosionParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\HugeExplosionSeedParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\LavaParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\NetherPortalParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\NoteParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\Particle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\ParticleEngine.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\RedDustParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\SmokeParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\SnowShovelParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\SpellParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\SplashParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\SuspendedParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\SuspendedTownParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\TakeAnimationParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\TerrainParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles\WaterDropParticle.h">
+      <Filter>Client\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\ArrowRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\BlazeRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\BoatRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\ChestRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\ChickenRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\CowRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\CreeperRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\DefaultRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\EnchantTableRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\EnderChestRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\EnderCrystalRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\EnderDragonRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\EndermanRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\EntityRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\EntityTileRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\ExperienceOrbRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\FallingTileRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\FireballRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\FishingHookRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\GameRenderer.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\GhastRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\GiantMobRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\HumanoidMobRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\ItemFrameRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ItemInHandRenderer.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ItemRenderer.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ItemSpriteRenderer.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\LavaSlimeRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\LevelRenderer.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\LightningBoltRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\MinecartRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\MobRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\MobSpawnerRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\MushroomCowRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\PaintingRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\PigRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\PlayerRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ProgressRenderer.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SheepRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SignRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SilverfishRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SkullTileRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SlimeRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SnowManRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SpiderRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\SquidRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\TheEndPortalRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\TileEntityRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\TileRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\TntRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\VillagerGolemRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\VillagerRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\WolfRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\ZombieRenderer.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\AllowAllCuller.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Chunk.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Culler.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\DirtyChunkSorter.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\DistanceChunkSorter.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Frustum.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\FrustumCuller.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\FrustumData.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\MultiPlayerChunkCache.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PlayerChunkMap.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ServerChunkCache.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Tesselator.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Mobs\TileEntityRenderDispatcher.h">
+      <Filter>Client\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\ViewportCuller.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\AbstractContainerScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\AchievementScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\ChatScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\ConfirmScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\ConnectScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\ContainerScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\ControlsScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\CraftingScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\CreateWorldScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\DeathScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\DisconnectedScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\ErrorScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\FurnaceScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\InBedChatScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\InventoryScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\JoinMultiplayerScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\NameEntryScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\OptionsScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\PauseScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\ReceivingLevelScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\RenameWorldScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\Screen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ScreenSizeCalculator.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\SelectWorldScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\StatsScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\TextEditScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\TitleScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\TrapScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\VideoSettingsScreen.h">
+      <Filter>Client\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\AbstractTexturePack.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\ClockTexture.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\CompassTexture.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\DLCTexturePack.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\DefaultTexturePack.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\FileTexturePack.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\FolderTexturePack.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\HttpTexture.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\HttpTextureProcessor.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\MemTexture.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\MemTextureProcessor.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\MobSkinMemTextureProcessor.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\MobSkinTextureProcessor.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\StitchedTexture.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\Texture.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\TextureHolder.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\TextureManager.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\TextureMap.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\TexturePack.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\TexturePackRepository.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Textures.h">
+      <Filter>Client\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Button.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\Font.h">
+      <Filter>Client\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Gui.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\GuiComponent.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\GuiMessage.h">
+      <Filter>Client\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Audio\Consoles_SoundEngine.h">
+      <Filter>Common\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Audio\SoundEngine.h">
+      <Filter>Common\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Colours\ColourTable.h">
+      <Filter>Common\Colours</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\App_Defines.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\App_enums.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\App_structs.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\BuildVer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ConsoleGameMode.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Console_Awards_enum.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Console_Debug_enum.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Consoles_App.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Potion_Macros.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\nlohmann\json.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCAudioFile.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCCapeFile.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCColourTableFile.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCFile.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCGameRules.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCGameRulesFile.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCGameRulesHeader.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCLocalisationFile.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCManager.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCPack.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCSkinFile.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCTextureFile.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DLC\DLCUIDataFile.h">
+      <Filter>Common\DLC</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Discord\DiscordManager.h">
+      <Filter>Common\Discord</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Discord\DiscordXUIDMapper.h">
+      <Filter>Common\Discord</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\AddEnchantmentRuleDefinition.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\AddItemRuleDefinition.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\ApplySchematicRuleDefinition.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\BiomeOverride.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\CollectItemRuleDefinition.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\CompleteAllRuleDefinition.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\CompoundGameRuleDefinition.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\ConsoleGameRules.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\ConsoleGameRulesConstants.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\ConsoleGenerateStructure.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\ConsoleGenerateStructureAction.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\ConsoleSchematicFile.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\GameRule.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\GameRuleDefinition.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\GameRuleManager.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\GameRulesInstance.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\LevelGenerationOptions.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\LevelGenerators.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\LevelRules.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\LevelRuleset.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\NamedAreaRuleDefinition.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\StartFeature.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\UpdatePlayerRuleDefinition.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\UseTileRuleDefinition.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\XboxStructureActionGenerateBox.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\XboxStructureActionPlaceBlock.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\XboxStructureActionPlaceContainer.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GameRules\XboxStructureActionPlaceSpawner.h">
+      <Filter>Common\GameRules</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Leaderboards\LeaderboardManager.h">
+      <Filter>Common\Leaderboards</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Network\GameNetworkManager.h">
+      <Filter>Common\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Network\NetworkPlayerInterface.h">
+      <Filter>Common\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Network\PlatformNetworkManagerInterface.h">
+      <Filter>Common\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Network\PlatformNetworkManagerStub.h">
+      <Filter>Common\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Network\SessionInfo.h">
+      <Filter>Common\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Telemetry\TelemetryManager.h">
+      <Filter>Common\Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Trial\TrialMode.h">
+      <Filter>Common\Trial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\AreaConstraint.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\AreaHint.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\AreaTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\ChangeStateConstraint.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\ChoiceTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\CompleteUsingItemTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\ControllerTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\CraftTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\DiggerItemHint.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\EffectChangedTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\FullTutorial.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\FullTutorialActiveTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\FullTutorialMode.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\InfoTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\InputConstraint.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\LookAtEntityHint.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\LookAtTileHint.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\PickupTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\ProcedureCompoundTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\ProgressFlagTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\StatTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\StateChangeTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\TakeItemHint.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\Tutorial.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\TutorialConstraint.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\TutorialConstraints.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\TutorialEnum.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\TutorialHint.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\TutorialHints.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\TutorialMessage.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\TutorialMode.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\TutorialTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\TutorialTasks.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\UseItemTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\UseTileTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Tutorial\XuiCraftingTask.h">
+      <Filter>Common\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIController.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_AbstractContainerMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_AnvilMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_BrewingMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_ContainerMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_CraftingMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_CraftingTableMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_CreativeMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_DispenserMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_EnchantingMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_FurnaceMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_InventoryMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_PauseMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_StartGame.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\IUIScene_TradingMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UI.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIBitmapFont.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIComponent_Chat.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIComponent_DebugUIConsole.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIComponent_DebugUIMarketingGuide.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIComponent_Logo.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIComponent_MenuBackground.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIComponent_Panorama.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIComponent_PressStartToPlay.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIComponent_Tooltips.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIComponent_TutorialPopup.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_Base.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_BitmapIcon.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_Button.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_ButtonList.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_CheckBox.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_Cursor.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_DLCList.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_DynamicLabel.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_EnchantmentBook.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_EnchantmentButton.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_HTMLLabel.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_Label.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_LeaderboardList.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_MinecraftPlayer.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_PlayerList.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_PlayerSkinPreview.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_Progress.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_SaveList.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_Slider.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_SlotList.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_SpaceIndicatorBar.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_TextInput.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_TexturePackList.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIControl_Touch.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIController.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UICursor.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIEnums.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIFontData.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIGroup.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UILayer.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_AbstractContainerMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_AnvilMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_BrewingStandMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_ConnectingProgress.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_ContainerMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_ControlsMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_CraftingMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_CraftingTableMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_CreateWorldMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_CreativeMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_Credits.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_DLCMainMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_DLCOffersMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_DeathMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_DebugCreateSchematic.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_DebugOptions.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_DebugOverlay.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_DebugSetCamera.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_DispenserMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_EULA.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_EnchantingMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_EndPoem.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_FullscreenProgress.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_FurnaceMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_HUD.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_HelpAndOptionsMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_HowToPlay.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_HowToPlayMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_InGameHostOptionsMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_InGameInfoMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_InGamePlayerOptionsMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_InGameSaveManagementMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_Intro.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_InventoryMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_JoinMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_Keyboard.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_LanguageMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_LaunchMoreOptionsMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_LeaderboardsMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_LoadMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_LoadOrJoinMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_MainMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_MessageBox.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_PauseMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_QuadrantSignin.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_ReinstallMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_SaveMessage.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_SettingsAudioMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_SettingsControlMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_SettingsGraphicsMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_SettingsMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_SettingsOptionsMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_SettingsUIMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_SignEntryMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_SkinSelectMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_TeleportMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_Timer.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_TradingMenu.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIScene_TrialExitUpsell.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UIStructs.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UI\UITTFFont.h">
+      <Filter>Common\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_BasePlayer.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Chat.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_ConnectingProgress.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Controls.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_4JEdit.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_4JIcon.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_4JList.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_BrewProgress.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_BubblesProgress.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_BurnProgress.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_CraftIngredientSlot.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_EnchantButton.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_EnchantmentBook.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_EnchantmentButtonText.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_FireProgress.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_LoadingProgress.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_MinecraftPlayer.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_MinecraftSkinPreview.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_MinecraftSlot.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_MobEffect.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_PassthroughList.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_ProgressCtrlBase.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_SliderWrapper.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_SlotItem.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_SlotItemCtrlBase.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_SlotItemListItem.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_SlotList.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Ctrl_SplashPulser.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_CustomMessages.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_DLCOffers.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Death.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Debug.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_DebugItemEditor.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_DebugOverlay.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_DebugSchematicCreator.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_DebugSetCamera.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_DebugTips.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_FullscreenProgress.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_HUD.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_HelpAndOptions.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_HelpControls.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_HelpCredits.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_HelpHowToPlay.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Helper.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_HowToPlayMenu.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_InGameHostOptions.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_InGameInfo.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_InGamePlayerOptions.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Intro.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Leaderboards.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_LoadSettings.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_MainMenu.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_MultiGameCreate.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_MultiGameInfo.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_MultiGameJoinLoad.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_MultiGameLaunchMoreOptions.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_NewUpdateMessage.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_PartnernetPassword.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_PauseMenu.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Reinstall.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_SaveMessage.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_AbstractContainer.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_Anvil.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_Base.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_BrewingStand.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_Container.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_CraftingPanel.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_Enchant.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_Furnace.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_Inventory.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_Inventory_Creative.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_Trading.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_Trap.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Scene_Win.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_SettingsAll.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_SettingsAudio.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_SettingsControl.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_SettingsGraphics.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_SettingsOptions.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_SettingsUI.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_SignEntry.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_SkinSelect.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_SocialPost.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_Teleport.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_TextEntry.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_TransferToXboxOne.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_TrialExitUpsell.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_TutorialPopup.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\XUI\XUI_XZP_Icons.h">
+      <Filter>Common\XUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\minizip\ioapi.h">
+      <Filter>Common\minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\minizip\unzip.h">
+      <Filter>Common\minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\crc32.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\deflate.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\gzguts.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\inffast.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\inffixed.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\inflate.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\inftrees.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\trees.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\zconf.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\zlib.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\zlib\zutil.h">
+      <Filter>Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\4JLibs\inc\4J_Input.h">
+      <Filter>Platform\Durango\4JLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\4JLibs\inc\4J_Render.h">
+      <Filter>Platform\Durango\4JLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\ApplicationView.h">
+      <Filter>Platform\Durango</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Durango_App.h">
+      <Filter>Platform\Durango</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Durango_UIController.h">
+      <Filter>Platform\Durango</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Minecraft_Macros.h">
+      <Filter>Platform\Durango</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Resource.h">
+      <Filter>Platform\Durango</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Iggy\gdraw\gdraw_d3d11.h">
+      <Filter>Platform\Durango\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Iggy\include\gdraw.h">
+      <Filter>Platform\Durango\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Iggy\include\iggy.h">
+      <Filter>Platform\Durango\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Iggy\include\iggyexpruntime.h">
+      <Filter>Platform\Durango\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Iggy\include\iggyperfmon.h">
+      <Filter>Platform\Durango\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Iggy\include\rrCore.h">
+      <Filter>Platform\Durango\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Leaderboards\GameProgress.h">
+      <Filter>Platform\Durango\Leaderboards</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Miles\include\mss.h">
+      <Filter>Platform\Durango\Miles</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Miles\include\rrCore.h">
+      <Filter>Platform\Durango\Miles</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Network\base64.h">
+      <Filter>Platform\Durango\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Sentient\DynamicConfigurations.h">
+      <Filter>Platform\Durango\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Sentient\MinecraftTelemetry.h">
+      <Filter>Platform\Durango\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Sentient\SentientManager.h">
+      <Filter>Platform\Durango\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Sentient\SentientStats.h">
+      <Filter>Platform\Durango\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Sentient\SentientTelemetryCommon.h">
+      <Filter>Platform\Durango\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\Sentient\TelemetryEnum.h">
+      <Filter>Platform\Durango\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\XML\ATGXmlParser.h">
+      <Filter>Platform\Durango\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="Durango\XML\xmlFilesCallback.h">
+      <Filter>Platform\Durango\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\4JLibs\inc\4J_Input.h">
+      <Filter>Platform\Windows64\4JLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\4JLibs\inc\4J_Profile.h">
+      <Filter>Platform\Windows64\4JLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\4JLibs\inc\4J_Render.h">
+      <Filter>Platform\Windows64\4JLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\StorageManager.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Discord\discord_game_sdk.h">
+      <Filter>Platform\Windows64\Discord</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Steam\steam_api.h">
+      <Filter>Platform\Windows64\Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Steam\SteamManager.h">
+      <Filter>Platform\Windows64\Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Steam\SteamNetworkManager.h">
+      <Filter>Platform\Windows64\Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Win64ProfileData.h">
+      <Filter>Platform\Windows64</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Win64SavePaths.h">
+      <Filter>Platform\Windows64</Filter>
+    </ClInclude>
+    <ClInclude Include="ModLoader\ModLoader.h">
+      <Filter>ModLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="ModLoader\ModAPIImpl.h">
+      <Filter>ModLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\GameConfig\Minecraft.spa.h">
+      <Filter>Platform\Windows64\GameConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Iggy\gdraw\gdraw_d3d11.h">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Iggy\include\gdraw.h">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Iggy\include\iggy.h">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Iggy\include\iggyexpruntime.h">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Iggy\include\iggyperfmon.h">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Iggy\include\rrCore.h">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Leaderboards\WindowsLeaderboardManager.h">
+      <Filter>Platform\Windows64\Leaderboards</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Miles\include\mss.h">
+      <Filter>Platform\Windows64\Miles</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Miles\include\rrcore.h">
+      <Filter>Platform\Windows64\Miles</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Sentient\DynamicConfigurations.h">
+      <Filter>Platform\Windows64\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Sentient\MinecraftTelemetry.h">
+      <Filter>Platform\Windows64\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Sentient\SentientManager.h">
+      <Filter>Platform\Windows64\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Sentient\SentientStats.h">
+      <Filter>Platform\Windows64\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Sentient\SentientTelemetryCommon.h">
+      <Filter>Platform\Windows64\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Sentient\TelemetryEnum.h">
+      <Filter>Platform\Windows64\Sentient</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Social\SocialManager.h">
+      <Filter>Platform\Windows64\Social</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Minecraft_Macros.h">
+      <Filter>Platform\Windows64</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Resource.h">
+      <Filter>Platform\Windows64</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Windows64_App.h">
+      <Filter>Platform\Windows64</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\Windows64_UIController.h">
+      <Filter>Platform\Windows64</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows64\XML\ATGXmlParser.h">
+      <Filter>Platform\Windows64\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\SDLAudioEngine.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\MSSCMPExtractor.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\BedrockUIParser.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\UIScreenManager.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\HUDOverlay.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\InventoryOverlay.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\CraftingOverlay.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\ChatOverlay.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>Client\Core</Filter>
+    </None>
+    <None Include="Network Implementation Notes.txt">
+      <Filter>Client\Core</Filter>
+    </None>
+    <None Include="ReadMe.txt">
+      <Filter>Client\Core</Filter>
+    </None>
+    <None Include="Durango\SmallLogo.png">
+      <Filter>Platform\Durango</Filter>
+    </None>
+    <None Include="Durango\SplashScreen.png">
+      <Filter>Platform\Durango</Filter>
+    </None>
+    <None Include="Durango\StoreLogo.png">
+      <Filter>Platform\Durango</Filter>
+    </None>
+    <None Include="Durango\Iggy\gdraw\gdraw_d3d10_shaders.inl">
+      <Filter>Platform\Durango\Iggy</Filter>
+    </None>
+    <None Include="Durango\Iggy\gdraw\gdraw_d3d1x_shared.inl">
+      <Filter>Platform\Durango\Iggy</Filter>
+    </None>
+    <None Include="Durango\Iggy\gdraw\gdraw_shared.inl">
+      <Filter>Platform\Durango\Iggy</Filter>
+    </None>
+    <None Include="Windows64\GameConfig\Minecraft.gameconfig">
+      <Filter>Platform\Windows64\GameConfig</Filter>
+    </None>
+    <None Include="Windows64\GameConfig\Minecraft.spa">
+      <Filter>Platform\Windows64\GameConfig</Filter>
+    </None>
+    <None Include="Windows64\Iggy\gdraw\gdraw_d3d10_shaders.inl">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </None>
+    <None Include="Windows64\Iggy\gdraw\gdraw_d3d1x_shared.inl">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </None>
+    <None Include="Windows64\Iggy\gdraw\gdraw_gl_shaders.inl">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </None>
+    <None Include="Windows64\Iggy\gdraw\gdraw_gl_shared.inl">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </None>
+    <None Include="Windows64\Iggy\gdraw\gdraw_shared.inl">
+      <Filter>Platform\Windows64\Iggy</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Durango\WideLogo.png">
+      <Filter>Platform\Durango</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

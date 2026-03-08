@@ -1,0 +1,77 @@
+<rml>
+<head>
+    <title>Death Screen</title>
+    <link type="text/rcss" href="bedrock_common.rcss"/>
+    <style>
+        body {
+            background-color: #330000cc;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #death_title {
+            font-size: 36dp;
+            color: #ff4444ff;
+            margin-bottom: 12dp;
+        }
+
+        #death_score {
+            font-size: 16dp;
+            color: #aaaaaaff;
+            margin-bottom: 32dp;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12dp;
+        }
+
+        .btn-primary {
+            width: 200dp;
+            height: 40dp;
+            background-color: #4CAF50ff;
+            color: #ffffffff;
+            font-size: 16dp;
+            text-align: center;
+            line-height: 40dp;
+            border-radius: 4dp;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #66BB6Aff;
+        }
+
+        .btn-danger {
+            width: 200dp;
+            height: 40dp;
+            background-color: #cc3333ff;
+            color: #ffffffff;
+            font-size: 16dp;
+            text-align: center;
+            line-height: 40dp;
+            border-radius: 4dp;
+            cursor: pointer;
+        }
+
+        .btn-danger:hover {
+            background-color: #ee4444ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="death_title">{{ui.youDied}}</div>
+    <div id="death_score">Score: 0</div>
+    <div class="button-container">
+        <button id="btn_respawn" class="btn-primary">{{ui.respawn}}</button>
+        <button id="btn_death_quit" class="btn-danger">{{ui.titleScreen}}</button>
+    </div>
+</body>
+</rml>

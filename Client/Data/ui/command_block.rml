@@ -1,0 +1,89 @@
+<rml>
+<head>
+<title>Command Block</title>
+<link type="text/rcss" href="bedrock_common.rcss"/>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 12dp;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.panel {
+    background-color: #2a2a2a;
+    border: 2dp solid #555555;
+    padding: 16dp;
+    width: 480dp;
+}
+.panel-title {
+    font-size: 20dp;
+    font-weight: bold;
+    margin-bottom: 10dp;
+    text-align: center;
+}
+.label {
+    font-size: 11dp;
+    color: #aaaaaa;
+    margin-bottom: 4dp;
+}
+#input_command {
+    width: 100%;
+    background-color: #1a1a1a;
+    border: 1dp solid #555555;
+    color: #ffffff;
+    font-family: Mojangles;
+    font-size: 12dp;
+    padding: 6dp;
+    margin-bottom: 10dp;
+    min-height: 60dp;
+}
+.options-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10dp;
+    flex-wrap: wrap;
+}
+.options-row .button {
+    margin-right: 6dp;
+    margin-bottom: 4dp;
+}
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6dp;
+}
+.btn-row .button {
+    margin: 2dp 4dp;
+}
+</style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="panel">
+            <div class="panel-title">{{ui.commandBlock}}</div>
+            <div class="label">Console Command</div>
+            <input type="text" id="input_command" placeholder="/say Hello World"/>
+            <div class="options-row">
+                <div class="button" id="btn_cmd_mode">Mode: Impulse</div>
+                <div class="button" id="btn_cmd_conditional">Conditional: OFF</div>
+                <div class="button" id="btn_cmd_always">Always Active: OFF</div>
+            </div>
+            <div class="btn-row">
+                <div class="button" id="btn_cmd_done">{{gui.done}}</div>
+                <div class="button" id="btn_cmd_cancel">{{gui.cancel}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</rml>

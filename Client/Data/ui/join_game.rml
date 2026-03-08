@@ -1,0 +1,120 @@
+<rml>
+<head>
+	<title>Join Game</title>
+	<link type="text/rcss" href="bedrock_common.rcss"/>
+	<style>
+		body {
+			background-color: #000000c0;
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		.panel {
+			margin: auto;
+			margin-top: 60dp;
+			width: 480dp;
+			padding: 20dp;
+		}
+		h1 {
+			font-size: 24dp;
+			color: #ffffff;
+			text-align: center;
+			margin-bottom: 16dp;
+		}
+		.form-row {
+			margin-bottom: 10dp;
+			display: block;
+		}
+		.form-label {
+			font-size: 12dp;
+			color: #b0b0b0;
+			margin-bottom: 4dp;
+			display: block;
+		}
+		input.text {
+			width: 100%;
+			height: 28dp;
+			font-size: 14dp;
+			background-color: #313131;
+			color: #ffffff;
+			border-width: 1dp;
+			border-color: #555555;
+			padding: 4dp 8dp;
+		}
+		input.text:focus {
+			border-color: #3c8527;
+		}
+		.server-list {
+			width: 100%;
+			height: 180dp;
+			overflow: auto;
+			background-color: #1e1e1e;
+			border-width: 1dp;
+			border-color: #444444;
+			margin-bottom: 12dp;
+		}
+		.list-item {
+			padding: 8dp 10dp;
+			font-size: 13dp;
+			color: #cccccc;
+			border-bottom-width: 1dp;
+			border-color: #333333;
+		}
+		.list-item:hover {
+			background-color: #3c3c3c;
+		}
+		.list-item .server-name {
+			font-size: 14dp;
+			color: #ffffff;
+		}
+		.list-item .server-addr {
+			font-size: 11dp;
+			color: #888888;
+		}
+		.button-row {
+			margin-top: 14dp;
+			text-align: center;
+		}
+		.button-row .btn,
+		.button-row .btn-primary {
+			margin: 0 6dp;
+		}
+	</style>
+</head>
+<body>
+	<div class="panel">
+		<h1>{{ui.joinGame}}</h1>
+
+		<div class="form-row">
+			<div class="form-label">Server Address</div>
+			<input id="input_server_ip" type="text" value="localhost"/>
+		</div>
+
+		<div class="form-row">
+			<div class="form-label">Port</div>
+			<input id="input_server_port" type="text" value="19132"/>
+		</div>
+
+		<div class="form-label">Servers</div>
+		<div id="server_list" class="server-list">
+			<div class="list-item">
+				<div class="server-name">Local World</div>
+				<div class="server-addr">localhost:19132</div>
+			</div>
+			<div class="list-item">
+				<div class="server-name">Community Server</div>
+				<div class="server-addr">play.example.com:19132</div>
+			</div>
+			<div class="list-item">
+				<div class="server-name">Creative Hub</div>
+				<div class="server-addr">creative.example.com:19132</div>
+			</div>
+		</div>
+
+		<div class="button-row">
+			<button id="btn_join" class="btn-primary">{{ui.joinGame}}</button>
+			<button id="btn_join_back" class="btn">{{gui.back}}</button>
+		</div>
+	</div>
+</body>
+</rml>

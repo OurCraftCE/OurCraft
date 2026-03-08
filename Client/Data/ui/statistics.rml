@@ -1,0 +1,83 @@
+<rml>
+<head>
+<title>Statistics</title>
+<link type="text/rcss" href="bedrock_common.rcss"/>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 12dp;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.panel {
+    background-color: #2a2a2a;
+    border: 2dp solid #555555;
+    padding: 14dp;
+    width: 540dp;
+}
+.panel-title {
+    font-size: 20dp;
+    font-weight: bold;
+    margin-bottom: 10dp;
+    text-align: center;
+}
+.tab-bar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10dp;
+}
+.tab-btn {
+    background-color: #333333;
+    border: 1dp solid #555555;
+    padding: 4dp 8dp;
+    margin-right: 4dp;
+    cursor: pointer;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 11dp;
+}
+.tab-btn:hover { background-color: #4a4a4a; }
+#stat_table {
+    background-color: #1e1e1e;
+    border: 1dp solid #444444;
+    padding: 10dp;
+    min-height: 200dp;
+    margin-bottom: 10dp;
+    font-size: 12dp;
+    color: #cccccc;
+}
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+</style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="panel">
+            <div class="panel-title">{{gui.stats}}</div>
+            <div class="tab-bar">
+                <div class="tab-btn" id="btn_stat_general">General</div>
+                <div class="tab-btn" id="btn_stat_blocks">Blocks</div>
+                <div class="tab-btn" id="btn_stat_items">Items</div>
+                <div class="tab-btn" id="btn_stat_mobs">Mobs</div>
+            </div>
+            <div id="stat_table">Select a category to view statistics.</div>
+            <div class="btn-row">
+                <div class="button" id="btn_stat_close">{{gui.close}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</rml>

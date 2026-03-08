@@ -1,0 +1,42 @@
+# Custom UI strings for Ourcraft
+# These supplement the Bedrock lang file with keys not present there.
+
+ui.videoSettings=Video Settings
+ui.audioSettings=Audio Settings
+ui.controls=Controls
+ui.settings=Settings
+ui.pause=Game Menu
+ui.worldSelect=Select World
+ui.createWorld=Create New World
+ui.startGame=Play
+ui.options=Options
+ui.quit=Quit Game
+ui.titleScreen=Minecraft
+ui.multiplayer=Multiplayer
+ui.serverBrowser=Play Multiplayer
+ui.send=Send
+ui.texturePacks=Resource Packs
+ui.mods=Add-Ons
+ui.connecting=Connecting...
+ui.youDied=You Died!
+ui.respawn=Respawn
+ui.loading=Loading...
+ui.sleep=Sleep
+ui.leaveBed=Leave Bed
+ui.advancements=Advancements
+ui.friends=Friends
+ui.dressingRoom=Dressing Room
+ui.communityHub=Marketplace
+ui.credits=Credits
+ui.eula=End User License Agreement
+ui.agree=I Agree
+ui.disagree=I Disagree
+ui.map=Map
+ui.playerList=Player List
+ui.commandBlock=Command Block
+ui.signEdit=Edit Sign
+ui.signDone=Done
+ui.bookEdit=Book & Quill
+ui.bookSign=Sign
+ui.hostGame=Host Game
+ui.joinGame=Join Game

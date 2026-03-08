@@ -1,0 +1,131 @@
+<rml>
+<head>
+	<title>Credits</title>
+	<link type="text/rcss" href="bedrock_common.rcss"/>
+	<style>
+		body {
+			background-color: #000000;
+			width: 100%;
+			height: 100%;
+			display: block;
+			font-family: Mojangles;
+		}
+		.credits-outer {
+			width: 600dp;
+			margin: auto;
+			margin-top: 20dp;
+		}
+		#credits_content {
+			width: 600dp;
+			height: 500dp;
+			overflow-y: scroll;
+			text-align: center;
+			padding: 20dp;
+			background-color: #000000;
+		}
+		.title {
+			font-size: 32dp;
+			color: #ffffff;
+			text-align: center;
+			margin-bottom: 8dp;
+		}
+		.subtitle {
+			font-size: 14dp;
+			color: #888888;
+			text-align: center;
+			margin-bottom: 40dp;
+		}
+		.section-header {
+			font-size: 18dp;
+			color: #ffd700;
+			text-align: center;
+			margin-top: 30dp;
+			margin-bottom: 10dp;
+		}
+		.credit-name {
+			font-size: 14dp;
+			color: #cccccc;
+			text-align: center;
+			margin-bottom: 4dp;
+		}
+		.credit-role {
+			font-size: 12dp;
+			color: #888888;
+			text-align: center;
+			margin-bottom: 2dp;
+		}
+		.spacer {
+			height: 40dp;
+		}
+		.disclaimer {
+			font-size: 12dp;
+			color: #ff4444;
+			text-align: center;
+			margin-top: 40dp;
+			margin-bottom: 20dp;
+		}
+		.button-row {
+			text-align: center;
+			margin-top: 10dp;
+			margin-bottom: 20dp;
+		}
+	</style>
+</head>
+<body>
+	<div class="credits-outer">
+		<div id="credits_content">
+			<div class="title">OURCRAFT</div>
+			<div class="subtitle">Based on Minecraft by Mojang AB</div>
+
+			<div class="spacer"></div>
+
+			<div class="section-header">Original Development</div>
+			<div class="credit-role">Lead Programmer</div>
+			<div class="credit-name">James Sheridan</div>
+			<div class="credit-role">Engine Programmer</div>
+			<div class="credit-name">Patrick Geoghegan</div>
+			<div class="credit-role">Gameplay Programmer</div>
+			<div class="credit-name">Laura Kerr</div>
+			<div class="credit-role">Gameplay Programmer</div>
+			<div class="credit-name">David McMullan</div>
+
+			<div class="section-header">4J Studios</div>
+			<div class="credit-role">Studio Director</div>
+			<div class="credit-name">Chris van der Kuyl</div>
+			<div class="credit-role">Development Director</div>
+			<div class="credit-name">Paddy Burns</div>
+			<div class="credit-role">Technical Director</div>
+			<div class="credit-name">Craig Richardson</div>
+			<div class="credit-role">Art Director</div>
+			<div class="credit-name">Martin Sherburn</div>
+
+			<div class="section-header">Open Source Contributors</div>
+			<div class="credit-name">The Ourcraft Community</div>
+			<div class="credit-name">All GitHub Contributors</div>
+			<div class="credit-name">Bug Reporters &amp; Testers</div>
+
+			<div class="section-header">Libraries &amp; Technology</div>
+			<div class="credit-name">bgfx - Branimir Karadzic</div>
+			<div class="credit-name">SDL3 - Sam Lantinga</div>
+			<div class="credit-name">RmlUi - Michael Ragazzon</div>
+			<div class="credit-name">FreeType - David Turner, Robert Wilhelm, Werner Lemberg</div>
+			<div class="credit-name">RakNet</div>
+
+			<div class="section-header">Special Thanks</div>
+			<div class="credit-name">Markus "Notch" Persson</div>
+			<div class="credit-name">Jens "Jeb" Bergensten</div>
+			<div class="credit-name">Mojang Studios</div>
+			<div class="credit-name">The Minecraft Community</div>
+
+			<div class="spacer"></div>
+
+			<div class="disclaimer">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</div>
+
+			<div class="spacer"></div>
+		</div>
+		<div class="button-row">
+			<button id="btn_credits_back" class="btn">{{gui.back}}</button>
+		</div>
+	</div>
+</body>
+</rml>

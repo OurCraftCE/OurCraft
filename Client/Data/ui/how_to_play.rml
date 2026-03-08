@@ -1,0 +1,111 @@
+<rml>
+<head>
+	<title>How to Play</title>
+	<link type="text/rcss" href="bedrock_common.rcss"/>
+	<style>
+		body {
+			background-color: #000000c0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			font-family: Mojangles;
+		}
+		.panel {
+			margin: auto;
+			margin-top: 40dp;
+			width: 560dp;
+			padding: 20dp;
+		}
+		h1 {
+			font-size: 24dp;
+			color: #ffffff;
+			text-align: center;
+			margin-bottom: 16dp;
+		}
+		#howtoplay_content {
+			height: 360dp;
+			overflow: auto;
+			background-color: #1a1a1a80;
+			padding: 16dp;
+			border-width: 1dp;
+			border-color: #333333;
+			font-size: 13dp;
+			color: #cccccc;
+		}
+		.page-nav {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 10dp;
+			margin-bottom: 4dp;
+		}
+		#howtoplay_page_num {
+			font-size: 13dp;
+			color: #888888;
+			text-align: center;
+		}
+		.nav-btn {
+			display: inline-block;
+			width: 100dp;
+			height: 32dp;
+			line-height: 32dp;
+			text-align: center;
+			font-size: 14dp;
+			color: #ffffff;
+			background-color: #3c3c3c;
+			border-width: 2dp;
+			border-color: #565656;
+		}
+		.nav-btn:hover {
+			background-color: #4a4a4a;
+			border-color: #7a7a7a;
+		}
+		.nav-btn:active {
+			background-color: #2a2a2a;
+		}
+		.button-row {
+			text-align: center;
+			margin-top: 10dp;
+		}
+		.btn {
+			display: inline-block;
+			width: 200dp;
+			height: 36dp;
+			line-height: 36dp;
+			text-align: center;
+			font-size: 15dp;
+			color: #ffffff;
+			background-color: #3c3c3c;
+			border-width: 2dp;
+			border-color: #565656;
+		}
+		.btn:hover {
+			background-color: #4a4a4a;
+			border-color: #7a7a7a;
+		}
+		.btn:active {
+			background-color: #2a2a2a;
+		}
+	</style>
+</head>
+<body>
+	<div class="panel">
+		<h1>{{menu.howToPlay}}</h1>
+
+		<div id="howtoplay_content">
+			Movement: WASD to move, Space to jump, Shift to sneak
+		</div>
+
+		<div class="page-nav">
+			<div id="btn_howtoplay_prev" class="nav-btn">&lt; Prev</div>
+			<span id="howtoplay_page_num">Page 1 of 3</span>
+			<div id="btn_howtoplay_next" class="nav-btn">Next &gt;</div>
+		</div>
+
+		<div class="button-row">
+			<div id="btn_howtoplay_back" class="btn">{{gui.back}}</div>
+		</div>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,65 @@
+<rml>
+<head>
+    <title>Main</title>
+    <style>
+        body {
+            width: 100%; height: 100%;
+            background-color: #1a1a2e;
+            font-family: segoeui;
+            color: #ffffff;
+        }
+        .container {
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            width: 100%; height: 100%;
+        }
+        .logo {
+            font-size: 48dp; font-weight: bold;
+            color: #55ff55; margin-bottom: 20dp;
+        }
+        .welcome {
+            font-size: 18dp; color: #cccccc;
+            margin-bottom: 40dp;
+        }
+        button.play {
+            width: 360dp; height: 54dp;
+            background-color: #3a7d44;
+            border: 2dp solid #55aa55;
+            font-size: 22dp; color: #ffffff;
+            text-align: center;
+            margin-bottom: 16dp;
+        }
+        button.play:hover {
+            background-color: #4a9d54;
+            border-color: #77cc77;
+        }
+        button.secondary {
+            width: 240dp; height: 40dp;
+            background-color: #4a4a5a;
+            border: 2dp solid #6a6a7a;
+            font-size: 14dp; color: #cccccc;
+            text-align: center;
+            margin-bottom: 10dp;
+        }
+        button.secondary:hover {
+            background-color: #5a5a7a;
+            border-color: #8888aa;
+        }
+        .version {
+            position: absolute; bottom: 10dp; left: 10dp;
+            font-size: 12dp; color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">OURCRAFT</div>
+        <div class="welcome" id="welcome_text">Welcome, Player</div>
+        <button class="play" id="btn_play">PLAY</button>
+        <button class="secondary" id="btn_settings">Settings</button>
+        <button class="secondary" id="btn_logout">Logout</button>
+        <button class="secondary" id="btn_quit">Quit</button>
+    </div>
+    <div class="version" id="version_text">OurCraft Launcher v0.1.0</div>
+</body>
+</rml>

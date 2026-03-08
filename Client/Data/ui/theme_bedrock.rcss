@@ -1,0 +1,10 @@
+/* Bedrock Theme */
+.theme-btn { background-color: #484848; border: 2dp solid #3a3a3a; color: #d0d0d0; }
+.theme-btn:hover { background-color: #4a6a4a; border-color: #5a8a5a; color: #ffffff; }
+.theme-btn-primary { background-color: #565656; border: 2dp solid #3a3a3a; color: #ffffff; }
+.theme-btn-primary:hover { background-color: #4a6a4a; border-color: #5a8a5a; }
+.theme-btn-danger { background-color: #5a3838; border: 2dp solid #4a2a2a; color: #d0d0d0; }
+.theme-btn-danger:hover { background-color: #7a4848; border-color: #8a5858; color: #ffffff; }
+.theme-panel { background-color: #1a1a1a90; border: 2dp solid #3a3a3a; }
+.theme-slot { background-color: #8b8b8b40; border: 1dp solid #1e1e1e; }
+.theme-slot:hover { background-color: #a0a0a060; border-color: #ffffff80; }

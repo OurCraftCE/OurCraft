@@ -1,0 +1,65 @@
+<rml>
+<head>
+    <title>Settings</title>
+    <style>
+        body {
+            width: 100%; height: 100%;
+            background-color: #1a1a2e;
+            font-family: segoeui;
+            color: #ffffff;
+        }
+        .container {
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            width: 100%; height: 100%;
+        }
+        .title {
+            font-size: 28dp; font-weight: bold;
+            color: #ffffff; margin-bottom: 30dp;
+        }
+        .setting-row {
+            display: flex; flex-direction: row;
+            align-items: center; width: 500dp;
+            margin-bottom: 16dp;
+        }
+        .setting-label {
+            font-size: 14dp; color: #cccccc;
+            width: 200dp;
+        }
+        .setting-value {
+            font-size: 14dp; color: #aaaaff;
+            width: 300dp;
+        }
+        button {
+            width: 200dp; height: 40dp;
+            background-color: #4a4a5a;
+            border: 2dp solid #6a6a7a;
+            font-size: 14dp; color: #cccccc;
+            text-align: center;
+            margin-top: 20dp;
+        }
+        button:hover {
+            background-color: #5a5a7a;
+            border-color: #8888aa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Settings</div>
+        <div class="setting-row">
+            <div class="setting-label">Install Directory</div>
+            <div class="setting-value" id="install_dir">%AppData%/OurCraft</div>
+        </div>
+        <div class="setting-row">
+            <div class="setting-label">Dev Mode</div>
+            <div class="setting-value" id="dev_mode">Off</div>
+        </div>
+        <div class="setting-row">
+            <div class="setting-label">Language</div>
+            <div class="setting-value" id="language">English</div>
+        </div>
+        <button id="btn_back">Back</button>
+    </div>
+</body>
+</rml>

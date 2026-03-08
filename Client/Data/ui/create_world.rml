@@ -1,0 +1,196 @@
+<rml>
+<head>
+    <title>Create New World</title>
+    <link type="text/rcss" href="bedrock_common.rcss"/>
+    <style>
+        body {
+            background-color: #000000cc;
+            font-family: Mojangles;
+            color: #ffffff;
+            width: 100%;
+            height: 100%;
+        }
+
+        .screen-title {
+            text-align: center;
+            font-size: 24dp;
+            margin-top: 24dp;
+            color: #ffffff;
+        }
+
+        .form-container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 480dp;
+            margin-left: -240dp;
+            margin-top: -240dp;
+            background-color: #2a2a2acc;
+            padding: 20dp;
+            border-width: 2dp;
+            border-color: #444444;
+        }
+
+        .form-row {
+            margin-bottom: 12dp;
+            display: block;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14dp;
+            color: #b0b0b0;
+            margin-bottom: 4dp;
+        }
+
+        .form-inline {
+            display: block;
+            margin-bottom: 12dp;
+        }
+
+        .form-inline .form-label {
+            display: inline-block;
+            width: 140dp;
+            vertical-align: middle;
+        }
+
+        input.text {
+            display: block;
+            width: 100%;
+            height: 28dp;
+            padding: 4dp 8dp;
+            background-color: #1a1a1a;
+            border-width: 1dp;
+            border-color: #555555;
+            color: #ffffff;
+            font-size: 14dp;
+            font-family: Mojangles;
+        }
+
+        input.text:focus {
+            border-color: #4caf50;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 6dp 16dp;
+            background-color: #3a3a3a;
+            border-width: 1dp;
+            border-color: #555555;
+            color: #ffffff;
+            font-size: 14dp;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #4a4a4a;
+            border-color: #777777;
+        }
+
+        .btn-cycle {
+            display: block;
+            width: 300dp;
+            height: 32dp;
+            line-height: 32dp;
+            text-align: center;
+            background-color: #3a3a3a;
+            border-width: 1dp;
+            border-color: #555555;
+            color: #ffffff;
+            font-size: 14dp;
+            margin-bottom: 8dp;
+        }
+
+        .btn-cycle:hover {
+            background-color: #4a6a4a;
+            border-color: #6a8a6a;
+        }
+
+        .btn-toggle {
+            display: block;
+            width: 300dp;
+            height: 32dp;
+            line-height: 32dp;
+            text-align: center;
+            background-color: #3a3a3a;
+            border-width: 1dp;
+            border-color: #555555;
+            color: #ffffff;
+            font-size: 14dp;
+            margin-bottom: 8dp;
+        }
+
+        .btn-toggle:hover {
+            background-color: #4a4a4a;
+            border-color: #777777;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 8dp 24dp;
+            background-color: #4caf50;
+            border-width: 1dp;
+            border-color: #66cc6a;
+            color: #ffffff;
+            font-size: 15dp;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn-primary:hover {
+            background-color: #5cbf60;
+            border-color: #88dd8c;
+        }
+
+        .bottom-bar {
+            position: absolute;
+            bottom: 32dp;
+            left: 50%;
+            margin-left: -160dp;
+            width: 320dp;
+            text-align: center;
+        }
+
+        .bottom-bar .btn,
+        .bottom-bar .btn-primary {
+            margin-left: 8dp;
+            margin-right: 8dp;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen-title">{{ui.createWorld}}</div>
+
+    <div class="form-container">
+        <!-- World Name -->
+        <div class="form-row">
+            <div class="form-label">World Name</div>
+            <input type="text" class="text" id="input_name" value="My World"/>
+        </div>
+
+        <!-- Seed -->
+        <div class="form-row">
+            <div class="form-label">Seed (leave blank for random)</div>
+            <input type="text" class="text" id="input_seed" value=""/>
+        </div>
+
+        <!-- Game Mode cycle -->
+        <div id="btn_cycle_gamemode" class="btn-cycle">Mode: Creative</div>
+
+        <!-- Difficulty cycle -->
+        <div id="btn_cycle_difficulty" class="btn-cycle">Difficulty: Normal</div>
+
+        <!-- Structures toggle -->
+        <div id="btn_toggle_structures" class="btn-toggle">Structures: ON</div>
+
+        <!-- Bonus Chest toggle -->
+        <div id="btn_toggle_bonus" class="btn-toggle">Bonus Chest: OFF</div>
+    </div>
+
+    <!-- Bottom Buttons -->
+    <div class="bottom-bar">
+        <button class="btn-primary" id="btn_create">{{ui.createWorld}}</button>
+        <button class="btn" id="btn_cancel">{{gui.cancel}}</button>
+    </div>
+</body>
+</rml>

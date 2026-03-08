@@ -1,0 +1,87 @@
+<rml>
+<head>
+<title>Book</title>
+<link type="text/rcss" href="bedrock_common.rcss"/>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 12dp;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.panel {
+    background-color: #d4c09a;
+    border: 2dp solid #8b7355;
+    padding: 16dp;
+    width: 360dp;
+    color: #2a1a0a;
+}
+.panel-title {
+    font-size: 20dp;
+    font-weight: bold;
+    margin-bottom: 10dp;
+    text-align: center;
+}
+#book_page_content {
+    background-color: #ede0c4;
+    border: 1dp solid #8b7355;
+    padding: 8dp;
+    min-height: 200dp;
+    margin-bottom: 8dp;
+}
+.book-input {
+    width: 100%;
+    background-color: #ede0c4;
+    border: none;
+    color: #2a1a0a;
+    font-family: Mojangles;
+    font-size: 12dp;
+    padding: 4dp;
+    min-height: 180dp;
+}
+#book_page_num {
+    text-align: center;
+    font-size: 11dp;
+    margin-bottom: 8dp;
+    color: #2a1a0a;
+}
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4dp;
+}
+.btn-row .button {
+    margin: 2dp 4dp;
+}
+</style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="panel">
+            <div class="panel-title">{{ui.bookEdit}}</div>
+            <div id="book_page_content">
+                <input type="text" id="input_book_text" class="book-input" placeholder="Write your story..."/>
+            </div>
+            <div id="book_page_num">Page 1 of 1</div>
+            <div class="btn-row">
+                <div class="button" id="btn_book_prev">Prev Page</div>
+                <div class="button" id="btn_book_next">Next Page</div>
+                <div class="button" id="btn_book_sign">{{ui.bookSign}}</div>
+                <div class="button" id="btn_book_done">{{gui.done}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</rml>

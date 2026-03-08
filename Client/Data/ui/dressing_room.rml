@@ -1,0 +1,83 @@
+<rml>
+<head>
+<title>Dressing Room</title>
+<link type="text/rcss" href="bedrock_common.rcss"/>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 12dp;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.panel {
+    background-color: #2a2a2a;
+    border: 2dp solid #555555;
+    padding: 14dp;
+    width: 460dp;
+}
+.panel-title {
+    font-size: 20dp;
+    font-weight: bold;
+    margin-bottom: 10dp;
+    text-align: center;
+}
+#skin_list {
+    background-color: #1e1e1e;
+    border: 1dp solid #444444;
+    padding: 8dp;
+    min-height: 200dp;
+    margin-bottom: 10dp;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skin-item {
+    width: 80dp;
+    height: 100dp;
+    background-color: #333333;
+    border: 1dp solid #555555;
+    margin: 4dp;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10dp;
+    color: #aaaaaa;
+}
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-row .button {
+    margin: 2dp 4dp;
+}
+</style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="panel">
+            <div class="panel-title">{{ui.dressingRoom}}</div>
+            <div id="skin_list">
+                <div class="skin-item">Default</div>
+                <div class="skin-item">Alex</div>
+                <div class="skin-item">Steve</div>
+            </div>
+            <div class="btn-row">
+                <div class="button" id="btn_skin_select">{{gui.select}}</div>
+                <div class="button" id="btn_skin_import">Import</div>
+                <div class="button" id="btn_skin_back">{{gui.back}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</rml>

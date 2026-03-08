@@ -1,0 +1,55 @@
+<rml>
+<head>
+<title>Players</title>
+<link type="text/rcss" href="bedrock_common.rcss"/>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 12dp;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.panel {
+    background-color: #000000bb;
+    border: 1dp solid #555555;
+    padding: 10dp;
+    width: 400dp;
+    margin-top: 20dp;
+}
+.panel-title {
+    font-size: 16dp;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8dp;
+}
+#player_list_items {
+    display: flex;
+    flex-direction: column;
+    min-height: 40dp;
+}
+.player-entry {
+    padding: 3dp 6dp;
+    font-size: 12dp;
+    border-bottom: 1dp solid #444444;
+}
+</style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="panel">
+            <div class="panel-title">Players</div>
+            <div id="player_list_items">
+                <div class="player-entry">Player1</div>
+            </div>
+        </div>
+    </div>
+</body>
+</rml>

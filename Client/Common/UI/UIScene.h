@@ -1,0 +1,250 @@
+#pragma once
+#pragma warning(disable : 4250)
+using namespace std;
+
+#include "UIEnums.h"
+#include "UIControl_Base.h"
+#include <RmlUi/Core/ElementDocument.h>
+#include <RmlUi/Core/EventListener.h>
+#include <RmlUi/Core/Event.h>
+
+class ItemRenderer;
+class UILayer;
+
+// Macros for mapping scene elements — now route through RmlUi alongside Iggy stubs
+#define UI_BEGIN_MAP_ELEMENTS_AND_NAMES(parentClass) \
+	virtual bool mapElementsAndNames() \
+	{ \
+		parentClass::mapElementsAndNames(); \
+		IggyValuePath *currentRoot = IggyPlayerRootPath(getMovie());
+
+#define UI_END_MAP_ELEMENTS_AND_NAMES() \
+		return true; \
+	}
+
+#define UI_MAP_ELEMENT(var, name) \
+	{ var.setupControl(this, currentRoot, name); m_controls.push_back(&var); }
+
+#define UI_BEGIN_MAP_CHILD_ELEMENTS(parent) \
+	{ \
+		IggyValuePath *lastRoot = currentRoot; \
+		currentRoot = parent.getIggyValuePath();
+
+#define UI_END_MAP_CHILD_ELEMENTS() \
+		currentRoot = lastRoot; \
+	}
+
+#define UI_MAP_NAME(var, name) \
+	{ var = registerFastName(name); }
+
+
+class UIScene : public Rml::EventListener
+{
+	friend class UILayer;
+public:
+	IggyValuePath *m_rootPath;
+
+private:
+	Iggy *swf; // kept for ABI — always null on Windows64
+
+	// Iggy fast-names — kept for ABI, unused at runtime
+	IggyName m_funcRemoveObject, m_funcSlideLeft, m_funcSlideRight;
+	IggyName m_funcSetSafeZone, m_funcSetFocus, m_funcHorizontalResizeCheck;
+	IggyName m_funcSetAlpha;
+
+	ItemRenderer *m_pItemRenderer;
+	unordered_map<wstring, IggyName> m_fastNames;
+	unordered_map<wstring, bool> m_registeredTextures;
+
+	typedef struct _TimerInfo
+	{
+		int duration;
+		int targetTime;
+		bool running;
+	} TimerInfo;
+	unordered_map<int, TimerInfo> m_timers;
+
+	int m_iFocusControl, m_iFocusChild;
+	float m_lastOpacity;
+	bool m_bUpdateOpacity;
+	bool m_bVisible;
+	bool m_bCanHandleInput;
+	UIScene *m_backScene;
+	size_t m_callbackUniqueId;
+
+protected:
+	// RmlUi document — nullptr until this scene's .rml is created
+	Rml::ElementDocument *m_document;
+
+public:
+	enum ESceneResolution
+	{
+		eSceneResolution_1080,
+		eSceneResolution_720,
+		eSceneResolution_480,
+		eSceneResolution_Vita,
+	};
+
+protected:
+	ESceneResolution m_loadedResolution;
+	bool m_bIsReloading;
+	bool m_bFocussedOnce;
+	int m_movieWidth, m_movieHeight;
+	int m_renderWidth, m_renderHeight;
+	vector<UIControl *> m_controls;
+
+protected:
+	UILayer *m_parentLayer;
+	bool bHasFocus;
+	int m_iPad;
+	bool m_hasTickedOnce;
+
+public:
+	// Iggy compat — returns null; use getDocument() for RmlUi
+	virtual Iggy *getMovie() { return swf; }
+	Rml::ElementDocument *getDocument() { return m_document; }
+
+	void destroyMovie();
+	virtual void reloadMovie(bool force = false);
+	virtual bool needsReloaded();
+	virtual bool hasMovie();
+	virtual void updateSafeZone();
+
+	int getRenderWidth() { return m_renderWidth; }
+	int getRenderHeight() { return m_renderHeight; }
+	vector<UIControl *> *GetControls() { return &m_controls; }
+
+protected:
+	virtual F64 getSafeZoneHalfHeight();
+	virtual F64 getSafeZoneHalfWidth();
+	void setSafeZone(S32 top, S32 bottom, S32 left, S32 right);
+	void doHorizontalResizeCheck();
+	virtual wstring getMoviePath() = 0; // subclasses return path without extension
+
+	virtual bool mapElementsAndNames();
+	void initialiseMovie();
+	void loadMovie();
+
+private:
+	void loadDocument(); // internal — loads .rml if available
+
+public:
+	void PrintTotalMemoryUsage(__int64 &totalStatic, __int64 &totalDynamic) {}
+
+public:
+	UIScene(int iPad, UILayer *parentLayer);
+	virtual ~UIScene();
+
+	virtual EUIScene getSceneType() = 0;
+	ESceneResolution getSceneResolution() { return m_loadedResolution; }
+
+	virtual void tick();
+
+	IggyName registerFastName(const wstring &name);
+
+protected:
+	void addTimer(int id, int ms);
+	void killTimer(int id);
+	void tickTimers();
+	TimerInfo *getTimer(int id) { return &m_timers[id]; }
+	virtual void handleTimerComplete(int id) {}
+
+public:
+	virtual bool stealsFocus() { return true; }
+	virtual bool hasFocus(int iPad) { return bHasFocus && iPad == m_iPad; }
+	void gainFocus();
+	void loseFocus();
+
+	virtual void updateTooltips();
+	virtual void updateComponents() {}
+	virtual void handleGainFocus(bool navBack);
+	virtual void handleLoseFocus() {}
+	virtual bool hidesLowerScenes() { return m_hasTickedOnce; }
+	virtual UIControl *GetMainPanel();
+
+	void removeControl(UIControl_Base *control, bool centreScene);
+	void slideLeft();
+	void slideRight();
+
+	virtual void render(S32 width, S32 height, C4JRender::eViewportType viewport);
+	virtual void customDraw(IggyCustomDrawCallbackRegion *region);
+
+	void setOpacity(float percent);
+	void setVisible(bool visible);
+	bool isVisible() { return m_bVisible; }
+
+protected:
+	void customDrawSlotControl(IggyCustomDrawCallbackRegion *region, int iPad, shared_ptr<ItemInstance> item, float fAlpha, bool isFoil, bool bDecorations);
+
+	bool m_cacheSlotRenders;
+	bool m_needsCacheRendered;
+	int m_expectedCachedSlotCount;
+
+private:
+	typedef struct _CachedSlotDrawData
+	{
+		CustomDrawData *customDrawRegion;
+		shared_ptr<ItemInstance> item;
+		float fAlpha;
+		bool isFoil;
+		bool bDecorations;
+	} CachedSlotDrawData;
+	vector<CachedSlotDrawData *> m_cachedSlotDraw;
+	void _customDrawSlotControl(CustomDrawData *region, int iPad, shared_ptr<ItemInstance> item, float fAlpha, bool isFoil, bool bDecorations, bool usingCommandBuffer);
+
+public:
+	bool canHandleInput() { return m_bCanHandleInput; }
+	virtual bool allowRepeat(int key);
+	virtual void handleInput(int iPad, int key, bool repeat, bool pressed, bool released, bool &handled) {}
+
+	// RmlUi EventListener — dispatches to scene virtuals
+	virtual void ProcessEvent(Rml::Event &event) override;
+
+	void externalCallback(IggyExternalFunctionCallUTF16 *call);
+
+	virtual void handleDestroy() {}
+
+protected:
+	void sendInputToMovie(int key, bool repeat, bool pressed, bool released);
+	virtual void handlePreReload() {}
+	virtual void handleReload() {}
+	virtual void handlePress(F64 controlId, F64 childId) {}
+	virtual void handleFocusChange(F64 controlId, F64 childId) {}
+	virtual void handleInitFocus(F64 controlId, F64 childId) {}
+	virtual void handleCheckboxToggled(F64 controlId, bool selected) {}
+	virtual void handleSliderMove(F64 sliderId, F64 currentValue) {}
+	virtual void handleAnimationEnd() {}
+	virtual void handleSelectionChanged(F64 selectedId) {}
+	virtual void handleRequestMoreData(F64 startIndex, bool up) {}
+	virtual void handleTouchBoxRebuild() {}
+
+private:
+	void _handleFocusChange(F64 controlId, F64 childId);
+	void _handleInitFocus(F64 controlId, F64 childId);
+	int convertGameActionToIggyKeycode(int action);
+
+public:
+	bool controlHasFocus(int iControlId);
+	bool controlHasFocus(UIControl_Base *control);
+	int getControlFocus();
+	int getControlChildFocus();
+
+protected:
+	void navigateBack();
+
+public:
+	void setBackScene(UIScene *scene);
+	UIScene *getBackScene();
+	virtual void HandleDLCMountingComplete() {}
+	virtual void HandleDLCInstalled() {}
+	virtual void HandleDLCLicenseChange() {}
+	void registerSubstitutionTexture(const wstring &textureName, PBYTE pbData, DWORD dwLength, bool deleteData = false);
+	bool hasRegisteredSubstitutionTexture(const wstring &textureName);
+	virtual void handleUnlockFullVersion() {}
+	virtual void handleTouchInput(unsigned int iPad, S32 x, S32 y, int iId, bool bPressed, bool bRepeat, bool bReleased) {}
+
+protected:
+	virtual long long getDefaultGtcButtons() { return _360_GTC_BACK; }
+	size_t GetCallbackUniqueId();
+	virtual bool isReadyToDelete();
+};

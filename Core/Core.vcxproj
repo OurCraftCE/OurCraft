@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}</ProjectGuid>
+    <RootNamespace>MinecraftCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)x64_Debug\</OutDir>
+    <IntDir>$(ProjectDir)x64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)x64_Release\</OutDir>
+    <IntDir>$(ProjectDir)x64\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>Game;Network;$(ProjectDir);$(ProjectDir)..\World;$(ProjectDir)..\World\Entities;$(ProjectDir)..\World\AI;$(ProjectDir)..\World\Tiles;$(ProjectDir)..\World\Items;$(ProjectDir)..\World\Enchantments;$(ProjectDir)..\World\Level;$(ProjectDir)..\World\WorldGen;$(ProjectDir)..\World\Container;$(ProjectDir)..\World\Network;$(ProjectDir)..\World\IO;$(ProjectDir)..\World\Recipes;$(ProjectDir)..\World\Commands;$(ProjectDir)..\World\Math;$(ProjectDir)..\World\Stats;$(ProjectDir)..\World\Player;$(ProjectDir)..\World\Tiles\Materials;$(ProjectDir)..\World\FwdHeaders;$(ProjectDir)..\World\x64headers;$(ProjectDir)..\Client;$(ProjectDir)..\Client\Game;$(ProjectDir)..\Client\Render;$(ProjectDir)..\Client\Windows64\Iggy\include;$(ProjectDir)..\ExternalDependency\RakNet-built\include;$(ProjectDir)..\ExternalDependency\SDL3-built\include;$(ProjectDir)..\ExternalDependency\bgfx-built\include;$(ProjectDir)..\ExternalDependency\bgfx-built\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOMINMAX;_HAS_STD_BYTE=0;_EXTENDED_ACHIEVEMENTS;_DEBUG_MENUS_ENABLED;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;_WINDOWS64;SDL_STATIC;BX_CONFIG_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>Game;Network;$(ProjectDir);$(ProjectDir)..\World;$(ProjectDir)..\World\Entities;$(ProjectDir)..\World\AI;$(ProjectDir)..\World\Tiles;$(ProjectDir)..\World\Items;$(ProjectDir)..\World\Enchantments;$(ProjectDir)..\World\Level;$(ProjectDir)..\World\WorldGen;$(ProjectDir)..\World\Container;$(ProjectDir)..\World\Network;$(ProjectDir)..\World\IO;$(ProjectDir)..\World\Recipes;$(ProjectDir)..\World\Commands;$(ProjectDir)..\World\Math;$(ProjectDir)..\World\Stats;$(ProjectDir)..\World\Player;$(ProjectDir)..\World\Tiles\Materials;$(ProjectDir)..\World\FwdHeaders;$(ProjectDir)..\World\x64headers;$(ProjectDir)..\Client;$(ProjectDir)..\Client\Game;$(ProjectDir)..\Client\Render;$(ProjectDir)..\Client\Windows64\Iggy\include;$(ProjectDir)..\ExternalDependency\RakNet-built\include;$(ProjectDir)..\ExternalDependency\SDL3-built\include;$(ProjectDir)..\ExternalDependency\bgfx-built\include;$(ProjectDir)..\ExternalDependency\bgfx-built\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;NOMINMAX;_HAS_STD_BYTE=0;_EXTENDED_ACHIEVEMENTS;_DEBUG_MENUS_ENABLED;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_WARNINGS;_WINDOWS64;SDL_STATIC;BX_CONFIG_DEBUG=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Network\RakNetTransport.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Network\NetworkAdapter.cpp" />
+    <ClCompile Include="MinecraftServer.cpp" />
+    <ClCompile Include="Game\ServerLevel.cpp" />
+    <ClCompile Include="Game\DerivedServerLevel.cpp" />
+    <ClCompile Include="Game\ServerPlayer.cpp" />
+    <ClCompile Include="Game\ServerPlayerGameMode.cpp" />
+    <ClCompile Include="Network\ServerConnection.cpp" />
+    <ClCompile Include="Network\PlayerConnection.cpp" />
+    <ClCompile Include="Network\PendingConnection.cpp" />
+    <ClCompile Include="Network\PlayerList.cpp" />
+    <ClCompile Include="Game\EntityTracker.cpp" />
+    <ClCompile Include="Game\TrackedEntity.cpp" />
+    <ClCompile Include="Network\PlayerChunkMap.cpp" />
+    <ClCompile Include="Network\ServerCommandDispatcher.cpp" />
+    <ClCompile Include="Game\ServerLevelListener.cpp" />
+    <ClCompile Include="Network\ServerChunkCache.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Network\TransportTypes.h" />
+    <ClInclude Include="Network\ITransport.h" />
+    <ClInclude Include="Network\RakNetTransport.h" />
+    <ClInclude Include="Network\NetworkAdapter.h" />
+    <ClInclude Include="MinecraftServer.h" />
+    <ClInclude Include="Game\ServerLevel.h" />
+    <ClInclude Include="Game\DerivedServerLevel.h" />
+    <ClInclude Include="Game\ServerPlayer.h" />
+    <ClInclude Include="Game\ServerPlayerGameMode.h" />
+    <ClInclude Include="Network\ServerConnection.h" />
+    <ClInclude Include="Network\PlayerConnection.h" />
+    <ClInclude Include="Network\PendingConnection.h" />
+    <ClInclude Include="Network\PlayerList.h" />
+    <ClInclude Include="Game\EntityTracker.h" />
+    <ClInclude Include="Game\TrackedEntity.h" />
+    <ClInclude Include="Network\PlayerChunkMap.h" />
+    <ClInclude Include="Network\ServerCommandDispatcher.h" />
+    <ClInclude Include="Game\ServerLevelListener.h" />
+    <ClInclude Include="Network\ServerChunkCache.h" />
+    <ClInclude Include="ConsoleInputSource.h" />
+    <ClInclude Include="Network\ServerInterface.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

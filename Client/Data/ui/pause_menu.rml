@@ -1,0 +1,107 @@
+<rml>
+<head>
+<title>Pause Menu</title>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    font-family: Mojangles;
+    color: #ffffff;
+}
+
+.title {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 24dp;
+    color: #ffffff;
+}
+
+.menu-buttons {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -150dp;
+    width: 300dp;
+}
+
+.btn-menu {
+    display: block;
+    width: 300dp;
+    height: 36dp;
+    margin-bottom: 4dp;
+    background-color: #484848;
+    border: 2dp solid #3a3a3a;
+    color: #d0d0d0;
+    font-size: 13dp;
+    text-align: center;
+    padding-top: 8dp;
+}
+.btn-menu:hover {
+    background-color: #4a6a4a;
+    border-color: #5a8a5a;
+    color: #ffffff;
+}
+.btn-menu:active {
+    background-color: #3a5a3a;
+    border-color: #4a7a4a;
+}
+
+/* Resume is more prominent */
+.btn-resume {
+    display: block;
+    width: 300dp;
+    height: 40dp;
+    margin-bottom: 8dp;
+    background-color: #565656;
+    border: 2dp solid #3a3a3a;
+    color: #ffffff;
+    font-size: 15dp;
+    text-align: center;
+    padding-top: 9dp;
+}
+.btn-resume:hover {
+    background-color: #4a6a4a;
+    border-color: #5a8a5a;
+}
+.btn-resume:active {
+    background-color: #3a5a3a;
+    border-color: #4a7a4a;
+}
+
+/* Quit button - slightly red tinted */
+.btn-quit {
+    display: block;
+    width: 300dp;
+    height: 36dp;
+    margin-top: 12dp;
+    background-color: #5a3838;
+    border: 2dp solid #4a2a2a;
+    color: #d0d0d0;
+    font-size: 13dp;
+    text-align: center;
+    padding-top: 8dp;
+}
+.btn-quit:hover {
+    background-color: #7a4848;
+    border-color: #8a5858;
+    color: #ffffff;
+}
+.btn-quit:active {
+    background-color: #4a2828;
+    border-color: #3a1818;
+}
+</style>
+</head>
+<body>
+    <div class="title">{{ui.pause}}</div>
+    <div class="menu-buttons">
+        <button class="btn-resume" id="btn_resume">Resume Game</button>
+        <button class="btn-menu" id="btn_save">Save and Quit</button>
+        <button class="btn-menu" id="btn_options">{{ui.settings}}</button>
+        <button class="btn-quit" id="btn_quit_title">{{ui.titleScreen}}</button>
+    </div>
+</body>
+</rml>

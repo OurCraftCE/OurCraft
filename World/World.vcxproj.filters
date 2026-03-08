@@ -1,0 +1,4775 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <ItemGroup>
+    <Filter Include="World">
+      <UniqueIdentifier>{85597425-7919-5ab1-a2ee-efb0daee3f03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\AI">
+      <UniqueIdentifier>{05bbff88-eb99-59d6-a07e-e2b6dee59175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Commands">
+      <UniqueIdentifier>{cbbeb68b-1c4d-524d-8c25-df33a4f7a3e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Core">
+      <UniqueIdentifier>{759d5faa-0545-5cec-8aa6-fec7d0433387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Effects">
+      <UniqueIdentifier>{167bbf62-a529-5719-8fc0-30d72b7d2736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Enchantments">
+      <UniqueIdentifier>{7a69d909-2221-5191-8b42-927ab62198ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Entities">
+      <UniqueIdentifier>{0363faf6-5105-53cf-aca1-d6ea7bb5bb7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\GUI">
+      <UniqueIdentifier>{1d2eebfd-592f-54b4-b034-21c144514815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Headers">
+      <UniqueIdentifier>{6fbfae3a-7e3e-5fcf-8241-8be16e1395e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Items">
+      <UniqueIdentifier>{9114c6c8-0da5-5491-a113-d0d64c360d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Items\Recipes">
+      <UniqueIdentifier>{eb775ed7-0866-5e40-84ae-288aca0591e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Level">
+      <UniqueIdentifier>{01b714ec-0d87-5543-a807-840ccdbefab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\NBT">
+      <UniqueIdentifier>{80bb15d0-9003-5afb-86be-2cc0e601c36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Network">
+      <UniqueIdentifier>{973d59b2-c032-528f-9f2f-ed059687ecff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Packets">
+      <UniqueIdentifier>{6aa63a81-6f7d-5da4-8ef1-28aad6a31867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Storage">
+      <UniqueIdentifier>{527df906-3d4b-51d7-961a-3cb04739f17d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Tiles">
+      <UniqueIdentifier>{75d5f3f3-9907-5729-bab4-42fd0d5b0939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Tiles\TileEntities">
+      <UniqueIdentifier>{afac940b-e3dc-5aa9-aa96-7b798879bc39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\WorldGen">
+      <UniqueIdentifier>{59b79cd5-a54b-5dd8-9cc3-a00b44828a73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\x64Headers">
+      <UniqueIdentifier>{c985fe1d-0d0a-5bec-a19c-0193cd508f00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AI\ArrowAttackGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\BegGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\BreakDoorGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\BreedGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\DefendVillageTargetGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\DoorInteractGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\EatTileGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\FleeSunGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\FloatGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\FollowOwnerGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\FollowParentGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Goal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\HurtByTargetGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\InteractGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\LeapAtTargetGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\MakeLoveGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\MeleeAttackGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\MoveIndoorsGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\MoveThroughVillageGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\MoveTowardsRestrictionGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\MoveTowardsTargetGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\NearestAttackableTargetGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\NonTameRandomTargetGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\OcelotSitOnTileGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\OfferFlowerGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\OpenDoorGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\OwnerHurtByTargetGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\OwnerHurtTargetGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\OzelotAttackGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\PanicGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Path.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\PathFinder.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\PlayGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\RandomLookAroundGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\RandomStrollGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\RestrictOpenDoorGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\RestrictSunGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\SitGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\SwellGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\TakeFlowerGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\TargetGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\TemptGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\Command.cpp">
+      <Filter>World\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\DefaultGameModeCommand.cpp">
+      <Filter>World\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\EnchantItemCommand.cpp">
+      <Filter>World\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\ExperienceCommand.cpp">
+      <Filter>World\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\GameModeCommand.cpp">
+      <Filter>World\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\GiveItemCommand.cpp">
+      <Filter>World\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\KillCommand.cpp">
+      <Filter>World\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\TimeCommand.cpp">
+      <Filter>World\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\ToggleDownfallCommand.cpp">
+      <Filter>World\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\AABB.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Abilities.cpp">
+      <Filter>World\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats\Achievement.cpp">
+      <Filter>World\Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats\Achievements.cpp">
+      <Filter>World\Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\BinaryHeap.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\BiomeCache.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\BiomeDecorator.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\BiomeSource.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\BirchFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\BlockDestructionProgress.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\BlockGenMethods.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\BlockReplacements.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\BodyControl.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\BonusChestFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\BossMobPart.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\BoundingBox.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\Buffer.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\BufferedOutputStream.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\BufferedReader.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\Bush.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\ByteArrayInputStream.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\ByteArrayOutputStream.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\ByteBuffer.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\C4JThread.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\CactusFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\CanyonFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Class.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\ClayFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ClientSideMerchant.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Color.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\CommandDispatcher.cpp">
+      <Filter>World\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats\CommonStats.cpp">
+      <Filter>World\Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Creature.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\DamageSource.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\DataInputStream.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\DataOutputStream.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\DeadBushFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\DelayedRelease.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\DesertWellFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Direction.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Distort.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\DoorInfo.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\DragonFireball.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\DungeonFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats\DurangoStats.cpp">
+      <Filter>World\Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Emboss.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\EnchantmentCategory.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\EnchantmentHelper.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\EnchantmentInstance.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\EnchantmentTableEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\EndPodiumFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\EnderCrystal.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Enemy.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\EntityDamageSource.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\EntityIO.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\EntityPos.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ExperienceOrb.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\Explosion.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\EyeOfEnderSignal.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Facing.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\FastNoise.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\Feature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\File.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\FileHeader.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\FileInputStream.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\FileOutputStream.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Fireball.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\FishingHook.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\FixedBiomeSource.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\FlippedIcon.cpp">
+      <Filter>World\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\FloatBuffer.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\FlowerFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\FoliageColor.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\FoodConstants.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\FoodData.cpp">
+      <Filter>World\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\FoodRecipies.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats\GeneralStat.cpp">
+      <Filter>World\Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats\GenericStats.cpp">
+      <Filter>World\Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Giant.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\GlobalEntity.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\GoalSelector.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Golem.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\GrassColor.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\GroundBushFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Hasher.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\HellFireFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\HellPortalFeature.cpp">
+      <Filter>World\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\HellSpringFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\HitResult.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\HouseFeature.cpp">
+      <Filter>World\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\HugeMushroomFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\I18n.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\ImprovedNoise.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\IndirectEntityDamageSource.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\InputStream.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\InputStreamReader.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\IntBuffer.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\IntCache.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ItemFrame.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ItemInstance.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ItemStat.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\JavaMath.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\JumpControl.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\LakeFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Language.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\LargeCaveFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\LargeFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\LargeHellCaveFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\LavaSlime.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\LightGemFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\LiquidTileDynamic.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\LiquidTileStatic.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\LookControl.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\Material.cpp">
+      <Filter>World\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\MaterialColor.cpp">
+      <Filter>World\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\MegaTreeFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\MerchantRecipeList.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\MineShaftFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Minecraft.World.cpp">
+      <Filter>World\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\MobCategory.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\MobSpawner.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\MonsterRoomFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\MoveControl.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Mth.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\Mushroom.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\NetherBridgeFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\NetherBridgePieces.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\NetherSphere.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Node.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Npc.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\OreRecipies.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Ozelot.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\PathNavigation.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\PerformanceTimer.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\PerlinNoise.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\PerlinSimplexNoise.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\PineFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\PistonMovingPiece.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\PistonPieceEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\PortalForcer.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Pos.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\PumpkinFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Random.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\RandomPos.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\RandomScatteredLargeFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Rarity.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\ReadOnlyChunkCache.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\ReedsFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Rotate.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\SandFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\Sapling.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Scale.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\ScatteredFeaturePieces.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Sensing.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\ShapedRecipy.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\ShapelessRecipy.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\SharedConstants.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\SimplexNoise.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\SmallFireball.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\SmoothFloat.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\SnowMan.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Snowball.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\SpikeFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\Sponge.cpp">
+      <Filter>World\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\SpringFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\SpruceFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats\Stat.cpp">
+      <Filter>World\Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats\Stats.cpp">
+      <Filter>World\Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\StringHelpers.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\StrongholdFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\StrongholdPieces.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\StructureFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\StructureRecipies.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\SwampTreeFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\SynchedEntityData.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Synth.cpp">
+      <Filter>World\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Tag.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TallGrass.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\TallGrassFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\TheEndBiomeDecorator.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TheEndPortal.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\ThreadName.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Throwable.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ThrownEgg.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ThrownEnderpearl.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ThrownExpBottle.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\TickNextTickData.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\TileEventData.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\TilePos.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\ToolRecipies.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\TreeFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vec3.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\Village.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\VillageFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\VillageSiege.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\VillagerGolem.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\Villages.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\VinesFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\VoronoiZoom.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\WaterColor.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\WaterlilyFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\WeaponRecipies.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\WeighedRandom.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\WeighedTreasure.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\ZoneFile.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\ZoneIo.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\compression.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>World\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\system.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\InstantenousMobEffect.cpp">
+      <Filter>World\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\MobEffect.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\MobEffectInstance.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\PotionBrewing.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ThrownPotion.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\ArrowDamageEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\ArrowFireEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\ArrowInfiniteEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\ArrowKnockbackEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\DamageEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\DigDurabilityEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\DiggingEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\Enchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\FireAspectEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\KnockbackEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\LootBonusEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\OxygenEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\ProtectionEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\ThornsEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\UntouchingEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Enchantments\WaterWorkerEnchantment.cpp">
+      <Filter>World\Enchantments</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\AgableMob.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Animal.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Arrow.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Blaze.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Boat.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\BossMob.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\CaveSpider.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Chicken.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Cow.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Creeper.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\EnderDragon.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\EnderMan.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Entity.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\FlyingMob.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Ghast.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\HangingEntity.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\ItemEntity.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\LightningBolt.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Minecart.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Mob.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Monster.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\MushroomCow.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Painting.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\PathfinderMob.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Pig.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\PigZombie.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\PrimedTnt.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Sheep.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Silverfish.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Skeleton.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Slime.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Spider.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Squid.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\TamableAnimal.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Villager.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\WaterAnimal.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Wolf.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Zombie.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\AbstractContainerMenu.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ArmorSlot.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\BasicTypeContainers.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\BrewingStandMenu.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\CompoundContainer.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\Container.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\ContainerMenu.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\CraftingContainer.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\CraftingMenu.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\EnchantmentContainer.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\EnchantmentMenu.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\FurnaceMenu.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\FurnaceResultSlot.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Inventory.cpp">
+      <Filter>World\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\InventoryMenu.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\MenuBackup.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\MerchantContainer.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\MerchantMenu.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\MerchantResultSlot.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\RepairContainer.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\RepairMenu.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\RepairResultSlot.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\ResultContainer.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\ResultSlot.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\SimpleContainer.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\Slot.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\TrapMenu.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ArmorItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\BedItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\BoatItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\BookItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\BottleItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\BowItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\BowlFoodItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\BucketItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\CarrotOnAStickItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ClockItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\CoalItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\CompassItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ComplexItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\DiggerItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\DoorItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\DyePowderItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\EggItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\EnchantedBookItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\EnderEyeItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\EnderpearlItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ExperienceItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\FireChargeItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\FishingRodItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\FlintAndSteelItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\FoodItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\GoldenAppleItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\HangingEntityItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\HatchetItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\HoeItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\Item.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\MapItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\MilkBucketItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\MinecartItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\MonsterPlacerItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\PickaxeItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\PotionItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\ArmorDyeRecipe.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\ArmorRecipes.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\ClothDyeRecipes.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\FurnaceRecipes.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\MerchantRecipe.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipes\Recipes.cpp">
+      <Filter>World\Recipes</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\RecordingItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\RedStoneItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\SaddleItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\SeedFoodItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\SeedItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ShearsItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ShovelItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\SignItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\SkullItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\SnowballItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\TilePlanterItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\WeaponItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\CustomLevelSource.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\DerivedLevelData.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\Dimension.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\FlatLevelSource.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\HellDimension.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\HellFlatLevelSource.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\HellRandomLevelSource.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\Level.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelConflictException.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelData.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelSettings.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelSummary.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelType.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\RandomLevelSource.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\SkyIslandDimension.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\TheEndDimension.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\TheEndLevelRandomLevelSource.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\WaterLevelChunk.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\NbtIo.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\NbtSlotFile.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Connection.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\Socket.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\AddEntityPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\AddExperienceOrbPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\AddGlobalEntityPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\AddMobPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\AddPaintingPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\AddPlayerPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\AnimatePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\AwardStatPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\BlockRegionUpdatePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ChatPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ChunkTilesUpdatePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ChunkVisibilityAreaPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ChunkVisibilityPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ClientCommandPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ComplexItemDataPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ContainerAckPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ContainerButtonClickPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ContainerClickPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ContainerClosePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ContainerOpenPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ContainerSetContentPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ContainerSetDataPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ContainerSetSlotPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\CraftItemPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\CustomPayloadPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\DebugOptionsPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\DisconnectPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\EntityActionAtPositionPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\EntityEventPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ExplodePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\GameCommandPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\GameEventPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\GetInfoPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\InteractPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\KeepAlivePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\KickPlayerPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\LevelEventPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\LevelSoundPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\LoginPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\MoveEntityPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\MoveEntityPacketSmall.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\MovePlayerPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\Packet.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PacketListener.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PlayerAbilitiesPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PlayerActionPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PlayerCommandPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PlayerInfoPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PlayerInputPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\PreLoginPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\RemoveEntitiesPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\RemoveMobEffectPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\RespawnPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\RotateHeadPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\ServerSettingsChangedPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SetCarriedItemPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SetCreativeModeSlotPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SetEntityDataPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SetEntityMotionPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SetEquippedItemPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SetExperiencePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SetHealthPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SetRidingPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SetSpawnPositionPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SetTimePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\SignUpdatePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TakeItemEntityPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TeleportEntityPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TextureAndGeometryChangePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TextureAndGeometryPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TextureChangePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TexturePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TileDestructionPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TileEntityDataPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TileEventPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TileUpdatePacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\TradeItemPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\UpdateGameRuleProgressPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\UpdateMobEffectPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\UpdateProgressPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\UseItemPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Network\XZPacket.cpp">
+      <Filter>World\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\ChunkPos.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\ChunkStorageProfileDecorator.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\CompressedTileStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\ConsoleSaveFileConverter.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\ConsoleSaveFileInputStream.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\ConsoleSaveFileOriginal.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\ConsoleSaveFileOutputStream.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\ConsoleSaveFileSplit.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\DirectoryLevelStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\DirectoryLevelStorageSource.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\EmptyLevelChunk.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelChunk.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\LevelStorageProfilerDecorator.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\MapItemSavedData.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\McRegionChunkStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\McRegionLevelStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\McRegionLevelStorageSource.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\MemoryChunkStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\MemoryLevelStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\MemoryLevelStorageSource.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\MockedLevelStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\OldChunkStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\Region.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\RegionFile.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\RegionFileCache.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\SavedData.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="IO\SavedDataStorage.cpp">
+      <Filter>World\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\SparseDataStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\SparseLightStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\ZonedChunkStorage.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\AirTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\AnvilTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\AnvilTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\AuxDataTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\BedTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\BookshelfTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\BrewingStandTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\ButtonTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\CactusTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\CakeTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\CarrotTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\CauldronTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\ChestTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\ClayTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\ClothTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ClothTileItem.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\CocoaTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\ColoredTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\CoralTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\CropTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\DeadBushTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\DetectorRailTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\DiodeTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\DirectionalTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\DirtTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\DispenserTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\DoorTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\EggTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\EnchantmentTableTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\EnderChestTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\EntityTile.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\FallingTile.cpp">
+      <Filter>World\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\FarmTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\FenceGateTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\FenceTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\FireTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\FlowerPotTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\FurnaceTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\GlassTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\GrassTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\GravelTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\HalfSlabTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\HalfTransparentTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\HeavyTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\HellSandTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\HellStoneTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\HugeMushroomTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\IceTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\LadderTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\LeafTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\LeafTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\LeverTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\LightGemTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\LiquidTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\LockedChestTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\MelonTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\MetalTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\MobSpawnerTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\MultiTextureTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\MusicTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\MycelTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\NetherStalkTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\NotGateTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\ObsidianTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\OreTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\PistonBaseTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\PistonExtensionTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\PistonTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\PortalTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\PotatoTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\PressurePlateTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\PumpkinTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\QuartzBlockTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\RailTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\RecordPlayerTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\RedStoneDustTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\RedStoneOreTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\RedlightTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\ReedTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\SandStoneTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\SaplingTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\SignTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\SkullTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\SmoothStoneBrickTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\SmoothStoneBrickTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\SnowTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\SpringTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\StairTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\StemTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\StoneMonsterTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\StoneMonsterTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\StoneSlabTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\StoneSlabTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\StoneTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TheEndPortalFrameTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\ThinFenceTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\Tile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\BrewingStandTileEntity.cpp">
+      <Filter>World\Tiles\TileEntities</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\ChestTileEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\DispenserTileEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\EnderChestTileEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\FurnaceTileEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\MobSpawnerTileEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\MusicTileEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\SignTileEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\SkullTileEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TheEndPortalTileEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TileEntity.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\TileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TntTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TopSnowTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TorchTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TransparentTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TrapDoorTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TreeTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\TreeTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TripWireSourceTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\TripWireTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\VineTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\WallTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\WaterLilyTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Items\WaterLilyTileItem.cpp">
+      <Filter>World\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\WebTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\WoodSlabTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\WoodTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\WoolCarpetTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiles\WorkbenchTile.cpp">
+      <Filter>World\Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\AddIslandLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\AddMushroomIslandLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\AddSnowLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\AvoidPlayerGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\BasicTree.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\BeachBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\Biome.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\BiomeInitLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\BiomeOverrideLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\CaveFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\ControlledByPlayerGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Level\DataLayer.cpp">
+      <Filter>World\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\DesertBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\DownfallLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\DownfallMixerLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\ExtremeHillsBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\FlatLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\ForestBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\FuzzyZoomLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\GrowMushroomIslandLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\HellBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\IceBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\IslandLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\JungleBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\Layer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\LookAtPlayerGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\LookAtTradingPlayerGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\MineShaftPieces.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\MineShaftStart.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\MushroomIslandBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\OreFeature.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\PlainsBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Player.cpp">
+      <Filter>World\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Container\PlayerEnderChestContainer.cpp">
+      <Filter>World\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\RainforestBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\RegionHillsLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\RiverInitLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\RiverLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\RiverMixerLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\ShoreLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\SmoothLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\SmoothZoomLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\StructurePiece.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\StructureStart.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\SwampBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\SwampRiversLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\TaigaBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\TemperatureLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\TemperatureMixerLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\TheEndBiome.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\TradeWithPlayerGoal.cpp">
+      <Filter>World\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\VillagePieces.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGen\ZoomLayer.cpp">
+      <Filter>World\WorldGen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AI\ArrowAttackGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\BegGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\BreakDoorGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\BreedGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\DefendVillageTargetGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\DoorInteractGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\EatTileGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\FleeSunGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\FloatGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\FollowOwnerGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\FollowParentGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Goal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\HurtByTargetGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\InteractGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\LeapAtTargetGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\MakeLoveGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\MeleeAttackGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\MoveIndoorsGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\MoveThroughVillageGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\MoveTowardsRestrictionGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\MoveTowardsTargetGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\NearestAttackableTargetGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\NonTameRandomTargetGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\OcelotSitOnTileGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\OfferFlowerGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\OpenDoorGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\OwnerHurtByTargetGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\OwnerHurtTargetGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\OzelotAttackGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\PanicGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Path.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\PathFinder.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\PlayGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\RandomLookAroundGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\RandomStrollGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\RestrictOpenDoorGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\RestrictSunGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\SitGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\SwellGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\TakeFlowerGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\TargetGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\TemptGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.goal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\AdminLogCommand.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\Command.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\DefaultGameModeCommand.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\EnchantItemCommand.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\ExperienceCommand.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\GameModeCommand.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\GiveItemCommand.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\KillCommand.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\TimeCommand.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\ToggleDownfallCommand.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.commands.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\AABB.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Abilities.h">
+      <Filter>World\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats\Achievement.h">
+      <Filter>World\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats\Achievements.h">
+      <Filter>World\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\ArrayWithLength.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Arrays.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\BinaryHeap.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\BiomeCache.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\BiomeDecorator.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\BiomeSource.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\BirchFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\BlockDestructionProgress.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\BlockGenMethods.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\BlockReplacements.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\BodyControl.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\BonusChestFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\BossMobPart.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\BoundingBox.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\Buffer.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\BufferedOutputStream.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\BufferedReader.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Bush.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ByteArrayInputStream.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ByteArrayOutputStream.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ByteArrayTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ByteBuffer.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ByteTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\C4JThread.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\CactusFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\CanyonFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Class.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\ClayFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ClientSideMerchant.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Color.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\CommandDispatcher.h">
+      <Filter>World\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\CommandSender.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\CommandsEnum.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats\CommonStats.h">
+      <Filter>World\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\CompoundTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Control.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Coord.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Creature.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\DamageSource.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\DataInput.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\DataInputStream.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\DataOutput.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\DataOutputStream.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\DeadBushFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Materials\DecorationMaterial.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Definitions.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\DelayedRelease.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\DescFormatter.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\DesertWellFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Difficulty.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Direction.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Distort.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\DoorInfo.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\DoubleTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\DragonFireball.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\DungeonFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats\DurangoStats.h">
+      <Filter>World\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Emboss.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\EnchantmentCategory.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\EnchantmentHelper.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\EnchantmentInstance.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\EnchantmentTableEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\EndPodiumFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\EndTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EnderCrystal.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Enemy.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EntityDamageSource.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\EntityIO.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\EntityPos.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\Exceptions.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ExperienceOrb.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\Explosion.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EyeOfEnderSignal.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Facing.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\FastNoise.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\Feature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\File.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\FileFilter.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\FileHeader.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\FileInputStream.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\FileOutputStream.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\FilenameFilter.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Fireball.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\FishingHook.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\FixedBiomeSource.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\FlippedIcon.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\FloatBuffer.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\FloatTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\FlowerFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\FoliageColor.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\FoodConstants.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\FoodData.h">
+      <Filter>World\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\FoodRecipies.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\GZIPInputStream.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\GZIPOutputStream.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Materials\GasMaterial.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats\GeneralStat.h">
+      <Filter>World\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats\GenericStats.h">
+      <Filter>World\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Giant.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\GlobalEntity.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\GoalSelector.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Golem.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\GrassColor.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\GroundBushFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\HashExtension.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Hasher.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\HellFireFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\HellPortalFeature.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\HellSpringFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\HitResult.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\HouseFeature.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\HugeMushroomFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\I18n.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Icon.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\IconRegister.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\ImprovedNoise.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\IndirectEntityDamageSource.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\InputOutputStream.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\InputStream.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\InputStreamReader.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\IntArrayTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\IntBuffer.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\IntCache.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\IntTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ItemFrame.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ItemInstance.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ItemStat.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\JavaIntHash.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\JavaMath.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\JumpControl.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\LakeFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Language.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\LargeCaveFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\LargeFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\LargeHellCaveFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\LavaSlime.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\LightGemFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Materials\LiquidMaterial.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\LiquidTileDynamic.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\LiquidTileStatic.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ListTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\LongTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\LookControl.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Material.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\MaterialColor.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\MegaTreeFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Merchant.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\MerchantRecipeList.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\MineShaftFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\MobCategory.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\MobSpawner.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\MobType.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\MonsterRoomFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\MoveControl.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Mth.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Mushroom.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\NetherBridgeFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\NetherBridgePieces.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\NetherSphere.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Node.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Npc.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\NumberFormaters.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\OreRecipies.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\OutputStream.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Ozelot.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ParticleTypes.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\PathNavigation.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PerformanceTimer.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PerlinNoise.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PerlinSimplexNoise.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\PineFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\PistonMovingPiece.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\PistonPieceEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\PortalForcer.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Materials\PortalMaterial.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Pos.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ProgressListener.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\PumpkinFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Random.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\RandomPos.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\RandomScatteredLargeFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Rarity.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\ReadOnlyChunkCache.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\Reader.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Recipy.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\ReedsFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Reference.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Rotate.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\SandFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Sapling.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Scale.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\ScatteredFeaturePieces.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Sensing.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\ShapedRecipy.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\ShapelessRecipy.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\SharedConstants.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ShortTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\SimplexNoise.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\SmallFireball.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\SmoothFloat.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\SnowMan.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Snowball.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\SoundTypes.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\SpikeFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Sponge.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\SpringFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\SpruceFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats\Stat.h">
+      <Filter>World\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\StatFormatter.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats\Stats.h">
+      <Filter>World\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\StringHelpers.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\StringTag.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\StrongholdFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\StrongholdPieces.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\StructureFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\StructureRecipies.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\SwampTreeFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\SynchedEntityData.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Synth.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\System.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TallGrass.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\TallGrassFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\TheEndBiomeDecorator.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TheEndPortal.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\ThreadName.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Throwable.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ThrownEgg.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ThrownEnderpearl.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ThrownExpBottle.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\TickNextTickData.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\TileEventData.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\TilePos.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\ToolRecipies.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\TownFeature.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\TreeFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\UseAnim.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec3.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\Village.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\VillageFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\VillageSiege.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\VillagerGolem.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\Villages.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\VinesFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\VoronoiZoom.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\WaterColor.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\WaterlilyFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\WeaponRecipies.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Materials\WebMaterial.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\WeighedRandom.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\WeighedTreasure.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ZoneFile.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ZoneIo.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\compression.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>World\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\InstantenousMobEffect.h">
+      <Filter>World\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\MobEffect.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\MobEffectInstance.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\PotionBrewing.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ThrownPotion.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\ArrowDamageEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\ArrowFireEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\ArrowInfiniteEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\ArrowKnockbackEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\DamageEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\DigDurabilityEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\DiggingEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\Enchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\FireAspectEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\KnockbackEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\LootBonusEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\OxygenEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\ProtectionEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\ThornsEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\UntouchingEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Enchantments\WaterWorkerEnchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.item.enchantment.h">
+      <Filter>World\Enchantments</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\AgableMob.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Animal.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Blaze.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Boat.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\BossMob.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\CaveSpider.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Chicken.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Cow.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Creeper.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EnderDragon.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EnderMan.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Entity.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EntityEvent.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\FlyingMob.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Ghast.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\HangingEntity.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\ItemEntity.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\LightningBolt.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Minecart.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Mob.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Monster.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\MushroomCow.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Painting.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\PathfinderMob.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Pig.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\PigZombie.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\PrimedTnt.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Sheep.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Silverfish.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Skeleton.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Slime.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Spider.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Squid.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\TamableAnimal.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Villager.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\WaterAnimal.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Wolf.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Zombie.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.animal.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.monster.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\AbstractContainerMenu.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ArmorSlot.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\BasicTypeContainers.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\BrewingStandMenu.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\CompoundContainer.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\Container.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\ContainerMenu.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\CraftingContainer.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\CraftingMenu.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\EnchantmentContainer.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\EnchantmentMenu.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\EnchantmentSlot.h">
+      <Filter>World\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\FurnaceMenu.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\FurnaceResultSlot.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Inventory.h">
+      <Filter>World\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\InventoryMenu.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\MenuBackup.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\MerchantContainer.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\MerchantMenu.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\MerchantResultSlot.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\MouseInventoryClickHandler.h">
+      <Filter>World\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\RepairContainer.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\RepairMenu.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\RepairResultSlot.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\ResultContainer.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\ResultSlot.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\SimpleContainer.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\Slot.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\TrapMenu.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.commands.common.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.locale.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.network.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.stats.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.effect.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.control.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.goal.target.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.navigation.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.sensing.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.util.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.ai.village.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.boss.enderdragon.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.boss.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.global.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.npc.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.food.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.inventory.ContainerListener.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.inventory.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.item.alchemy.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.item.crafting.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.item.trading.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.dimension.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.levelgen.feature.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.levelgen.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.levelgen.structure.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.levelgen.synth.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.material.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.pathfinder.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.tile.entity.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.tile.piston.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.phys.h">
+      <Filter>World\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ArmorItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\BedItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\BoatItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\BookItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\BottleItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\BowItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\BowlFoodItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\BucketItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\CarrotOnAStickItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ClockItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\CoalItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\CompassItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ComplexItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\DiggerItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\DoorItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\DyePowderItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\EggItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\EnchantedBookItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\EnderEyeItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\EnderpearlItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ExperienceItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\FireChargeItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\FishingRodItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\FlintAndSteelItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\FoodItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\GoldenAppleItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\HangingEntityItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\HatchetItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\HoeItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\Item.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\MapItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\MilkBucketItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\MinecartItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\MonsterPlacerItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\PickaxeItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\PotionItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\ArmorDyeRecipe.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\ArmorRecipes.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\ClothDyeRecipes.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\FurnaceRecipes.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\MerchantRecipe.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipes\Recipes.h">
+      <Filter>World\Recipes</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\RecordingItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\RedStoneItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\SaddleItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\SeedFoodItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\SeedItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ShearsItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ShovelItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\SignItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\SkullItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\SnowballItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\TilePlanterItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\WeaponItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.item.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.item.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\CustomLevelSource.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\DerivedLevelData.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\Dimension.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\FlatLevelSource.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\HellDimension.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\HellFlatLevelSource.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\HellRandomLevelSource.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\Level.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelConflictException.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelData.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\LevelEvent.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelListener.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\LevelObjectInputStream.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelSettings.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelSource.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelSummary.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelType.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\NormalDimension.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\RandomLevelSource.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\TheEndDimension.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\TheEndLevelRandomLevelSource.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\WaterLevelChunk.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\NbtIo.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\NbtSlotFile.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\com.mojang.nbt.h">
+      <Filter>World\NBT</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Connection.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\Socket.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\SocketAddress.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\AddEntityPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\AddExperienceOrbPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\AddGlobalEntityPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\AddMobPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\AddPaintingPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\AddPlayerPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\AnimatePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\AwardStatPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\BlockRegionUpdatePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ChatAutoCompletePacket.h">
+      <Filter>World\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ChatPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ChunkTilesUpdatePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ChunkVisibilityAreaPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ChunkVisibilityPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ClientCommandPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ClientInformationPacket.h">
+      <Filter>World\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ClientProtocolPacket.h">
+      <Filter>World\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ComplexItemDataPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ContainerAckPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ContainerButtonClickPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ContainerClickPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ContainerClosePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ContainerOpenPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ContainerSetContentPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ContainerSetDataPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ContainerSetSlotPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\CraftItemPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\CustomPayloadPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\DebugOptionsPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\DisconnectPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\EntityActionAtPositionPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\EntityEventPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ExplodePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\GameCommandPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\GameEventPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\GetInfoPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\InteractPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\KeepAlivePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\KickPlayerPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\LevelEventPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\LevelSoundPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\LoginPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\MoveEntityPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\MoveEntityPacketSmall.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\MovePlayerPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\Packet.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PacketListener.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PlayerAbilitiesPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PlayerActionPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PlayerCommandPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PlayerInfoPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PlayerInputPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\PreLoginPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\RemoveEntitiesPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\RemoveMobEffectPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\RespawnPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\RotateHeadPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ServerAuthDataPacket.h">
+      <Filter>World\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\ServerSettingsChangedPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SetCarriedItemPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SetCreativeModeSlotPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SetEntityDataPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SetEntityMotionPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SetEquippedItemPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SetExperiencePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SetHealthPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SetRidingPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SetSpawnPositionPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SetTimePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SharedKeyPacket.h">
+      <Filter>World\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\SignUpdatePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TakeItemEntityPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TeleportEntityPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TextureAndGeometryChangePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TextureAndGeometryPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TextureChangePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TexturePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TileDestructionPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TileEntityDataPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TileEventPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TileUpdatePacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\TradeItemPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\UpdateGameRuleProgressPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\UpdateMobEffectPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\UpdateProgressPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\UseItemPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network\XZPacket.h">
+      <Filter>World\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.network.packet.h">
+      <Filter>World\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\ChunkPos.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\ChunkSource.h">
+      <Filter>World\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\ChunkStorage.h">
+      <Filter>World\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\ChunkStorageProfileDecorator.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\CompressedTileStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ConsoleSaveFile.h">
+      <Filter>World\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ConsoleSaveFileConverter.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ConsoleSaveFileIO.h">
+      <Filter>World\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ConsoleSaveFileInputStream.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ConsoleSaveFileOriginal.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ConsoleSaveFileOutputStream.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ConsoleSaveFileSplit.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\ConsoleSavePath.h">
+      <Filter>World\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\DirectoryLevelStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\DirectoryLevelStorageSource.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\EmptyLevelChunk.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelChunk.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelStorageProfilerDecorator.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LevelStorageSource.h">
+      <Filter>World\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\MapItemSavedData.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\McRegionChunkStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\McRegionLevelStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\McRegionLevelStorageSource.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\MemoryChunkStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\MemoryLevelStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\MemoryLevelStorageSource.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\MockedLevelStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\OldChunkStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\Region.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\RegionFile.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\RegionFileCache.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\SavedData.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="IO\SavedDataStorage.h">
+      <Filter>World\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\SparseDataStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\SparseLightStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\ZonedChunkStorage.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.chunk.storage.h">
+      <Filter>World\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.saveddata.h">
+      <Filter>World\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.storage.h">
+      <Filter>World\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\AirTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\AnvilTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\AnvilTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\AuxDataTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\BedTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\BookshelfTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\BrewingStandTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\ButtonTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\CactusTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\CakeTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\CarrotTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\CauldronTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\ChestTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\ClayTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\ClothTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ClothTileItem.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\CocoaTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\ColoredTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\CoralTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\CropTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\DeadBushTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\DetectorRailTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\DiodeTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\DirectionalTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\DirtTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\DispenserTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\DoorTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\EggTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\EnchantmentTableTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\EnderChestTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\EntityTile.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\FallingTile.h">
+      <Filter>World\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\FarmTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\FenceGateTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\FenceTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\FireTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\FlowerPotTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\FurnaceTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\GlassTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\GrassTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\GravelTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\HalfSlabTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\HalfTransparentTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\HeavyTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\HellSandTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\HellStoneTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\HugeMushroomTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\IceTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\LadderTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\LeafTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\LeafTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\LeverTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\LightGemTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\LiquidTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\LockedChestTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\MelonTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\MetalTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\MobSpawnerTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\MultiTextureTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\MusicTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\MycelTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\NetherStalkTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\NotGateTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\ObsidianTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\OreTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\PistonBaseTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\PistonExtensionTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\PistonTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\PortalTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\PotatoTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\PressurePlateTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\PumpkinTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\QuartzBlockTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\RailTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\RecordPlayerTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\RedStoneDustTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\RedStoneOreTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\RedlightTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\ReedTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\SandStoneTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\SaplingTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\SignTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\SkullTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\SmoothStoneBrickTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\SmoothStoneBrickTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\SnowTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\SpringTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\StairTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\StemTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\StoneMonsterTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\StoneMonsterTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\StoneSlabTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\StoneSlabTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\StoneTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TheEndPortalFrameTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\ThinFenceTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\Tile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\BrewingStandTileEntity.h">
+      <Filter>World\Tiles\TileEntities</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\ChestTileEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\DispenserTileEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\EnderChestTileEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\FurnaceTileEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\MobSpawnerTileEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\MusicTileEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\SignTileEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\SkullTileEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TheEndPortalTileEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TileEntity.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\TileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TntTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TopSnowTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TorchTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TransparentTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TrapDoorTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TreeTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\TreeTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TripWireSourceTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\TripWireTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\VineTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\WallTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\WaterLilyTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items\WaterLilyTileItem.h">
+      <Filter>World\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\WebTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\WoodSlabTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\WoodTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\WoolCarpetTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiles\WorkbenchTile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.projectile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.tile.h">
+      <Filter>World\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\AddIslandLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\AddMushroomIslandLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\AddSnowLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\AvoidPlayerGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\BasicTree.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\BeachBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\Biome.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\BiomeInitLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\BiomeOverrideLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\CaveFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\ControlledByPlayerGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\DataLayer.h">
+      <Filter>World\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\DesertBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\DownfallLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\DownfallMixerLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\ExtremeHillsBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\FlatLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\ForestBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\FuzzyZoomLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\GrowMushroomIslandLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\HellBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\IceBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\IslandLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\JungleBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\Layer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\LightLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\LookAtPlayerGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\LookAtTradingPlayerGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\MineShaftPieces.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\MineShaftStart.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\MushroomIslandBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\OceanBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\OreFeature.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\PlainsBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Player.h">
+      <Filter>World\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\PlayerEnderChestContainer.h">
+      <Filter>World\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\PlayerIO.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\RainforestBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\RegionHillsLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Level\RiverBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\RiverInitLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\RiverLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\RiverMixerLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\ShoreLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\SmoothLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\SmoothZoomLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\StructurePiece.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\StructureStart.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\SwampBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\SwampRiversLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\TaigaBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\TemperatureLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\TemperatureMixerLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\TheEndBiome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\TradeWithPlayerGoal.h">
+      <Filter>World\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\VillagePieces.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGen\ZoomLayer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.entity.player.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.biome.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="FwdHeaders\net.minecraft.world.level.newbiome.layer.h">
+      <Filter>World\WorldGen</Filter>
+    </ClInclude>
+    <ClInclude Include="x64headers\extraX64.h">
+      <Filter>World\x64Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="x64headers\qnet.h">
+      <Filter>World\x64Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="x64headers\xmcore.h">
+      <Filter>World\x64Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="x64headers\xrnm.h">
+      <Filter>World\x64Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="x64headers\xsocialpost.h">
+      <Filter>World\x64Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="x64headers\xuiapp.h">
+      <Filter>World\x64Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="x64headers\xuiresource.h">
+      <Filter>World\x64Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Minecraft.World.h">
+      <Filter>World\Core</Filter>
+    </None>
+    <None Include="ReadMe.txt">
+      <Filter>World\Core</Filter>
+    </None>
+    <None Include="Math\Tag.h">
+      <Filter>World\Math</Filter>
+    </None>
+    <None Include="Entities\Arrow.h">
+      <Filter>World\Entities</Filter>
+    </None>
+    <None Include="FwdHeaders\net.minecraft.world.ContainerListener.h">
+      <Filter>World\Headers</Filter>
+    </None>
+    <None Include="FwdHeaders\net.minecraft.world.damagesource.h">
+      <Filter>World\Headers</Filter>
+    </None>
+    <None Include="FwdHeaders\net.minecraft.world.level.chunk.h">
+      <Filter>World\Headers</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,65 @@
+<rml>
+<head>
+<title>Friends</title>
+<link type="text/rcss" href="bedrock_common.rcss"/>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 12dp;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.panel {
+    background-color: #2a2a2a;
+    border: 2dp solid #555555;
+    padding: 14dp;
+    width: 400dp;
+}
+.panel-title {
+    font-size: 20dp;
+    font-weight: bold;
+    margin-bottom: 10dp;
+    text-align: center;
+}
+#friends_list {
+    background-color: #1e1e1e;
+    border: 1dp solid #444444;
+    padding: 8dp;
+    min-height: 200dp;
+    margin-bottom: 10dp;
+    font-size: 12dp;
+    color: #cccccc;
+}
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-row .button {
+    margin: 2dp 4dp;
+}
+</style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="panel">
+            <div class="panel-title">{{ui.friends}}</div>
+            <div id="friends_list">No friends online.</div>
+            <div class="btn-row">
+                <div class="button" id="btn_friends_invite">Invite Friend</div>
+                <div class="button" id="btn_friends_back">{{gui.back}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</rml>

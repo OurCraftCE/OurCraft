@@ -1,0 +1,172 @@
+<rml>
+<head>
+<title>Inventory</title>
+<link type="text/rcss" href="../bedrock_common.rcss"/>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 14dp;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel {
+    background-color: #1a2a3a90;
+    border: 2dp solid #2a4a5a;
+    padding: 16dp;
+    width: 520dp;
+}
+
+.panel-title {
+    font-size: 22dp;
+    font-weight: bold;
+    margin-bottom: 14dp;
+    text-align: center;
+    color: #d0e0f0;
+}
+
+.section-label {
+    font-size: 11dp;
+    color: #3a5a6a;
+    margin-bottom: 4dp;
+    margin-top: 10dp;
+}
+
+.armor-row {
+    display: flex;
+    flex-direction: row;
+    gap: 4dp;
+    margin-bottom: 10dp;
+    justify-content: flex-start;
+}
+
+.armor-label {
+    font-size: 11dp;
+    color: #3a5a6a;
+    margin-bottom: 4dp;
+}
+
+.inventory-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 468dp;
+}
+
+.hotbar-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 468dp;
+    margin-top: 8dp;
+    border-top: 2dp solid #2a4a5a;
+    padding-top: 6dp;
+}
+
+.slot {
+    width: 52dp;
+    height: 52dp;
+    background-color: #1a2a3a60;
+    border: 1dp solid #3a5a6a;
+    text-align: center;
+    padding-top: 14dp;
+    font-size: 12dp;
+    color: #3a5a6a;
+    overflow: hidden;
+}
+
+.slot:hover {
+    border-color: #5a8aaa;
+    background-color: #2a4a5a80;
+}
+
+.slot.selected {
+    border-color: #ffffff;
+    background-color: #3a6a8a80;
+}
+
+.slot.has-item {
+    color: #d0e0f0;
+}
+
+.hint {
+    font-size: 11dp;
+    color: #3a5a6a;
+    text-align: center;
+    margin-top: 10dp;
+}
+</style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="panel">
+            <div class="panel-title">{{container.inventory}}</div>
+
+            <!-- Armor slots (horizontal for console) -->
+            <div class="armor-label">Armor</div>
+            <div class="armor-row">
+                <div class="slot" id="armor_0"></div>
+                <div class="slot" id="armor_1"></div>
+                <div class="slot" id="armor_2"></div>
+                <div class="slot" id="armor_3"></div>
+            </div>
+
+            <div class="section-label">{{container.inventory}}</div>
+            <div class="inventory-grid" id="inv_grid">
+                <div class="slot" id="inv_9"></div>
+                <div class="slot" id="inv_10"></div>
+                <div class="slot" id="inv_11"></div>
+                <div class="slot" id="inv_12"></div>
+                <div class="slot" id="inv_13"></div>
+                <div class="slot" id="inv_14"></div>
+                <div class="slot" id="inv_15"></div>
+                <div class="slot" id="inv_16"></div>
+                <div class="slot" id="inv_17"></div>
+                <div class="slot" id="inv_18"></div>
+                <div class="slot" id="inv_19"></div>
+                <div class="slot" id="inv_20"></div>
+                <div class="slot" id="inv_21"></div>
+                <div class="slot" id="inv_22"></div>
+                <div class="slot" id="inv_23"></div>
+                <div class="slot" id="inv_24"></div>
+                <div class="slot" id="inv_25"></div>
+                <div class="slot" id="inv_26"></div>
+                <div class="slot" id="inv_27"></div>
+                <div class="slot" id="inv_28"></div>
+                <div class="slot" id="inv_29"></div>
+                <div class="slot" id="inv_30"></div>
+                <div class="slot" id="inv_31"></div>
+                <div class="slot" id="inv_32"></div>
+                <div class="slot" id="inv_33"></div>
+                <div class="slot" id="inv_34"></div>
+                <div class="slot" id="inv_35"></div>
+            </div>
+
+            <div class="hotbar-row" id="hotbar_row">
+                <div class="slot" id="inv_0"></div>
+                <div class="slot" id="inv_1"></div>
+                <div class="slot" id="inv_2"></div>
+                <div class="slot" id="inv_3"></div>
+                <div class="slot" id="inv_4"></div>
+                <div class="slot" id="inv_5"></div>
+                <div class="slot" id="inv_6"></div>
+                <div class="slot" id="inv_7"></div>
+                <div class="slot" id="inv_8"></div>
+            </div>
+
+            <div class="hint">Press B or ESC to close</div>
+        </div>
+    </div>
+</body>
+</rml>

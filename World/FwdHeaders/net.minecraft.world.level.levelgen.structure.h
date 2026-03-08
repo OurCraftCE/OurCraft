@@ -1,0 +1,16 @@
+#pragma once
+
+#include "../Level/BlockGenMethods.h"
+#include "../Math/BoundingBox.h"
+#include "../WorldGen/MineShaftFeature.h"
+#include "../WorldGen/MineShaftPieces.h"
+#include "../WorldGen/MineShaftStart.h"
+#include "../WorldGen/StrongholdFeature.h"
+#include "../WorldGen/StrongholdPieces.h"
+#include "../WorldGen/StructureFeature.h"
+#include "../WorldGen/StructurePiece.h"
+#include "../WorldGen/StructureStart.h"
+#include "../WorldGen/VillageFeature.h"
+#include "../WorldGen/VillagePieces.h"
+#include "../WorldGen/RandomScatteredLargeFeature.h"
+#include "../WorldGen/ScatteredFeaturePieces.h"

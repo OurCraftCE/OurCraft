@@ -1,0 +1,118 @@
+<rml>
+<head>
+<title>Chat</title>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 14dp;
+}
+
+.chat-overlay {
+    position: absolute;
+    bottom: 52dp;
+    left: 8dp;
+    width: 520dp;
+}
+
+.chat-history {
+    width: 100%;
+    max-height: 200dp;
+    overflow: auto;
+    margin-bottom: 4dp;
+}
+
+.chat-line {
+    background-color: #00000088;
+    padding: 2dp 6dp;
+    margin-bottom: 1dp;
+    font-size: 12dp;
+    font-family: Mojangles;
+}
+
+.input-row {
+    display: block;
+    width: 100%;
+    margin-bottom: 4dp;
+}
+
+.chat-input {
+    display: inline-block;
+    width: 440dp;
+    height: 24dp;
+    background-color: #000000cc;
+    border: 1dp solid #555555;
+    color: #ffffff;
+    font-size: 13dp;
+    font-family: Mojangles;
+    padding: 2dp 6dp;
+    vertical-align: top;
+}
+
+.chat-input:focus {
+    border-color: #8888ff;
+}
+
+.send-btn {
+    display: inline-block;
+    width: 60dp;
+    height: 24dp;
+    line-height: 24dp;
+    background-color: #4a4a4a;
+    border: 1dp solid #666666;
+    color: #ffffff;
+    font-size: 12dp;
+    font-family: Mojangles;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 4dp;
+}
+
+.send-btn:hover {
+    background-color: #5a5a8a;
+    border-color: #8888ff;
+}
+
+.close-btn {
+    display: inline-block;
+    width: 24dp;
+    height: 24dp;
+    line-height: 24dp;
+    background-color: #6a3030;
+    border: 1dp solid #8a4040;
+    color: #ffffff;
+    font-size: 12dp;
+    font-family: Mojangles;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 4dp;
+}
+
+.close-btn:hover {
+    background-color: #8a4040;
+    border-color: #aa5555;
+}
+
+.hint {
+    font-size: 10dp;
+    color: #666666;
+    margin-top: 2dp;
+    font-family: Mojangles;
+}
+</style>
+</head>
+<body>
+    <div class="chat-overlay">
+        <div class="chat-history" id="chat_history">
+        </div>
+        <div class="input-row">
+            <input class="chat-input" type="text" id="input_chat_message" placeholder="Type a message..." maxlength="256" />
+            <div class="send-btn" id="btn_chat_send">{{ui.send}}</div>
+            <div class="close-btn" id="btn_chat_close">X</div>
+        </div>
+        <div class="hint">Enter to send, ESC to close</div>
+    </div>
+</body>
+</rml>

@@ -1,0 +1,78 @@
+<rml>
+<head>
+<title>Edit Sign</title>
+<link type="text/rcss" href="bedrock_common.rcss"/>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 12dp;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.panel {
+    background-color: #2a2a2a;
+    border: 2dp solid #555555;
+    padding: 16dp;
+    width: 360dp;
+}
+.panel-title {
+    font-size: 20dp;
+    font-weight: bold;
+    margin-bottom: 12dp;
+    text-align: center;
+}
+.sign-preview {
+    background-color: #5c3d1e;
+    border: 2dp solid #3a2510;
+    padding: 12dp;
+    margin-bottom: 12dp;
+    display: flex;
+    flex-direction: column;
+}
+.sign-preview input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1dp solid #a07040;
+    color: #ffffff;
+    font-family: Mojangles;
+    font-size: 13dp;
+    padding: 2dp 0dp;
+    margin-bottom: 4dp;
+    text-align: center;
+    width: 100%;
+}
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8dp;
+}
+</style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="panel">
+            <div class="panel-title">{{ui.signEdit}}</div>
+            <div class="sign-preview">
+                <input type="text" id="input_sign_1" placeholder="Line 1"/>
+                <input type="text" id="input_sign_2" placeholder="Line 2"/>
+                <input type="text" id="input_sign_3" placeholder="Line 3"/>
+                <input type="text" id="input_sign_4" placeholder="Line 4"/>
+            </div>
+            <div class="btn-row">
+                <div class="button" id="btn_sign_done">{{ui.signDone}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</rml>

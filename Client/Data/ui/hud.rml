@@ -1,0 +1,166 @@
+<rml>
+<head>
+<title>HUD</title>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 14dp;
+}
+
+/* Crosshair */
+.crosshair {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -8dp;
+    margin-top: -8dp;
+    width: 16dp;
+    height: 16dp;
+    text-align: center;
+    color: #ffffffaa;
+    font-size: 16dp;
+}
+
+/* Bottom HUD container */
+.hud-bottom {
+    position: absolute;
+    bottom: 8dp;
+    left: 50%;
+    margin-left: -182dp;
+    width: 364dp;
+}
+
+/* Hotbar */
+.hotbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hotbar-slot {
+    width: 40dp;
+    height: 40dp;
+    background-color: #1a1a1a99;
+    border: 1dp solid #333333;
+    margin: 0 0dp;
+    text-align: center;
+    padding-top: 10dp;
+    color: #888888;
+    font-size: 12dp;
+}
+.hotbar-slot.active {
+    border-color: #ffffff;
+    background-color: #3a3a3aaa;
+}
+
+/* Bars above hotbar */
+.bars-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2dp;
+    width: 364dp;
+}
+.bar-left, .bar-right {
+    display: flex;
+    flex-direction: row;
+}
+.heart, .hunger, .armor-icon, .bubble {
+    width: 10dp;
+    height: 10dp;
+    margin: 0 1dp;
+}
+.heart { background-color: #cc3333; }
+.heart.half { background-color: #cc333388; }
+.heart.empty { background-color: #33333388; }
+.hunger { background-color: #b87333; }
+.hunger.half { background-color: #b8733388; }
+.hunger.empty { background-color: #33333388; }
+.armor-icon { background-color: #aaaaaa; }
+.bubble { background-color: #3399ff; }
+
+/* XP bar */
+.xp-bar-bg {
+    width: 364dp;
+    height: 5dp;
+    background-color: #111111;
+    margin-bottom: 2dp;
+}
+.xp-bar-fill {
+    height: 100%;
+    background-color: #80ff20;
+    width: 0dp;
+}
+.xp-level {
+    text-align: center;
+    font-size: 12dp;
+    color: #80ff20;
+    margin-bottom: 1dp;
+}
+
+/* Chat */
+.chat-container {
+    position: absolute;
+    top: 8dp;
+    left: 8dp;
+    width: 400dp;
+}
+.chat-line {
+    background-color: #00000066;
+    padding: 2dp 4dp;
+    margin-bottom: 1dp;
+    font-size: 12dp;
+}
+</style>
+</head>
+<body>
+    <!-- Crosshair -->
+    <div class="crosshair">+</div>
+
+    <!-- Chat -->
+    <div class="chat-container" id="chat_container">
+    </div>
+
+    <!-- Bottom HUD -->
+    <div class="hud-bottom">
+        <!-- XP Level -->
+        <div class="xp-level" id="xp_level"></div>
+
+        <!-- Armor / Air row -->
+        <div class="bars-container">
+            <div class="bar-left" id="armor_bar">
+            </div>
+            <div class="bar-right" id="air_bar">
+            </div>
+        </div>
+
+        <!-- Health / Hunger row -->
+        <div class="bars-container">
+            <div class="bar-left" id="health_bar">
+            </div>
+            <div class="bar-right" id="hunger_bar">
+            </div>
+        </div>
+
+        <!-- XP Bar -->
+        <div class="xp-bar-bg">
+            <div class="xp-bar-fill" id="xp_bar_fill"></div>
+        </div>
+
+        <!-- Hotbar -->
+        <div class="hotbar" id="hotbar">
+            <div class="hotbar-slot active" id="slot_0">1</div>
+            <div class="hotbar-slot" id="slot_1">2</div>
+            <div class="hotbar-slot" id="slot_2">3</div>
+            <div class="hotbar-slot" id="slot_3">4</div>
+            <div class="hotbar-slot" id="slot_4">5</div>
+            <div class="hotbar-slot" id="slot_5">6</div>
+            <div class="hotbar-slot" id="slot_6">7</div>
+            <div class="hotbar-slot" id="slot_7">8</div>
+            <div class="hotbar-slot" id="slot_8">9</div>
+        </div>
+    </div>
+</body>
+</rml>

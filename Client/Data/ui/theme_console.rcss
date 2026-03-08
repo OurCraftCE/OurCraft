@@ -1,0 +1,10 @@
+/* Console Edition Theme */
+.theme-btn { background-color: #2a3a4a; border: 2dp solid #3a5a6a; color: #d0e0f0; }
+.theme-btn:hover { background-color: #3a5a7a; border-color: #5a8aaa; color: #ffffff; }
+.theme-btn-primary { background-color: #2a5a4a; border: 2dp solid #3a8a6a; color: #ffffff; }
+.theme-btn-primary:hover { background-color: #3a7a5a; border-color: #5aaa7a; }
+.theme-btn-danger { background-color: #5a2a2a; border: 2dp solid #8a3a3a; color: #ffcccc; }
+.theme-btn-danger:hover { background-color: #7a3a3a; }
+.theme-panel { background-color: #1a2a3a90; border: 2dp solid #2a4a5a; }
+.theme-slot { background-color: #1a2a3a60; border: 1dp solid #3a5a6a; }
+.theme-slot:hover { background-color: #2a4a5a80; border-color: #5a8aaa; }

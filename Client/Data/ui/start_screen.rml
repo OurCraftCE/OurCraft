@@ -1,0 +1,251 @@
+<rml>
+<head>
+    <title>Start Screen</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Mojangles;
+            color: #ffffff;
+        }
+
+        /* Panorama background - fills entire screen */
+        .panorama {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+        }
+        .panorama img {
+            width: 100%; height: 100%;
+        }
+
+        /* Dark vignette overlay */
+        .vignette {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: #00000066;
+        }
+
+        /* ========== LOGO ========== */
+        .logo-container {
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            margin-left: -240dp;
+            width: 480dp;
+            text-align: center;
+        }
+        .logo-container img {
+            width: 480dp;
+            height: 82dp;
+        }
+
+        /* Edition subtitle below logo */
+        .edition-label {
+            position: absolute;
+            top: 22%;
+            width: 100%;
+            text-align: center;
+            font-size: 10dp;
+            color: #a0a0a0;
+            letter-spacing: 3dp;
+        }
+
+        /* ========== MAIN BUTTONS (center column) ========== */
+        .center-buttons {
+            position: absolute;
+            top: 32%;
+            left: 50%;
+            margin-left: -150dp;
+            width: 300dp;
+        }
+
+        /* Play button - large, prominent */
+        .btn-play {
+            display: block;
+            width: 300dp;
+            height: 44dp;
+            margin-bottom: 4dp;
+            background-color: #565656;
+            border: 2dp solid #3a3a3a;
+            color: #ffffff;
+            font-size: 16dp;
+            text-align: center;
+            padding-top: 10dp;
+        }
+        .btn-play:hover {
+            background-color: #4a6a4a;
+            border-color: #5a8a5a;
+        }
+        .btn-play:active {
+            background-color: #3a5a3a;
+            border-color: #4a7a4a;
+        }
+
+        /* Standard menu button */
+        .btn-menu {
+            display: block;
+            width: 300dp;
+            height: 36dp;
+            margin-bottom: 4dp;
+            background-color: #484848;
+            border: 2dp solid #3a3a3a;
+            color: #d0d0d0;
+            font-size: 13dp;
+            text-align: center;
+            padding-top: 8dp;
+        }
+        .btn-menu:hover {
+            background-color: #4a6a4a;
+            border-color: #5a8a5a;
+            color: #ffffff;
+        }
+        .btn-menu:active {
+            background-color: #3a5a3a;
+            border-color: #4a7a4a;
+        }
+
+        /* Marketplace button - teal/green accent */
+        .btn-marketplace {
+            display: block;
+            width: 300dp;
+            height: 40dp;
+            margin-top: 12dp;
+            margin-bottom: 4dp;
+            background-color: #2d7d5e;
+            border: 2dp solid #1a5a3a;
+            color: #ffffff;
+            font-size: 14dp;
+            text-align: center;
+            padding-top: 9dp;
+        }
+        .btn-marketplace:hover {
+            background-color: #3a9a6e;
+            border-color: #2a7a5a;
+        }
+        .btn-marketplace:active {
+            background-color: #1a6a4e;
+            border-color: #0a5a3a;
+        }
+
+        /* ========== BOTTOM BAR ========== */
+        .bottom-bar {
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 100%;
+            height: 40dp;
+            background-color: #00000088;
+        }
+
+        /* Bottom-left: Sign In + Profile */
+        .bottom-left {
+            position: absolute;
+            bottom: 48dp;
+            left: 16dp;
+        }
+        .btn-small {
+            display: block;
+            width: 140dp;
+            height: 28dp;
+            margin-bottom: 4dp;
+            background-color: #48484880;
+            border: 1dp solid #3a3a3a80;
+            color: #b0b0b0;
+            font-size: 11dp;
+            text-align: center;
+            padding-top: 6dp;
+        }
+        .btn-small:hover {
+            background-color: #58587880;
+            border-color: #6a6a8a;
+            color: #ffffff;
+        }
+
+        /* Bottom-right: Dressing Room / Skin */
+        .bottom-right {
+            position: absolute;
+            bottom: 48dp;
+            right: 16dp;
+            text-align: right;
+        }
+
+        /* Version text */
+        .version-text {
+            position: absolute;
+            bottom: 10dp;
+            left: 16dp;
+            font-size: 9dp;
+            color: #808080;
+        }
+
+        /* Copyright */
+        .copyright-text {
+            position: absolute;
+            bottom: 10dp;
+            right: 16dp;
+            font-size: 9dp;
+            color: #808080;
+        }
+
+        /* Feedback button (bottom center) */
+        .btn-feedback {
+            position: absolute;
+            bottom: 48dp;
+            left: 50%;
+            margin-left: -60dp;
+            width: 120dp;
+            height: 28dp;
+            background-color: #48484860;
+            border: 1dp solid #3a3a3a60;
+            color: #909090;
+            font-size: 10dp;
+            text-align: center;
+            padding-top: 6dp;
+        }
+        .btn-feedback:hover {
+            background-color: #58587880;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Panorama background -->
+    <div class="panorama">
+        <img src="../resource_packs/vanilla/textures/ui/panorama_0.png" />
+    </div>
+    <div class="vignette" />
+
+    <!-- Minecraft logo (src overridden at runtime if a resource pack provides logo.png) -->
+    <div class="logo-container">
+        <img id="logo-img" src="logo.png" />
+    </div>
+
+    <!-- Edition subtitle -->
+    <div class="edition-label">OURCRAFT EDITION</div>
+
+    <!-- Main menu buttons -->
+    <div class="center-buttons">
+        <button class="btn-play" id="btn_play">{{ui.startGame}}</button>
+        <button class="btn-menu" id="btn_multiplayer">{{ui.multiplayer}}</button>
+        <button class="btn-menu" id="btn_options">{{ui.settings}}</button>
+        <button class="btn-marketplace" id="btn_marketplace">{{ui.communityHub}}</button>
+    </div>
+
+    <!-- Bottom-left buttons -->
+    <div class="bottom-left">
+        <button class="btn-small" id="btn_signin">Sign In</button>
+        <button class="btn-small" id="btn_profile">Profile</button>
+    </div>
+
+    <!-- Bottom-right buttons -->
+    <div class="bottom-right">
+        <button class="btn-small" id="btn_dressing">{{ui.dressingRoom}}</button>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="bottom-bar" />
+    <div class="version-text">v1.83.0 (Ourcraft)</div>
+    <div class="copyright-text">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT</div>
+</body>
+</rml>

@@ -1,0 +1,168 @@
+<rml>
+<head>
+<title>Brewing Stand</title>
+<link type="text/rcss" href="bedrock_common.rcss"/>
+<style>
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    font-family: Mojangles;
+    color: #ffffff;
+    font-size: 12dp;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel {
+    background-color: #2a2a2a;
+    border: 2dp solid #555555;
+    padding: 12dp;
+    width: 460dp;
+}
+
+.panel-title {
+    font-size: 20dp;
+    font-weight: bold;
+    margin-bottom: 10dp;
+    text-align: center;
+}
+
+.brew-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6dp;
+    margin-bottom: 12dp;
+}
+
+.brew-label {
+    font-size: 9dp;
+    color: #888888;
+}
+
+.brew-potions-row {
+    display: flex;
+    flex-direction: row;
+    gap: 8dp;
+    align-items: center;
+}
+
+.separator {
+    width: 100%;
+    height: 2dp;
+    background-color: #444444;
+    margin-top: 8dp;
+    margin-bottom: 8dp;
+}
+
+.section-label {
+    font-size: 10dp;
+    color: #888888;
+    margin-bottom: 2dp;
+    margin-top: 4dp;
+}
+
+.inventory-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 342dp;
+}
+
+.hotbar-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 342dp;
+    margin-top: 6dp;
+    border-top: 2dp solid #444444;
+    padding-top: 4dp;
+}
+
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8dp;
+}
+</style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="panel">
+            <div class="panel-title">{{container.brewing}}</div>
+
+            <div class="brew-section">
+                <div class="brew-label">Ingredient</div>
+                <div class="slot" id="brew_ingredient"></div>
+
+                <div class="brew-potions-row">
+                    <div class="slot" id="brew_0"></div>
+                    <div class="slot" id="brew_1"></div>
+                    <div class="slot" id="brew_2"></div>
+                </div>
+
+                <div class="brew-label">Fuel</div>
+                <div class="slot" id="brew_fuel"></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="section-label">{{container.inventory}}</div>
+            <div class="inventory-grid">
+                <div class="slot" id="inv_9"></div>
+                <div class="slot" id="inv_10"></div>
+                <div class="slot" id="inv_11"></div>
+                <div class="slot" id="inv_12"></div>
+                <div class="slot" id="inv_13"></div>
+                <div class="slot" id="inv_14"></div>
+                <div class="slot" id="inv_15"></div>
+                <div class="slot" id="inv_16"></div>
+                <div class="slot" id="inv_17"></div>
+                <div class="slot" id="inv_18"></div>
+                <div class="slot" id="inv_19"></div>
+                <div class="slot" id="inv_20"></div>
+                <div class="slot" id="inv_21"></div>
+                <div class="slot" id="inv_22"></div>
+                <div class="slot" id="inv_23"></div>
+                <div class="slot" id="inv_24"></div>
+                <div class="slot" id="inv_25"></div>
+                <div class="slot" id="inv_26"></div>
+                <div class="slot" id="inv_27"></div>
+                <div class="slot" id="inv_28"></div>
+                <div class="slot" id="inv_29"></div>
+                <div class="slot" id="inv_30"></div>
+                <div class="slot" id="inv_31"></div>
+                <div class="slot" id="inv_32"></div>
+                <div class="slot" id="inv_33"></div>
+                <div class="slot" id="inv_34"></div>
+                <div class="slot" id="inv_35"></div>
+            </div>
+
+            <div class="hotbar-row">
+                <div class="slot" id="inv_0"></div>
+                <div class="slot" id="inv_1"></div>
+                <div class="slot" id="inv_2"></div>
+                <div class="slot" id="inv_3"></div>
+                <div class="slot" id="inv_4"></div>
+                <div class="slot" id="inv_5"></div>
+                <div class="slot" id="inv_6"></div>
+                <div class="slot" id="inv_7"></div>
+                <div class="slot" id="inv_8"></div>
+            </div>
+
+            <div class="btn-row">
+                <div class="btn-small" id="btn_close_brew">{{gui.close}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</rml>

@@ -1,0 +1,193 @@
+<rml>
+<head>
+    <title>Video Settings</title>
+    <link type="text/rcss" href="bedrock_common.rcss"/>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #000000cc;
+            font-family: Mojangles;
+            color: #ffffff;
+        }
+
+        .settings-panel {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .title {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 6%;
+            font-size: 24dp;
+            color: #ffffff;
+            margin-bottom: 24dp;
+        }
+
+        .settings-list {
+            display: block;
+            width: 640dp;
+            margin: 0 auto;
+        }
+
+        .settings-row {
+            display: block;
+            width: 640dp;
+            margin-bottom: 4dp;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 308dp;
+            height: 40dp;
+            line-height: 40dp;
+            text-align: center;
+            margin-bottom: 4dp;
+            margin-right: 4dp;
+            background-color: #3c3c3c;
+            color: #ffffff;
+            font-size: 14dp;
+            border-width: 2dp;
+            border-color: #565656;
+        }
+
+        .btn:hover {
+            background-color: #4a4a4a;
+            border-color: #7a7a7a;
+        }
+
+        .btn:active {
+            background-color: #2a2a2a;
+        }
+
+        .setting-row {
+            display: block;
+            width: 640dp;
+            height: 44dp;
+            margin-bottom: 8dp;
+        }
+
+        .setting-label {
+            display: inline-block;
+            width: 140dp;
+            height: 44dp;
+            line-height: 44dp;
+            font-size: 16dp;
+            color: #d0d0d0;
+            vertical-align: middle;
+        }
+
+        .slider-track {
+            display: inline-block;
+            width: 240dp;
+            height: 10dp;
+            margin-top: 17dp;
+            background-color: #3c3c3c;
+            border-width: 1dp;
+            border-color: #565656;
+            vertical-align: middle;
+        }
+
+        .slider-track:hover {
+            border-color: #7a7a7a;
+        }
+
+        .slider-fill {
+            display: block;
+            width: 50%;
+            height: 100%;
+            background-color: #4caf50;
+        }
+
+        .slider-value {
+            display: inline-block;
+            width: 60dp;
+            height: 44dp;
+            line-height: 44dp;
+            font-size: 14dp;
+            color: #aaaaaa;
+            text-align: right;
+            vertical-align: middle;
+            margin-left: 8dp;
+        }
+
+        .btn-done {
+            display: block;
+            width: 300dp;
+            height: 40dp;
+            line-height: 40dp;
+            text-align: center;
+            margin: 16dp auto 0 auto;
+            background-color: #3c3c3c;
+            color: #ffffff;
+            font-size: 16dp;
+            border-width: 2dp;
+            border-color: #565656;
+        }
+
+        .btn-done:hover {
+            background-color: #4a4a4a;
+            border-color: #7a7a7a;
+        }
+
+        .btn-done:active {
+            background-color: #2a2a2a;
+        }
+
+        .bottom-bar {
+            display: block;
+            width: 300dp;
+            margin: 16dp auto 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="settings-panel">
+        <div class="title">{{ui.videoSettings}}</div>
+        <div class="settings-list">
+            <!-- Row 1: cycle buttons -->
+            <div class="settings-row">
+                <div id="btn_cycle_render_dist" class="btn">Render Distance: Far</div>
+                <div id="btn_cycle_graphics" class="btn">Graphics: Fancy</div>
+            </div>
+            <div class="settings-row">
+                <div id="btn_cycle_gui_scale" class="btn">GUI Scale: Auto</div>
+                <div id="btn_cycle_particles" class="btn">Particles: All</div>
+            </div>
+            <div class="settings-row">
+                <div id="btn_cycle_clouds" class="btn">Clouds: ON</div>
+                <div id="btn_cycle_ao" class="btn">Smooth Lighting: ON</div>
+            </div>
+            <div class="settings-row">
+                <div id="btn_cycle_window" class="btn">Window Mode: Windowed</div>
+                <div id="btn_cycle_fps" class="btn">FPS Limit: Unlimited</div>
+            </div>
+
+            <!-- FOV slider -->
+            <div class="setting-row">
+                <div class="setting-label">{{options.fov}}</div>
+                <div id="track_fov" class="slider-track">
+                    <div id="fill_fov" class="slider-fill" style="width: 50%;"></div>
+                </div>
+                <div id="val_fov" class="slider-value">90</div>
+            </div>
+
+            <!-- Brightness slider -->
+            <div class="setting-row">
+                <div class="setting-label">{{options.gamma}}</div>
+                <div id="track_gamma" class="slider-track">
+                    <div id="fill_gamma" class="slider-fill" style="width: 0%;"></div>
+                </div>
+                <div id="val_gamma" class="slider-value">0%</div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div id="btn_video_back" class="btn-done">{{gui.done}}</div>
+        </div>
+    </div>
+</body>
+</rml>

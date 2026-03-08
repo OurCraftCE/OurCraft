@@ -1,0 +1,14 @@
+========================================
+  Ourcraft Dedicated Server
+  (Community Edition)
+========================================
+
+[Server] Loading config from server.properties...
+[Server] Port:         19132
+[Server] Max Players:  8
+[Server] View Dist:    10
+[Server] Online Mode:  false
+
+[Server] Listening on port 19132 (max 8 players)
+[Server] Server ready.
+

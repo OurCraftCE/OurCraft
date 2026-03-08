@@ -1,0 +1,149 @@
+<rml>
+<head>
+    <title>Multiplayer</title>
+    <link type="text/rcss" href="bedrock_common.rcss"/>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #000000cc;
+            font-family: Mojangles;
+            color: #ffffff;
+        }
+
+        .screen-title {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 24dp;
+            margin-top: 10%;
+            color: #ffffff;
+            margin-bottom: 24dp;
+        }
+
+        .content-area {
+            display: block;
+            width: 600dp;
+            margin: 0 auto;
+        }
+
+        .server-list {
+            display: block;
+            width: 100%;
+            background-color: #1a1a1acc;
+            border-width: 1dp;
+            border-color: #444444;
+            min-height: 200dp;
+            max-height: 320dp;
+            overflow: auto;
+            padding: 4dp;
+            margin-bottom: 12dp;
+        }
+
+        .server-item {
+            display: block;
+            padding: 8dp 12dp;
+            margin-bottom: 3dp;
+            background-color: #2a2a2a;
+            border-width: 1dp;
+            border-color: #3a3a3a;
+            font-size: 14dp;
+        }
+
+        .server-item:hover {
+            background-color: #3a3a3a;
+            border-color: #555555;
+        }
+
+        .server-item.selected {
+            background-color: #2a4a2a;
+            border-color: #4a7a4a;
+        }
+
+        .server-name {
+            display: block;
+            font-size: 14dp;
+            color: #ffffff;
+        }
+
+        .server-addr {
+            display: block;
+            font-size: 11dp;
+            color: #888888;
+        }
+
+        .empty-label {
+            display: block;
+            text-align: center;
+            color: #666666;
+            font-size: 13dp;
+            padding: 30dp;
+        }
+
+        .btn-row {
+            display: block;
+            text-align: center;
+            margin-bottom: 8dp;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 130dp;
+            height: 36dp;
+            line-height: 36dp;
+            text-align: center;
+            margin: 0 4dp;
+            background-color: #3c3c3c;
+            color: #ffffff;
+            font-size: 14dp;
+            border-width: 2dp;
+            border-color: #565656;
+        }
+
+        .btn:hover {
+            background-color: #4a4a4a;
+            border-color: #7a7a7a;
+        }
+
+        .btn:active {
+            background-color: #2a2a2a;
+        }
+
+        .btn-join {
+            background-color: #2d6a2d;
+            border-color: #3a8a3a;
+        }
+
+        .btn-join:hover {
+            background-color: #3a8a3a;
+            border-color: #4aaa4a;
+        }
+
+        .bottom-bar {
+            display: block;
+            width: 300dp;
+            margin: 16dp auto 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen-title">{{ui.serverBrowser}}</div>
+
+    <div class="content-area">
+        <div class="server-list" id="server_list">
+            <div class="empty-label">No servers. Add a server to get started.</div>
+        </div>
+
+        <div class="btn-row">
+            <div id="btn_server_join" class="btn btn-join">Join</div>
+            <div id="btn_server_direct" class="btn">Direct Connect</div>
+            <div id="btn_server_add" class="btn">Add Server</div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div id="btn_server_back" class="btn">{{gui.back}}</div>
+    </div>
+</body>
+</rml>

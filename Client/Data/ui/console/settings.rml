@@ -1,0 +1,85 @@
+<rml>
+<head>
+    <title>Settings</title>
+    <link type="text/rcss" href="../bedrock_common.rcss"/>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #000000cc;
+            font-family: Mojangles;
+            color: #d0e0f0;
+        }
+
+        .settings-panel {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .title {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 10%;
+            font-size: 28dp;
+            color: #d0e0f0;
+            margin-bottom: 28dp;
+        }
+
+        .button-column {
+            display: block;
+            width: 320dp;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: block;
+            width: 320dp;
+            height: 48dp;
+            line-height: 48dp;
+            text-align: center;
+            margin-bottom: 10dp;
+            background-color: #2a3a4a;
+            color: #d0e0f0;
+            font-size: 18dp;
+            border-width: 2dp;
+            border-color: #3a5a6a;
+        }
+
+        .btn:hover {
+            background-color: #3a5a7a;
+            border-color: #5a8aaa;
+            color: #ffffff;
+        }
+
+        .btn:active {
+            background-color: #1a2a3a;
+        }
+
+        .bottom-bar {
+            display: block;
+            width: 320dp;
+            margin: 32dp auto 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="settings-panel">
+        <div class="title">{{ui.settings}}</div>
+        <div class="button-column">
+            <div id="btn_settings_audio" class="btn">Audio</div>
+            <div id="btn_settings_video" class="btn">Video</div>
+            <div id="btn_settings_controls" class="btn">Controls</div>
+            <div id="btn_settings_language" class="btn">Language</div>
+            <div id="btn_settings_texture_packs" class="btn">Texture Packs</div>
+            <div id="btn_settings_mods" class="btn">Mods</div>
+            <div id="btn_cycle_theme" class="btn">UI Theme: Console</div>
+        </div>
+        <div class="bottom-bar">
+            <div id="btn_settings_back" class="btn">{{gui.back}}</div>
+        </div>
+    </div>
+</body>
+</rml>

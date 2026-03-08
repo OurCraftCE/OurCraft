@@ -1,0 +1,52 @@
+<rml>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            width: 100%; height: 100%;
+            background-color: #1a1a2e;
+            font-family: segoeui;
+            color: #ffffff;
+        }
+        .container {
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            width: 100%; height: 100%;
+        }
+        .logo {
+            font-size: 48dp; font-weight: bold;
+            color: #55ff55; margin-bottom: 60dp;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 16dp; color: #aaaaaa;
+            margin-bottom: 40dp; text-align: center;
+        }
+        button {
+            width: 320dp; height: 44dp;
+            background-color: #3a7d44;
+            border: 2dp solid #55aa55;
+            font-size: 16dp; color: #ffffff;
+            text-align: center;
+            margin-bottom: 12dp;
+        }
+        button:hover {
+            background-color: #4a9d54;
+            border-color: #77cc77;
+        }
+        .status {
+            font-size: 14dp; color: #ff6666;
+            margin-top: 20dp; text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">OURCRAFT</div>
+        <div class="subtitle">Community Edition</div>
+        <button id="btn_login">Sign in with Microsoft</button>
+        <button id="btn_quit">Quit</button>
+        <div class="status" id="status_text"></div>
+    </div>
+</body>
+</rml>

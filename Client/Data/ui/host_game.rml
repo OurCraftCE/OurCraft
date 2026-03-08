@@ -1,0 +1,105 @@
+<rml>
+<head>
+	<title>Host Game</title>
+	<link type="text/rcss" href="bedrock_common.rcss"/>
+	<style>
+		body {
+			background-color: #000000c0;
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		.panel {
+			margin: auto;
+			margin-top: 80dp;
+			width: 420dp;
+			padding: 20dp;
+		}
+		h1 {
+			font-size: 24dp;
+			color: #ffffff;
+			text-align: center;
+			margin-bottom: 20dp;
+		}
+		.form-row {
+			margin-bottom: 12dp;
+			display: block;
+		}
+		.form-label {
+			font-size: 12dp;
+			color: #b0b0b0;
+			margin-bottom: 4dp;
+			display: block;
+		}
+		.form-value {
+			font-size: 16dp;
+			color: #ffffff;
+			display: inline-block;
+		}
+		input.text {
+			width: 100%;
+			height: 28dp;
+			font-size: 14dp;
+			background-color: #313131;
+			color: #ffffff;
+			border-width: 1dp;
+			border-color: #555555;
+			padding: 4dp 8dp;
+		}
+		input.text:focus {
+			border-color: #3c8527;
+		}
+		.toggle-row {
+			display: block;
+			margin-bottom: 12dp;
+		}
+		.toggle-btn {
+			display: inline-block;
+			padding: 6dp 18dp;
+			font-size: 14dp;
+			color: #ffffff;
+			background-color: #555555;
+			border-width: 0;
+		}
+		.toggle-btn:hover {
+			background-color: #3c8527;
+		}
+		.toggle-btn.active {
+			background-color: #3c8527;
+		}
+		.button-row {
+			margin-top: 20dp;
+			text-align: center;
+		}
+		.button-row .btn,
+		.button-row .btn-primary {
+			margin: 0 6dp;
+		}
+	</style>
+</head>
+<body>
+	<div class="panel">
+		<h1>{{ui.hostGame}}</h1>
+
+		<div class="form-row">
+			<div class="form-label">Max Players</div>
+			<div id="host_max_players" class="form-value">8</div>
+		</div>
+
+		<div class="toggle-row">
+			<div class="form-label">Online Game</div>
+			<button id="btn_host_online" class="toggle-btn active">ON</button>
+		</div>
+
+		<div class="form-row">
+			<div class="form-label">Port</div>
+			<input id="input_host_port" type="text" value="19132"/>
+		</div>
+
+		<div class="button-row">
+			<button id="btn_host_start" class="btn-primary">Start</button>
+			<button id="btn_host_back" class="btn">{{gui.back}}</button>
+		</div>
+	</div>
+</body>
+</rml>

@@ -1,0 +1,10 @@
+/* Java Edition Theme */
+.theme-btn { background-color: #A0A0A0; border: 2dp solid #000000; color: #373737; }
+.theme-btn:hover { background-color: #6C6CFF; border-color: #000000; color: #FFFFFF; }
+.theme-btn-primary { background-color: #A0A0A0; border: 2dp solid #000000; color: #373737; }
+.theme-btn-primary:hover { background-color: #6C6CFF; color: #FFFFFF; }
+.theme-btn-danger { background-color: #A0A0A0; border: 2dp solid #000000; color: #373737; }
+.theme-btn-danger:hover { background-color: #FF6C6C; color: #FFFFFF; }
+.theme-panel { background-color: #C6C6C6; border: 2dp solid #000000; }
+.theme-slot { background-color: #8B8B8B; border: 1dp solid #373737; }
+.theme-slot:hover { background-color: #A0A0A0; border-color: #FFFFFF; }

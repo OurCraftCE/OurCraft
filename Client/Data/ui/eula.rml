@@ -1,0 +1,107 @@
+<rml>
+<head>
+	<title>End User License Agreement</title>
+	<link type="text/rcss" href="bedrock_common.rcss"/>
+	<style>
+		body {
+			background-color: #000000e0;
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		.panel {
+			margin: auto;
+			margin-top: 40dp;
+			width: 580dp;
+			padding: 20dp;
+		}
+		h1 {
+			font-size: 24dp;
+			color: #ffffff;
+			text-align: center;
+			margin-bottom: 16dp;
+		}
+		.eula-scroll {
+			height: 380dp;
+			overflow: auto;
+			background-color: #1a1a1a;
+			padding: 16dp;
+			border-width: 1dp;
+			border-color: #444444;
+		}
+		.eula-heading {
+			font-size: 14dp;
+			color: #ffffff;
+			margin-top: 14dp;
+			margin-bottom: 6dp;
+		}
+		.eula-text {
+			font-size: 12dp;
+			color: #bbbbbb;
+			margin-bottom: 8dp;
+			display: block;
+		}
+		.eula-date {
+			font-size: 11dp;
+			color: #888888;
+			margin-bottom: 12dp;
+			display: block;
+		}
+		.button-row {
+			text-align: center;
+			margin-top: 16dp;
+		}
+		.button-row .btn,
+		.button-row .btn-primary,
+		.button-row .btn-danger {
+			margin: 0 8dp;
+		}
+	</style>
+</head>
+<body>
+	<div class="panel">
+		<h1>{{ui.eula}}</h1>
+
+		<div class="eula-scroll">
+			<div class="eula-date">Last Updated: March 7, 2026</div>
+
+			<div class="eula-text">PLEASE READ THIS END USER LICENSE AGREEMENT CAREFULLY BEFORE USING THIS SOFTWARE. BY USING THIS SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS AGREEMENT.</div>
+
+			<div class="eula-heading">1. License Grant</div>
+			<div class="eula-text">Subject to the terms of this Agreement, you are granted a non-exclusive, non-transferable, limited license to use this software for personal, non-commercial purposes. This software is provided as an open-source project and is not affiliated with, endorsed by, or associated with Mojang Studios or Microsoft Corporation.</div>
+
+			<div class="eula-heading">2. Restrictions</div>
+			<div class="eula-text">You shall not: (a) use this software for any commercial purpose without explicit permission; (b) represent this software as an official Minecraft product; (c) distribute modified versions without clearly indicating they are unofficial; (d) use this software to infringe on any intellectual property rights.</div>
+
+			<div class="eula-heading">3. Intellectual Property</div>
+			<div class="eula-text">Minecraft is a trademark of Mojang Studios. All Minecraft-related assets, names, and branding remain the property of their respective owners. This project uses these references solely for interoperability and educational purposes.</div>
+
+			<div class="eula-heading">4. Disclaimer of Warranties</div>
+			<div class="eula-text">THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH YOU.</div>
+
+			<div class="eula-heading">5. Limitation of Liability</div>
+			<div class="eula-text">IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</div>
+
+			<div class="eula-heading">6. User Content</div>
+			<div class="eula-text">You are responsible for any content you create, share, or distribute using this software. You agree not to create or distribute content that is illegal, harmful, threatening, abusive, or otherwise objectionable.</div>
+
+			<div class="eula-heading">7. Online Services</div>
+			<div class="eula-text">If you use the multiplayer features of this software, you agree to behave respectfully toward other users. The developers reserve the right to implement measures to prevent abuse of online services.</div>
+
+			<div class="eula-heading">8. Modifications</div>
+			<div class="eula-text">This Agreement may be updated from time to time. Continued use of the software after changes constitutes acceptance of the modified Agreement.</div>
+
+			<div class="eula-heading">9. Termination</div>
+			<div class="eula-text">This license is effective until terminated. It will terminate automatically if you fail to comply with any term of this Agreement. Upon termination, you must destroy all copies of the software in your possession.</div>
+
+			<div class="eula-heading">10. Governing Law</div>
+			<div class="eula-text">This Agreement shall be governed by and construed in accordance with applicable local laws, without regard to conflict of law principles.</div>
+		</div>
+
+		<div class="button-row">
+			<button id="btn_eula_accept" class="btn-primary">{{ui.agree}}</button>
+			<button id="btn_eula_decline" class="btn-danger">{{ui.disagree}}</button>
+		</div>
+	</div>
+</body>
+</rml>

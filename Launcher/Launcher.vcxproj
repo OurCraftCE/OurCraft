@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C3D4E5F6-A7B8-9012-CDEF-123456789ABC}</ProjectGuid>
+    <RootNamespace>MinecraftLauncher</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)x64\Debug\Launcher\</OutDir>
+    <IntDir>$(ProjectDir)x64\Debug\Intermediate\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)x64\Release\Launcher\</OutDir>
+    <IntDir>$(ProjectDir)x64\Release\Intermediate\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)ExternalDependency\SDL3-built\include;$(SolutionDir)ExternalDependency\bgfx-built\include;$(SolutionDir)ExternalDependency\bgfx-built\include\compat\msvc;$(SolutionDir)ExternalDependency\RmlUi-built\include;$(SolutionDir)ExternalDependency\freetype-built\include\freetype2;$(SolutionDir)ExternalDependency\curl-built\include;$(SolutionDir)ExternalDependency\miniz;$(SolutionDir)ExternalDependency;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS64;SDL_STATIC;BX_CONFIG_DEBUG=1;_HAS_STD_BYTE=0;RMLUI_STATIC_LIB;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>/Zc:__cplusplus /Zc:preprocessor %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)ExternalDependency\SDL3-built\lib;$(SolutionDir)ExternalDependency\bgfx-built\lib;$(SolutionDir)ExternalDependency\RmlUi-built\lib;$(SolutionDir)ExternalDependency\freetype-built\lib;$(SolutionDir)ExternalDependency\curl-built\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;SDL3-static.lib;bgfxDebug.lib;bxDebug.lib;bimgDebug.lib;bimg_decodeDebug.lib;rmlui.lib;rmlui_debugger.lib;freetyped.lib;libcurl-d.lib;wldap32.lib;crypt32.lib;normaliz.lib;iphlpapi.lib;secur32.lib;winmm.lib;imm32.lib;setupapi.lib;version.lib;cfgmgr32.lib;ole32.lib;oleaut32.lib;uuid.lib;shell32.lib;advapi32.lib;gdi32.lib;user32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)ExternalDependency\SDL3-built\include;$(SolutionDir)ExternalDependency\bgfx-built\include;$(SolutionDir)ExternalDependency\bgfx-built\include\compat\msvc;$(SolutionDir)ExternalDependency\RmlUi-built\include;$(SolutionDir)ExternalDependency\freetype-built\include\freetype2;$(SolutionDir)ExternalDependency\curl-built\include;$(SolutionDir)ExternalDependency\miniz;$(SolutionDir)ExternalDependency;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS64;SDL_STATIC;_HAS_STD_BYTE=0;RMLUI_STATIC_LIB;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>/Zc:__cplusplus /Zc:preprocessor %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)ExternalDependency\SDL3-built\lib;$(SolutionDir)ExternalDependency\bgfx-built\lib;$(SolutionDir)ExternalDependency\RmlUi-built\lib;$(SolutionDir)ExternalDependency\freetype-built\lib;$(SolutionDir)ExternalDependency\curl-built\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;SDL3-static.lib;bgfx.lib;bx.lib;bimg.lib;bimg_decode.lib;rmlui.lib;rmlui_debugger.lib;freetype.lib;libcurl-d.lib;wldap32.lib;crypt32.lib;normaliz.lib;iphlpapi.lib;secur32.lib;winmm.lib;imm32.lib;setupapi.lib;version.lib;cfgmgr32.lib;ole32.lib;oleaut32.lib;uuid.lib;shell32.lib;advapi32.lib;gdi32.lib;user32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Platform\RmlBgfxRenderer.cpp" />
+    <ClCompile Include="Platform\RmlSystemInterface.cpp" />
+    <ClCompile Include="Platform\stb_image_impl.cpp" />
+    <ClCompile Include="UI\LauncherUI.cpp" />
+    <ClCompile Include="Auth\HttpClient.cpp" />
+    <ClCompile Include="Auth\MicrosoftAuth.cpp" />
+    <ClCompile Include="Auth\TokenStorage.cpp" />
+    <ClCompile Include="Assets\BedrockExtractor.cpp" />
+    <ClCompile Include="Assets\AssetManager.cpp" />
+    <ClCompile Include="Client\ClientManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Platform\RmlBgfxRenderer.h" />
+    <ClInclude Include="Platform\RmlSystemInterface.h" />
+    <ClInclude Include="UI\LauncherUI.h" />
+    <ClInclude Include="Auth\HttpClient.h" />
+    <ClInclude Include="Auth\MicrosoftAuth.h" />
+    <ClInclude Include="Auth\TokenStorage.h" />
+    <ClInclude Include="Assets\BedrockExtractor.h" />
+    <ClInclude Include="Assets\AssetManager.h" />
+    <ClInclude Include="Client\ClientManager.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup>
+    <PostBuildEvent>
+      <Command>
+if not exist "$(OutDir)Platform\shaders\" mkdir "$(OutDir)Platform\shaders\"
+xcopy /Y /I "$(ProjectDir)Platform\shaders\*.bin" "$(OutDir)Platform\shaders\"
+if not exist "$(OutDir)UI\rml\" mkdir "$(OutDir)UI\rml\"
+xcopy /Y /I "$(ProjectDir)UI\rml\*.rml" "$(OutDir)UI\rml\"
+if exist "$(ProjectDir)UI\rml\*.ttf" xcopy /Y /I "$(ProjectDir)UI\rml\*.ttf" "$(OutDir)UI\rml\"
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
